@@ -1,0 +1,82 @@
+{
+ "story": "Someone gave me a cheque for Rs 2,00,000 and it bounced on 1 November 2026. What should I do?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "other",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 200000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-11-01",
+    "event": "Cheque bounced",
+    "user_words": "Someone gave me a cheque for Rs 2,00,000 and it bounced on 1 November 2026."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "What should I do?",
+  "missing": [
+   "Name and address of the cheque issuer",
+   "Date of the cheque",
+   "Reason for the bounce",
+   "State and city"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [],
+ "answer": null,
+ "answer_first_try": null,
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "",
+ "escalate": true,
+ "escalation_reasons": [
+  "out of scope: other"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "This problem is outside what I have verified law for (I cover unpaid salary, consumer refunds and, partly, rental deposits). Rather than guess, please contact free legal aid: NALSA 15100 or Tele-Law 14454. They can advise you at no cost.",
+ "scope_message_hi": "",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "",
+ "versions": {},
+ "error": null,
+ "case_id": "M01_cheque_bounce",
+ "seconds": 2.3
+}

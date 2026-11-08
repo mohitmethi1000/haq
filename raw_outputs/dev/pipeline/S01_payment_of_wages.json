@@ -1,0 +1,338 @@
+{
+ "story": "What can I do under the Payment of Wages Act? My company in Hyderabad hasn't paid my October 2026 salary of Rs 30,000.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Telangana",
+  "user_city": "Hyderabad",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 30000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-10",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 30000.0,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10",
+    "event": "Salary for October 2026 not paid",
+    "user_words": "My company in Hyderabad hasn't paid my October 2026 salary of Rs 30,000."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "What can I do under the Payment of Wages Act?",
+  "missing": [
+   "Exact date of salary due",
+   "Company name",
+   "Whether PF was deducted"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for October 2026 were due before the end of 07 November 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-10"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Nov 2029 (1095 days left). This counts 3 years from 07 Nov 2026 (when October 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-11-07",
+   "days_left": 1095,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 1 month(s) x Rs 30,000 = Rs 30,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 1,
+    "monthly_wage_inr": 30000.0,
+    "total": 30000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "Your October 2026 salary of Rs 30,000 was due before 07 November 2026 and is still unpaid. You can file a claim with the wage authority for your unpaid wages. The employer must prove they paid you. You can also claim compensation if you win. The law that applies now is the Code on Wages, 2019.",
+  "claims": [
+   {
+    "text": "Your salary of Rs 30,000 for October 2026 was due before 07 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages for payment.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim with the wage authority for your unpaid wages. The authority can order up to ten times the claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019.",
+    "cite": [
+     "COW2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with the wage authority in Telangana.",
+    "why": "This is the correct forum to recover your unpaid salary and claim compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your employment and unpaid salary, such as offer letters, pay slips, or bank statements.",
+    "why": "You need evidence to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "Contact the wage authority to confirm the exact procedure and required forms.",
+    "why": "This will help you file the claim correctly.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of your employment, such as an offer letter or pay slips?",
+   "Has your employer made any deductions from your salary, such as PF or professional tax?",
+   "Are you a member of a registered trade union?",
+   "Have you received any written communication from your employer about the unpaid salary?"
+  ],
+  "not_covered": [
+   "The exact date of salary due",
+   "Company name",
+   "Whether PF was deducted"
+  ],
+  "corrections": [
+   "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019. The Code on Wages, 2019 applies to your case."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "Your October 2026 salary of Rs 30,000 was due before 07 November 2026 and is still unpaid. You can file a claim with the wage authority for your unpaid wages. The employer must prove they paid you. You can also claim compensation if you win. The law that applies now is the Code on Wages, 2019.",
+  "claims": [
+   {
+    "text": "Your salary of Rs 30,000 for October 2026 was due before 07 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages for payment.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim with the wage authority for your unpaid wages. The authority can order up to ten times the claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019.",
+    "cite": [
+     "COW2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with the wage authority in Telangana.",
+    "why": "This is the correct forum to recover your unpaid salary and claim compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your employment and unpaid salary, such as offer letters, pay slips, or bank statements.",
+    "why": "You need evidence to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "Contact the wage authority to confirm the exact procedure and required forms.",
+    "why": "This will help you file the claim correctly.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of your employment, such as an offer letter or pay slips?",
+   "Has your employer made any deductions from your salary, such as PF or professional tax?",
+   "Are you a member of a registered trade union?",
+   "Have you received any written communication from your employer about the unpaid salary?"
+  ],
+  "not_covered": [
+   "The exact date of salary due",
+   "Company name",
+   "Whether PF was deducted"
+  ],
+  "corrections": [
+   "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019. The Code on Wages, 2019 applies to your case."
+  ]
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your salary of Rs 30,000 for October 2026 was due before 07 November 2026.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "Section 17(1)(iv) states that for monthly basis employment, wages shall be paid 'before the expiry of the seventh day of the succeeding month.' For October 2026, the seventh day of the succeeding month (November 2026) is 7 November 2026. The sentence says 'before 07 November 2026,' which is consistent with 'before the expiry of the seventh day' (i.e., before 7 November)."
+  },
+  {
+   "n": 2,
+   "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages for payment.",
+   "cite": "COW2019_s2y",
+   "supported": false,
+   "reason": "The law text explicitly states that HRA (house rent allowance) is excluded from wages in section 2(y) - it is listed under 'does not include' as item (b) 'house rent allowance.' It also explicitly excludes overtime allowance in item (h). The sentence incorrectly includes both HRA and overtime as wages."
+  },
+  {
+   "n": 3,
+   "text": "The employer must prove they paid you the wages.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "Section 59 states: 'the burden to prove that the said dues have been paid shall be on the employer.' This directly supports that the employer must prove they paid the wages."
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim with the wage authority for your unpaid wages. The authority can order up to ten times the claim as compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "Section 45(2) states that the authority 'may order, having regard to the circumstances under which the claim arises, the payment of compensation in addition to the claim determined, which may extend to ten times of the claim determined.' This directly supports both the ability to file a claim with the wage authority and the up to ten times compensation."
+  },
+  {
+   "n": 5,
+   "text": "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019.",
+   "cite": "COW2019_s69",
+   "supported": true,
+   "reason": "Section 69(1) states: 'The Payment of Wages Act, 1936, the Minimum Wages Act, 1948, the Payment of Bonus Act, 1965 and the Equal Remuneration Act, 1976 are hereby repealed.' This directly supports that the Payment of Wages Act, 1936 was repealed."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 30,000. My wages for October 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 30,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "COW2019_s17",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "COW2019_s69"
+ ],
+ "unconfirmed": [
+  "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages for payment."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "S01_payment_of_wages",
+ "seconds": 9.4
+}

@@ -1,0 +1,249 @@
+{
+ "story": "मैंने 31 अगस्त 2026 को बेंगलुरु में किराए का कमरा छोड़ दिया। मकान मालिक ने मेरा 40,000 रुपये का डिपॉज़िट वापस नहीं किया।",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "deposit",
+  "user_language": "hindi",
+  "user_state": "Karnataka",
+  "user_city": "Bengaluru",
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 40000.0,
+  "amount_paid_inr": 40000.0,
+  "purchase_date": "2026-08-31",
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": "2026-08-31",
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": "2026-08-31",
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08-31",
+    "event": "Tenant vacated the rented room in Bengaluru.",
+    "user_words": "मैंने 31 अगस्त 2026 को बेंगलुरु में किराए का कमरा छोड़ दिया"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "To get the security deposit of 40,000 INR returned from the landlord.",
+  "missing": [
+   "Landlord's name and contact details",
+   "Reason for withholding the deposit",
+   "Date when the deposit was originally paid"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "deposit_scope",
+   "outcome": "uncertain",
+   "message": "Deposit refunds depend on your State's rent law and your rent agreement. I haven't verified any State rent law yet, so I won't quote one. I can still help you write a demand letter based on your facts. Free legal aid (15100) can tell you your State's rule.",
+   "cite": [
+    "LSA1987_s12"
+   ],
+   "facts_used": {
+    "user_state": "Karnataka"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Your State's law decides"
+  },
+  {
+   "name": "deposit_limitation",
+   "outcome": "uncertain",
+   "message": "I haven't verified the time limit for getting a deposit back through court, so I won't guess one. Don't wait - a lawyer can confirm it quickly.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Time limit: not verified"
+  }
+ ],
+ "answer": {
+  "summary": "You moved out of your room in Bengaluru on 31 August 2026. The landlord has not returned your 40,000 INR deposit. You need to find out why they are keeping it.",
+  "claims": [
+   {
+    "text": "You vacated your rented room in Bengaluru on 31 August 2026.",
+    "cite": []
+   },
+   {
+    "text": "You paid a security deposit of 40,000 INR.",
+    "cite": []
+   },
+   {
+    "text": "You have not yet received your 40,000 INR deposit back.",
+    "cite": []
+   },
+   {
+    "text": "Free legal aid is available if you need help proving your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written message or letter to the landlord asking for the 40,000 INR deposit.",
+    "why": "This creates a written record of your request and shows you are trying to settle the issue.",
+    "cite": []
+   },
+   {
+    "action": "Check your rent agreement or bank statement for the date you paid the 40,000 INR deposit.",
+    "why": "This helps you prove when you paid the deposit if you need to go to court later.",
+    "cite": []
+   },
+   {
+    "action": "Call the free legal aid helpline at 15100 to ask about your rights in Karnataka.",
+    "why": "They can explain the laws and help you write a demand letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the landlord's name and phone number?",
+   "Do you have a copy of your rent agreement?",
+   "When did you originally pay the 40,000 INR deposit?",
+   "Do you have any messages or bank transfers showing you paid the deposit?"
+  ],
+  "not_covered": [
+   "The specific time limit for taking a landlord to court over a deposit in Karnataka.",
+   "The exact rules for rent deposits in Karnataka."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You moved out of your room in Bengaluru on 31 August 2026. The landlord has not returned your 40,000 INR deposit. You need to find out why they are keeping it.",
+  "claims": [
+   {
+    "text": "You vacated your rented room in Bengaluru on 31 August 2026.",
+    "cite": []
+   },
+   {
+    "text": "You paid a security deposit of 40,000 INR.",
+    "cite": []
+   },
+   {
+    "text": "You have not yet received your 40,000 INR deposit back.",
+    "cite": []
+   },
+   {
+    "text": "Free legal aid is available if you need help proving your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written message or letter to the landlord asking for the 40,000 INR deposit.",
+    "why": "This creates a written record of your request and shows you are trying to settle the issue.",
+    "cite": []
+   },
+   {
+    "action": "Check your rent agreement or bank statement for the date you paid the 40,000 INR deposit.",
+    "why": "This helps you prove when you paid the deposit if you need to go to court later.",
+    "cite": []
+   },
+   {
+    "action": "Call the free legal aid helpline at 15100 to ask about your rights in Karnataka.",
+    "why": "They can explain the laws and help you write a demand letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the landlord's name and phone number?",
+   "Do you have a copy of your rent agreement?",
+   "When did you originally pay the 40,000 INR deposit?",
+   "Do you have any messages or bank transfers showing you paid the deposit?"
+  ],
+  "not_covered": [
+   "The specific time limit for taking a landlord to court over a deposit in Karnataka.",
+   "The exact rules for rent deposits in Karnataka."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Free legal aid is available if you need help proving your claim.",
+   "cite": "LSA1987_s12",
+   "supported": false,
+   "reason": "The law text lists specific categories of persons eligible for free legal services but does not state that help proving a 'claim' is a condition for availability."
+  }
+ ],
+ "rendered": {
+  "summary": "आप 31 August 2026 को बेंगलुरु में अपना कमरा खाली करके चले गए। मकान मालिक ने आपकी ₹40,000 की सिक्योरिटी डिपॉजिट वापस नहीं की है। आपको यह पता लगाना होगा कि वे इसे क्यों रोक कर बैठे हैं।",
+  "claims": [
+   "आपने 31 August 2026 को बेंगलुरु में अपना रेंटेड कमरा खाली किया।",
+   "आपने ₹40,000 की सिक्योरिटी डिपॉजिट जमा की थी।",
+   "आपको अभी तक आपकी ₹40,000 की डिपॉजिट वापस नहीं मिली है।",
+   "अगर आपको अपना क्लेम साबित करने में मदद चाहिए, तो फ्री लीगल एड (free legal aid) उपलब्ध है।"
+  ],
+  "next_steps": [
+   "मकान मालिक को ₹40,000 की डिपॉजिट मांगने के लिए एक लिखित मैसेज या लेटर भेजें। — इससे आपकी रिक्वेस्ट का एक लिखित रिकॉर्ड बन जाता है और यह दिखाता है कि आप मामले को सुलझाने की कोशिश कर रहे हैं।",
+   "आपकी ₹40,000 की डिपॉजिट की तारीख चेक करने के लिए अपना रेंट एग्रीमेंट या बैंक स्टेटमेंट देखें। — अगर आपको बाद में कोर्ट जाना पड़े, तो इससे आपको डिपॉजिट देने की तारीख साबित करने में मदद मिलेगी।",
+   "कर्नाटक में अपने अधिकारों के बारे में पूछने के लिए फ्री लीगल एड हेल्पलाइन 15100 पर कॉल करें। — वे आपको कानून समझा सकते हैं और डिमांड लेटर लिखने में मदद कर सकते हैं।"
+  ],
+  "questions_for_user": [
+   "मकान मालिक का नाम और फोन नंबर क्या है?",
+   "क्या आपके पास अपने रेंट एग्रीमेंट की एक कॉपी है?",
+   "आपने मूल रूप से ₹40,000 की डिपॉजिट कब जमा की थी?",
+   "क्या आपके पास कोई मैसेज या बैंक ट्रांसफर है जो यह दिखाता है कि आपने डिपॉजिट जमा की है?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for return of security deposit\n\nI paid you a security deposit of Rs 40,000 on [FILL: date paid] for the premises at [FILL: address]. I vacated the premises and handed over the keys on 31 August 2026. The deposit has not been returned.\n\nI request you to return the deposit, less any deduction you can justify in writing with bills, within 15 days of receiving this letter.\n\nIf it is not returned, I will take legal action to recover it, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: deposit_scope (uncertain)",
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "Free legal aid is available if you need help proving your claim."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your rent agreement.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: none - this letter states facts only",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_deposit_hi",
+ "seconds": 9.7
+}

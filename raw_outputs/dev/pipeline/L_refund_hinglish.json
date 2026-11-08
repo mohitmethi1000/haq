@@ -1,0 +1,332 @@
+{
+ "story": "Maine 5 October 2026 ko online 3200 ka mixer grinder liya. Toota hua tha. 8 October ko return kar diya par refund nahi aaya.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "hinglish",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 3200.0,
+  "amount_paid_inr": 3200.0,
+  "purchase_date": "2026-10-05",
+  "refund_refused_date": "2026-10-08",
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-05",
+    "event": "Bought a mixer grinder online",
+    "user_words": "Maine 5 October 2026 ko online 3200 ka mixer grinder liya"
+   },
+   {
+    "date": "2026-10-08",
+    "event": "Returned the broken mixer grinder",
+    "user_words": "8 October ko return kar diya"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get a refund for a broken mixer grinder that was returned but not refunded.",
+  "missing": [
+   "Name of the online platform or seller",
+   "State and city of the user",
+   "Reason for refund refusal"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 08 Oct 2028 (700 days left). This counts 2 years from 08 Oct 2026 (the date they refused; if they refused earlier, your deadline is earlier). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "refund_refused_date": "2026-10-08"
+   },
+   "deadline": "2028-10-08",
+   "days_left": 700,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 3,200, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 3200.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You bought a broken mixer grinder online for Rs 3,200 on 5 October 2026. You returned it on 8 October 2026, but the company refused to give you a refund. You are a consumer under the Consumer Protection Act, 2019. You can file a complaint at your local District Consumer Commission. There is no filing fee because your amount is below Rs 5 lakh. You have 700 days left to file, but you should not wait.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought goods for personal use, not for business.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A defect means a fault or shortcoming in the goods, and refusing to take back defective goods is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_10",
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file your complaint in the District Consumer Commission.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPA2019_s34_2"
+    ]
+   },
+   {
+    "text": "There is no filing fee because the amount paid is Rs 3,200.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "They can help you resolve the issue with the seller or platform for free.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the seller's grievance officer asking for your refund.",
+    "why": "This shows you tried to solve it directly before going to court.",
+    "cite": []
+   },
+   {
+    "action": "File an online complaint at e-jagriti.gov.in.",
+    "why": "You can file in the district where you live or work without a lawyer and without a fee.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of the online platform or seller?",
+   "What is your state and city?",
+   "Do you have the order number or receipt?"
+  ],
+  "not_covered": [
+   "The specific reason why the company refused your refund.",
+   "The name of the online platform or seller.",
+   "The exact date of delivery or return."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You bought a broken mixer grinder online for Rs 3,200 on 5 October 2026. You returned it on 8 October 2026, but the company refused to give you a refund. You are a consumer under the Consumer Protection Act, 2019. You can file a complaint at your local District Consumer Commission. There is no filing fee because your amount is below Rs 5 lakh. You have 700 days left to file, but you should not wait.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought goods for personal use, not for business.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A defect means a fault or shortcoming in the goods, and refusing to take back defective goods is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_10",
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file your complaint in the District Consumer Commission.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPA2019_s34_2"
+    ]
+   },
+   {
+    "text": "There is no filing fee because the amount paid is Rs 3,200.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "They can help you resolve the issue with the seller or platform for free.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the seller's grievance officer asking for your refund.",
+    "why": "This shows you tried to solve it directly before going to court.",
+    "cite": []
+   },
+   {
+    "action": "File an online complaint at e-jagriti.gov.in.",
+    "why": "You can file in the district where you live or work without a lawyer and without a fee.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of the online platform or seller?",
+   "What is your state and city?",
+   "Do you have the order number or receipt?"
+  ],
+  "not_covered": [
+   "The specific reason why the company refused your refund.",
+   "The name of the online platform or seller.",
+   "The exact date of delivery or return."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are a consumer because you bought goods for personal use, not for business.",
+   "cite": "CPA2019_s2_7",
+   "supported": false,
+   "reason": "The law text defines 'consumer' as any person who buys goods or avails services, but explicitly excludes 'a person who obtains such goods for resale or for any commercial purpose.' The sentence states 'You are a consumer because you bought goods for personal use, not for business' - this adds a 'personal use, not for business' condition that is not in the law text. The law uses 'commercial purpose' as the exclusion criterion, not 'personal use vs business use' as a positive inclusion criterion. The sentence incorrectly implies that 'personal use' is sufficient for consumer status, when the law requires simply that the person is not buying for resale or commercial purpose."
+  },
+  {
+   "n": 2,
+   "text": "A defect means a fault or shortcoming in the goods, and refusing to take back defective goods is an unfair trade practice.",
+   "cite": "CPA2019_s2_10",
+   "supported": false,
+   "reason": "The law text defines 'defect' as 'any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard.' The sentence states 'A defect means a fault or shortcoming in the goods' - this is partially supported but omits 'imperfection' and the specific dimensions (quality, quantity, potency, purity, standard). More critically, the sentence adds 'and refusing to take back defective goods is an unfair trade practice' - this is not in the law text. The law text only defines 'defect'; it does not mention 'unfair trade practice' or 'refusing to take back defective goods.' This is an added condition not present in the law text."
+  },
+  {
+   "n": 3,
+   "text": "A defect means a fault or shortcoming in the goods, and refusing to take back defective goods is an unfair trade practice.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": false,
+   "reason": "The law text defines 'defect' as 'any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard.' The sentence states 'A defect means a fault or shortcoming in the goods' - this is partially supported but omits 'imperfection' and the specific dimensions. More critically, the sentence adds 'and refusing to take back defective goods is an unfair trade practice' - this is not in the law text. The law text only defines 'defect'; it does not mention 'unfair trade practice' or 'refusing to take back defective goods.' This is an added condition not present in the law text."
+  },
+  {
+   "n": 4,
+   "text": "You can file your complaint in the District Consumer Commission.",
+   "cite": "CPA2019_s34_1",
+   "supported": true,
+   "reason": "The sentence 'You can file your complaint in the District Consumer Commission' is supported by the law text. The law text states that 'the District Commission shall have jurisdiction to entertain complaints' - this directly implies that complaints can be filed in the District Consumer Commission."
+  },
+  {
+   "n": 5,
+   "text": "You can file your complaint in the District Consumer Commission.",
+   "cite": "CPA2019_s34_2",
+   "supported": true,
+   "reason": "The sentence 'You can file your complaint in the District Consumer Commission' is supported by the law text. The law text provides criteria for where a complaint shall be instituted in a District Commission, including where the opposite party resides or carries on business, where the cause of action arises, or where the complainant resides."
+  },
+  {
+   "n": 6,
+   "text": "There is no filing fee because the amount paid is Rs 3,200.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The sentence states 'There is no filing fee because the amount paid is Rs 3,200.' The law text states 'No fee where the consideration paid is up to Rs 5 lakh.' Since Rs 3,200 is up to Rs 5 lakh, the sentence correctly applies the rule to the person's facts and is directly supported by the law text."
+  }
+ ],
+ "rendered": {
+  "summary": "Aapne 5 October 2026 ko online ₹3,200 mein ek kharab mixer grinder kharida tha. Aapne 8 October 2026 ko ise wapas kar diya, lekin company ne aapko refund dene se mana kar diya. Aap Consumer Protection Act, 2019 ke tehat ek consumer hain. Aap apne local District Consumer Commission mein complaint file kar sakte hain. Filing fee nahi hai kyunki aapki amount ₹5 lakh se kam hai. Aapke paas complaint file karne ke liye 700 din bache hain, lekin aapko intezar nahi karna chahiye.",
+  "claims": [
+   "Aap ek consumer hain kyunki aapne personal use ke liye saman kharida tha, business ke liye nahi.",
+   "Defect ka matlab saman mein koi fault ya kami hona hai, aur defective saman ko wapas lene se mana karna ek unfair trade practice hai.",
+   "Aap apni complaint District Consumer Commission mein file kar sakte hain.",
+   "Koi filing fee nahi hai kyunki aapne ₹3,200 pay kiye the."
+  ],
+  "next_steps": [
+   "National Consumer Helpline par 1915 par call karein ya 8800001915 par WhatsApp karein. — Ve aapko seller ya platform ke saath issue free mein solve karne mein help kar sakte hain.",
+   "Seller ke grievance officer ko apna refund maangne ke liye ek written complaint bhejein. — Isse yeh dikhta hai ki aapne court jaane se pehle directly issue solve karne ki koshish ki thi.",
+   "e-jagriti.gov.in par online complaint file karein. — Aap bina lawyer aur bina fee ke us district mein file kar sakte hain jahan aap rehte hain ya kaam karte hain."
+  ],
+  "questions_for_user": [
+   "Online platform ya seller ka naam kya hai?",
+   "Aapka state aur city kaunsa hai?",
+   "Kya aapke paas order number ya receipt hai?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 05 October 2026 I paid Rs 3,200 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests, including on 08 October 2026, you have not refunded the amount.\n\nI request a full refund of Rs 3,200 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 2 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_10",
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_1",
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPFEE_r7"
+ ],
+ "unconfirmed": [
+  "You are a consumer because you bought goods for personal use, not for business.",
+  "A defect means a fault or shortcoming in the goods, and refusing to take back defective goods is an unfair trade practice."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_refund_hinglish",
+ "seconds": 16.2
+}

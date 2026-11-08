@@ -1,0 +1,120 @@
+{
+ "story": "A loan recovery agent says police will arrest me tomorrow because I missed EMIs. Also my last employer owes me Rs 15,000 salary for October 2026.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "other",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": "last employer, loan recovery agent",
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 15000.0,
+  "amount_paid_inr": null,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-10",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 15000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": "Loan recovery agent threatened arrest over missed EMIs",
+  "timeline": [
+   {
+    "date": "2026-11-08",
+    "event": "Loan recovery agent threatened to arrest the user tomorrow due to missed EMIs",
+    "user_words": "A loan recovery agent says police will arrest me tomorrow because I missed EMIs"
+   },
+   {
+    "date": "2026-10",
+    "event": "Last employer did not pay salary for October 2026",
+    "user_words": "my last employer owes me Rs 15,000 salary for October 2026"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [
+   "Threat of police arrest",
+   "Threat of violence"
+  ],
+  "user_goal": "Recover unpaid salary and stop illegal recovery threats",
+  "missing": [
+   "State",
+   "City",
+   "Exact date of missed EMIs",
+   "Name of the employer and recovery agent",
+   "Full details of the loan"
+  ]
+ },
+ "triage": {
+  "flags": [
+   "arrest_or_police",
+   "model:violence"
+  ],
+  "severity": "stop",
+  "helplines": [
+   [
+    "Free legal aid (NALSA)",
+    "15100"
+   ],
+   [
+    "Police / emergency",
+    "112"
+   ],
+   [
+    "Women helpline",
+    "181 (in West Bengal use 112)"
+   ]
+  ],
+  "messages": [
+   [
+    "Because police, arrest or a court is involved, please talk to a lawyer before doing anything. Free legal aid: 15100. I can still explain your money problem below, but don't rely on me for the police part.",
+    "पुलिस, गिरफ्तारी या कोर्ट का मामला है, इसलिए पहले वकील से बात करें। मुफ़्त कानूनी मदद: 15100।"
+   ],
+   [
+    "Your safety comes first. If you are in danger now, call 112. Women can also call 181. Keep any proof (photos, messages). When you are safe, free legal aid on 15100 can help with both the violence and the money.",
+    "आपकी सुरक्षा सबसे ज़रूरी है। अभी खतरा हो तो 112 पर कॉल करें। महिलाएँ 181 पर भी कॉल कर सकती हैं। सुरक्षित होने पर 15100 पर मुफ़्त कानूनी मदद लें।"
+   ]
+  ]
+ },
+ "rules": [],
+ "answer": null,
+ "answer_first_try": null,
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "",
+ "escalate": true,
+ "escalation_reasons": [
+  "safety: arrest_or_police, model:violence"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Police / emergency",
+   "112"
+  ],
+  [
+   "Women helpline",
+   "181 (in West Bengal use 112)"
+  ]
+ ],
+ "scope_message": "Because police, arrest or a court is involved, please talk to a lawyer before doing anything. Free legal aid: 15100. I can still explain your money problem below, but don't rely on me for the police part.\n\nYour safety comes first. If you are in danger now, call 112. Women can also call 181. Keep any proof (photos, messages). When you are safe, free legal aid on 15100 can help with both the violence and the money.",
+ "scope_message_hi": "पुलिस, गिरफ्तारी या कोर्ट का मामला है, इसलिए पहले वकील से बात करें। मुफ़्त कानूनी मदद: 15100।\n\nआपकी सुरक्षा सबसे ज़रूरी है। अभी खतरा हो तो 112 पर कॉल करें। महिलाएँ 181 पर भी कॉल कर सकती हैं। सुरक्षित होने पर 15100 पर मुफ़्त कानूनी मदद लें।",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "",
+ "versions": {},
+ "error": null,
+ "case_id": "E02_police_arrest",
+ "seconds": 2.7
+}

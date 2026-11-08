@@ -1,0 +1,315 @@
+{
+ "story": "I resigned on Tuesday 3 November 2026 without serving my notice period. My employer in Lucknow says that because of this he can keep my whole October 2026 salary of Rs 21,000 forever. Is that legal?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Uttar Pradesh",
+  "user_city": "Lucknow",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 21000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "employee",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-11-03",
+  "unpaid_from_month": "2026-10",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 21000.0,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-11-03",
+    "event": "Resigned from job",
+    "user_words": "I resigned on Tuesday 3 November 2026 without serving my notice period."
+   },
+   {
+    "date": "2026-11-08",
+    "event": "Employer threatened to withhold October salary",
+    "user_words": "My employer in Lucknow says that because of this he can keep my whole October 2026 salary of Rs 21,000 forever."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "To find out if an employer can legally keep an employee's October 2026 salary of Rs 21,000 because the employee resigned on 3 November 2026 without serving the notice period.",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (03 Nov 2026), the law says final wages must be paid within two working days - about 05 Nov 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-11-03"
+   },
+   "deadline": "2026-11-05",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Nov 2029 (1095 days left). This counts 3 years from 07 Nov 2026 (when October 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-11-07",
+   "days_left": 1095,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 1 month(s) x Rs 21,000 = Rs 21,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 1,
+    "monthly_wage_inr": 21000.0,
+    "total": 21000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "No, your employer cannot legally keep your October 2026 salary of Rs 21,000 just because you resigned without serving your notice period. Under the Code on Wages, 2019, your final wages must be paid within two working days of your resignation, which is around 05 November 2026. The employer must prove they paid you, and any contract saying they can keep your salary is illegal.",
+  "claims": [
+   {
+    "text": "Your employer must pay your October 2026 salary of Rs 21,000 within two working days of your resignation on 03 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Any agreement that lets the employer keep your salary is illegal and has no legal effect.",
+    "cite": [
+     "COW2019_s60"
+    ]
+   },
+   {
+    "text": "The employer must prove that they have paid you the Rs 21,000, not the other way around.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim for your unpaid salary within three years, which is 07 November 2029. Do not wait until the last date.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_art7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Ask your employer in writing for your October 2026 salary of Rs 21,000, mentioning that the law requires payment within two working days of your resignation.",
+    "why": "This creates a written record of your demand and your employer's refusal.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "action": "File a wage claim with your State labour department in Uttar Pradesh if the employer does not pay you.",
+    "why": "The labour department can order the employer to pay you and can also order compensation up to ten times your claim.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "Gather proof of your employment, such as your offer letter, resignation email, and bank statements showing no salary credit.",
+    "why": "You will need this to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any written proof of your employment, like an offer letter or resignation email?",
+   "Did your employer give you any written notice or agreement about the notice period or salary deduction?"
+  ],
+  "not_covered": [
+   "What happens if you signed a notice period agreement or a contract that says you will forfeit your salary if you leave early.",
+   "Whether your employer can deduct salary for the notice period you did not serve, as this is not covered in the law pack.",
+   "Whether you are eligible for any other benefits like gratuity or leave encashment."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "No, your employer cannot legally keep your October 2026 salary of Rs 21,000 just because you resigned without serving your notice period. Under the Code on Wages, 2019, your final wages must be paid within two working days of your resignation, which is around 05 November 2026. The employer must prove they paid you, and any contract saying they can keep your salary is illegal.",
+  "claims": [
+   {
+    "text": "Your employer must pay your October 2026 salary of Rs 21,000 within two working days of your resignation on 03 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Any agreement that lets the employer keep your salary is illegal and has no legal effect.",
+    "cite": [
+     "COW2019_s60"
+    ]
+   },
+   {
+    "text": "The employer must prove that they have paid you the Rs 21,000, not the other way around.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim for your unpaid salary within three years, which is 07 November 2029. Do not wait until the last date.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_art7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Ask your employer in writing for your October 2026 salary of Rs 21,000, mentioning that the law requires payment within two working days of your resignation.",
+    "why": "This creates a written record of your demand and your employer's refusal.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "action": "File a wage claim with your State labour department in Uttar Pradesh if the employer does not pay you.",
+    "why": "The labour department can order the employer to pay you and can also order compensation up to ten times your claim.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "Gather proof of your employment, such as your offer letter, resignation email, and bank statements showing no salary credit.",
+    "why": "You will need this to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any written proof of your employment, like an offer letter or resignation email?",
+   "Did your employer give you any written notice or agreement about the notice period or salary deduction?"
+  ],
+  "not_covered": [
+   "What happens if you signed a notice period agreement or a contract that says you will forfeit your salary if you leave early.",
+   "Whether your employer can deduct salary for the notice period you did not serve, as this is not covered in the law pack.",
+   "Whether you are eligible for any other benefits like gratuity or leave encashment."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your employer must pay your October 2026 salary of Rs 21,000 within two working days of your resignation on 03 November 2026.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text states in sub-section (2) that where an employee has resigned from service, the wages payable shall be paid within two working days of his resignation. The sentence applies this to the specific facts (October 2026 salary of Rs 21,000, resignation on 03 November 2026)."
+  },
+  {
+   "n": 2,
+   "text": "Any agreement that lets the employer keep your salary is illegal and has no legal effect.",
+   "cite": "COW2019_s60",
+   "supported": true,
+   "reason": "The law text states that any contract or agreement whereby an employee relinquishes the right to any amount or bonus due shall be null and void. This directly supports that an agreement letting the employer keep salary is illegal and has no legal effect."
+  },
+  {
+   "n": 3,
+   "text": "The employer must prove that they have paid you the Rs 21,000, not the other way around.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text states in sub-section (1) that where a claim has been filed on account of non-payment of wages, the burden to prove that the said dues have been paid shall be on the employer. The sentence applies this burden of proof to the specific amount of Rs 21,000."
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim for your unpaid salary within three years, which is 07 November 2029. Do not wait until the last date.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text states in sub-section (6) that the application may be filed within a period of three years from the date on which claims arise. The sentence applies this to the specific date (07 November 2029) and advises not to wait until the last date. The sentence does not add any condition, time limit, amount cap, right, or penalty not in the law text - it merely applies the three-year period to specific facts and gives advice."
+  },
+  {
+   "n": 5,
+   "text": "You can file a claim for your unpaid salary within three years, which is 07 November 2029. Do not wait until the last date.",
+   "cite": "LIM1963_art7",
+   "supported": false,
+   "reason": "The law text [LIM1963_art7] states 'Three years When the wages accrue due' without specifying any start date or providing any information about when claims arise or how to calculate the three-year period. The sentence adds specific factual application (07 November 2029) but more importantly, the law text does not contain any information about a specific date that would make this calculation possible. The sentence's assertion of a specific date (07 November 2029) cannot be derived from the law text alone as the text provides no reference date or method to compute 'three years' from 'when wages accrue due'."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 21,000. My wages for October 2026 have not been paid. My last working day was 03 November 2026.\n\nI request you to pay the unpaid amount of Rs 21,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s45",
+  "COW2019_s59",
+  "COW2019_s60",
+  "LIM1963_art7"
+ ],
+ "unconfirmed": [
+  "You can file a claim for your unpaid salary within three years, which is 07 November 2029. Do not wait until the last date."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_F02_notice_period",
+ "seconds": 12.3
+}

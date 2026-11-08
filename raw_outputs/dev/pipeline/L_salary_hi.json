@@ -1,0 +1,353 @@
+{
+ "story": "मेरी कंपनी ने अगस्त और सितंबर 2026 की सैलरी नहीं दी है। महीने के 35,000 रुपये थे। मैंने 30 सितंबर 2026 को इस्तीफा दे दिया था।",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "hindi",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 70000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-09-30",
+  "unpaid_from_month": "2026-08",
+  "unpaid_to_month": "2026-09",
+  "monthly_wage_inr": 35000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08",
+    "event": "Salary not paid for August",
+    "user_words": "मेरी कंपनी ने अगस्त और सितंबर 2026 की सैलरी नहीं दी है"
+   },
+   {
+    "date": "2026-09-30",
+    "event": "Resigned from job",
+    "user_words": "मैंने 30 सितंबर 2026 को इस्तीफा दे दिया था"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get the pending salary for August and September 2026",
+  "missing": [
+   "Company name",
+   "State and City",
+   "Proof of resignation"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (30 Sep 2026), the law says final wages must be paid within two working days - about 03 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-09-30"
+   },
+   "deadline": "2026-10-03",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Sep 2029 (1034 days left). This counts 3 years from 07 Sep 2026 (when August 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "August 2026",
+     "September 2026"
+    ]
+   },
+   "deadline": "2029-09-07",
+   "days_left": 1034,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 35,000 = Rs 70,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 35000.0,
+    "total": 70000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "Your employer has not paid your salary for August and September 2026. Your final wages must be paid within two working days of your resignation on 30 September 2026. You can file a wage claim for Rs 70,000 with the labour authority. The deadline to file this claim is 07 September 2029.",
+  "claims": [
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation on 30 September 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 70,000 for two months at Rs 35,000 per month.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation. The employer must prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You have three years from 07 September 2026 to file the claim. Do not wait until the deadline.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of your resignation, such as an email or resignation letter.",
+    "why": "You need this to show your last working day.",
+    "cite": []
+   },
+   {
+    "action": "Find out if your employer is a bank, railway, or central PSU. If yes, contact the Central Government wage authority. Otherwise, contact your State labour department.",
+    "why": "This tells you where to file the claim.",
+    "cite": [
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File a wage claim before the wage authority with your proof of employment and unpaid salary.",
+    "why": "This starts the official process to recover your money and compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help with the claim.",
+    "why": "You can get free legal help from the District Legal Services Authority.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name and location of your company?",
+   "Do you have any proof of your resignation, like an email or letter?"
+  ],
+  "not_covered": [
+   "The exact fee to file the claim is not in the law pack.",
+   "The specific form to fill out is not in the law pack."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "Your employer has not paid your salary for August and September 2026. Your final wages must be paid within two working days of your resignation on 30 September 2026. You can file a wage claim for Rs 70,000 with the labour authority. The deadline to file this claim is 07 September 2029.",
+  "claims": [
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation on 30 September 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 70,000 for two months at Rs 35,000 per month.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation. The employer must prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You have three years from 07 September 2026 to file the claim. Do not wait until the deadline.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of your resignation, such as an email or resignation letter.",
+    "why": "You need this to show your last working day.",
+    "cite": []
+   },
+   {
+    "action": "Find out if your employer is a bank, railway, or central PSU. If yes, contact the Central Government wage authority. Otherwise, contact your State labour department.",
+    "why": "This tells you where to file the claim.",
+    "cite": [
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File a wage claim before the wage authority with your proof of employment and unpaid salary.",
+    "why": "This starts the official process to recover your money and compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help with the claim.",
+    "why": "You can get free legal help from the District Legal Services Authority.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name and location of your company?",
+   "Do you have any proof of your resignation, like an email or letter?"
+  ],
+  "not_covered": [
+   "The exact fee to file the claim is not in the law pack.",
+   "The specific form to fill out is not in the law pack."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your employer must pay your final wages within two working days of your resignation on 30 September 2026.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text in s17(2)(ii) states that for employees who 'resigned from service', wages shall be paid 'within two working days of his... resignation'. The sentence applies this to a resignation on 30 September 2026 and specifies 'two working days', which matches the law text exactly."
+  },
+  {
+   "n": 2,
+   "text": "Your unpaid wages are Rs 70,000 for two months at Rs 35,000 per month.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "The law text in s2y defines 'wages' as 'all remuneration whether by way of salaries, allowances or otherwise, expressed in terms of money or capable of being so expressed'. The sentence states unpaid wages of Rs 70,000 for two months at Rs 35,000 per month, which is a calculation of wages in terms of money, consistent with the definition. The law text does not contain specific amounts or time periods, so the sentence's application is valid."
+  },
+  {
+   "n": 3,
+   "text": "You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation. The employer must prove they paid you.",
+   "cite": "COW2019_s45",
+   "supported": false,
+   "reason": "The law text states the authority 'may order... the payment of compensation in addition to the claim determined, which may extend to ten times of the claim determined'. It does not say the authority 'can order up to ten times your claim as compensation' - the law says 'may extend to ten times of the claim determined' which is different from 'up to ten times'. Also, the law text does not state that 'The employer must prove they paid you' - it states the burden of proof is on the employer in s59, not in s45. The sentence combines elements from s45 and s59, but s45 itself does not contain the burden of proof requirement."
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation. The employer must prove they paid you.",
+   "cite": "COW2019_s59",
+   "supported": false,
+   "reason": "The law text in s59 states 'the burden to prove that the said dues have been paid shall be on the employer.' However, the sentence says 'The employer must prove they paid you' which is a rephrasing but the law text says 'the burden to prove that the said dues have been paid shall be on the employer' - this is actually supported. But wait - the sentence also includes 'You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation.' which are from s45, not s59. The law text provided is s59, which only contains the burden of proof provision. The sentence contains multiple claims, most of which are not in s59."
+  },
+  {
+   "n": 5,
+   "text": "You have three years from 07 September 2026 to file the claim. Do not wait until the deadline.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text in s45(6) states 'The application under sub-section (4) may be filed within a period of three years from the date on which claims referred to in sub-section (1) arises: Provided that the authority referred to in sub-section (1) may, entertain the application after three years on sufficient cause being shown by the applicant for such delay.' The sentence states 'You have three years from 07 September 2026 to file the claim' - this is a direct application of the three-year period. The date 07 September 2026 would need to be the date when claims arose, which is not specified in the law text but the sentence applies the rule to a specific date. The law text does not contradict this."
+  }
+ ],
+ "rendered": {
+  "summary": "आपके एम्प्लॉयर ने अगस्त और सितंबर 2026 का आपका सैलरी नहीं दिया है। 30 सितंबर 2026 को आपके रिज़ाइन करने के दो वर्किंग दिनों के अंदर आपकी फाइनल सैलरी का पेमेंट होना ज़रूरी है। आप लेबर अथॉरिटी के पास ₹70,000 के वेज क्लेम के लिए फाइल कर सकते हैं। इस क्लेम को फाइल करने की डेडलाइन 07 सितंबर 2029 है।",
+  "claims": [
+   "30 सितंबर 2026 को आपके रिज़ाइन करने के दो वर्किंग दिनों के अंदर आपके एम्प्लॉयर को आपकी फाइनल सैलरी का पेमेंट करना ही होगा।",
+   "आपका जो सैलरी पेंडिंग है, वो ₹70,000 है जो दो महीने (₹35,000 प्रति माह) का है।",
+   "आप वेज अथॉरिटी के पास क्लेम फाइल कर सकते हैं। अथॉरिटी आपको कंपनसेशन के तौर पर आपके क्लेम का दस गुना तक दे सकती है। एम्प्लॉयर को यह साबित करना होगा कि उन्होंने आपको पेमेंट कर दिया है।",
+   "07 सितंबर 2026 से आपके पास क्लेम फाइल करने के लिए तीन साल का समय है। डेडलाइन का इंतज़ार बिल्कुल न करें।"
+  ],
+  "next_steps": [
+   "अपने रिज़ाइन करने के प्रूफ इकट्ठा करें, जैसे कोई ईमेल या रिज़ाइनेशन लेटर। — आपको अपना आखिरी वर्किंग डे दिखाने के लिए इसकी ज़रूरत होगी।",
+   "पता करें कि क्या आपका एम्प्लॉयर कोई बैंक, रेलवे, या सेंट्रल PSU है। अगर हाँ, तो सेंट्रल गवर्नमेंट वेज अथॉरिटी से कॉन्टैक्ट करें। वरना, अपने स्टेट लेबर डिपार्टमेंट से कॉन्टैक्ट करें। — इससे आपको पता चलेगा कि क्लेम कहाँ फाइल करना है।",
+   "अपने एम्प्लॉयमेंट प्रूफ और पेंडिंग सैलरी के साथ वेज अथॉरिटी के पास वेज क्लेम फाइल करें। — इससे आपके पैसे और कंपनसेशन रिकवर करने का ऑफिशियल प्रोसेस शुरू हो जाएगा।",
+   "अगर आपको क्लेम में मदद चाहिए, तो फ्री लीगल एड के लिए 15100 पर कॉल करें। — आप डिस्ट्रिक्ट लीगल सर्विस अथॉरिटी से फ्री लीगल हेल्प ले सकते हैं।"
+  ],
+  "questions_for_user": [
+   "आपकी कंपनी का नाम और लोकेशन क्या है?",
+   "क्या आपके पास अपने रिज़ाइन करने का कोई प्रूफ है, जैसे कोई ईमेल या लेटर?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 35,000. My wages for August 2026 to September 2026 have not been paid. My last working day was 30 September 2026.\n\nI request you to pay the unpaid amount of Rs 70,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "You can file a claim with the wage authority. The authority can order up to ten times your claim as compensation. The employer must prove they paid you."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_salary_hi",
+ "seconds": 26.6
+}

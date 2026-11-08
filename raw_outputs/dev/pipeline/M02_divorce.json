@@ -1,0 +1,82 @@
+{
+ "story": "I want a divorce from my husband. We married in 2019 in Jaipur. What is the process?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "other",
+  "user_language": "english",
+  "user_state": "Rajasthan",
+  "user_city": "Jaipur",
+  "other_party_name": "husband",
+  "other_party_kind": "individual",
+  "amount_claimed_inr": null,
+  "amount_paid_inr": null,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": "User wants a divorce from husband and asks about the process.",
+  "timeline": [
+   {
+    "date": "2019",
+    "event": "User got married in Jaipur",
+    "user_words": "We married in 2019 in Jaipur"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "User wants a divorce from her husband and wants to know the legal process.",
+  "missing": [
+   "Type of divorce (mutual consent or contested)",
+   "Grounds for divorce",
+   "Date of separation or living apart",
+   "Presence of minor children"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [],
+ "answer": null,
+ "answer_first_try": null,
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "",
+ "escalate": true,
+ "escalation_reasons": [
+  "out of scope: other"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "This problem is outside what I have verified law for (I cover unpaid salary, consumer refunds and, partly, rental deposits). Rather than guess, please contact free legal aid: NALSA 15100 or Tele-Law 14454. They can advise you at no cost.",
+ "scope_message_hi": "",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "",
+ "versions": {},
+ "error": null,
+ "case_id": "M02_divorce",
+ "seconds": 2.1
+}

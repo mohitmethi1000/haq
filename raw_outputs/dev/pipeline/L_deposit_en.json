@@ -1,0 +1,189 @@
+{
+ "story": "I left my rented room in Bengaluru on 31 August 2026. The owner has not returned my Rs 40,000 deposit.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "deposit",
+  "user_language": "english",
+  "user_state": "Karnataka",
+  "user_city": "Bengaluru",
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 40000.0,
+  "amount_paid_inr": 40000.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": "2026-08-31",
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08-31",
+    "event": "User left the rented room",
+    "user_words": "I left my rented room in Bengaluru on 31 August 2026"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": null,
+  "missing": [
+   "Date the deposit was originally paid",
+   "Reason for withholding the deposit",
+   "Landlord's contact details or name"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "deposit_scope",
+   "outcome": "uncertain",
+   "message": "Deposit refunds depend on your State's rent law and your rent agreement. I haven't verified any State rent law yet, so I won't quote one. I can still help you write a demand letter based on your facts. Free legal aid (15100) can tell you your State's rule.",
+   "cite": [
+    "LSA1987_s12"
+   ],
+   "facts_used": {
+    "user_state": "Karnataka"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Your State's law decides"
+  },
+  {
+   "name": "deposit_limitation",
+   "outcome": "uncertain",
+   "message": "I haven't verified the time limit for getting a deposit back through court, so I won't guess one. Don't wait - a lawyer can confirm it quickly.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Time limit: not verified"
+  }
+ ],
+ "answer": {
+  "summary": "You paid a Rs 40,000 deposit for a room in Bengaluru and left on 31 August 2026. The owner has not returned it. You can ask for it back. You need to know your rent agreement terms and your state's rent law to move forward.",
+  "claims": [
+   {
+    "text": "You can ask the owner to return your Rs 40,000 deposit.",
+    "cite": []
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Check your rent agreement for deposit terms.",
+    "why": "The agreement tells you how and when the deposit should be returned.",
+    "cite": []
+   },
+   {
+    "action": "Send a written demand letter to the owner asking for your deposit.",
+    "why": "A written request creates a clear record.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 for free legal aid.",
+    "why": "They can help you understand your state's rent rules and help you write the letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What date did you originally pay the deposit?",
+   "Why does the owner say they are keeping the deposit?",
+   "What is the owner's name and contact number?"
+  ],
+  "not_covered": [
+   "State-specific rent laws for Karnataka",
+   "Time limits for filing a case to get the deposit back"
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You paid a Rs 40,000 deposit for a room in Bengaluru and left on 31 August 2026. The owner has not returned it. You can ask for it back. You need to know your rent agreement terms and your state's rent law to move forward.",
+  "claims": [
+   {
+    "text": "You can ask the owner to return your Rs 40,000 deposit.",
+    "cite": []
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Check your rent agreement for deposit terms.",
+    "why": "The agreement tells you how and when the deposit should be returned.",
+    "cite": []
+   },
+   {
+    "action": "Send a written demand letter to the owner asking for your deposit.",
+    "why": "A written request creates a clear record.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 for free legal aid.",
+    "why": "They can help you understand your state's rent rules and help you write the letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What date did you originally pay the deposit?",
+   "Why does the owner say they are keeping the deposit?",
+   "What is the owner's name and contact number?"
+  ],
+  "not_covered": [
+   "State-specific rent laws for Karnataka",
+   "Time limits for filing a case to get the deposit back"
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for return of security deposit\n\nI paid you a security deposit of Rs 40,000 on [FILL: date paid] for the premises at [FILL: address]. I vacated the premises and handed over the keys on 31 August 2026. The deposit has not been returned.\n\nI request you to return the deposit, less any deduction you can justify in writing with bills, within 15 days of receiving this letter.\n\nIf it is not returned, I will take legal action to recover it, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: deposit_scope (uncertain)"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your rent agreement.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: none - this letter states facts only",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_deposit_en",
+ "seconds": 4.2
+}

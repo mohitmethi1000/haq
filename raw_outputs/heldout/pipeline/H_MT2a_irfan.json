@@ -1,0 +1,294 @@
+{
+ "story": "Mohammed Irfan here. I work as a security guard for an agency in Kolkata. My salary of Rs 16,000 for September 2026 has not been paid. I am still working there.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": "Kolkata",
+  "other_party_name": "an agency",
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 16000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "agency_worker",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-09",
+  "unpaid_to_month": "2026-09",
+  "monthly_wage_inr": 16000.0,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-09",
+    "event": "Salary not paid for September 2026",
+    "user_words": "My salary of Rs 16,000 for September 2026 has not been paid. I am still working there."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Recover unpaid salary",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for September 2026 were due before the end of 07 October 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-09"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Oct 2029 (1064 days left). This counts 3 years from 07 Oct 2026 (when September 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "September 2026"
+    ]
+   },
+   "deadline": "2029-10-07",
+   "days_left": 1064,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 1 month(s) x Rs 16,000 = Rs 16,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 1,
+    "monthly_wage_inr": 16000.0,
+    "total": 16000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "Your salary of Rs 16,000 for September 2026 is overdue. You can file a wage claim before the labour authority to recover this amount. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "Your salary for September 2026 was due before 07 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay and allowances like HRA and overtime.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "The wage authority can order up to ten times the claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer has to prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with the State labour authority in Kolkata within 3 years from 07 October 2026.",
+    "why": "You must file the claim before 07 October 2029 to recover your unpaid salary.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your work, like your appointment letter, salary slips, or messages about your job.",
+    "why": "The employer must prove they paid you, so your proof helps your case.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "action": "Contact the free legal aid helpline 15100 if you need help filing the claim.",
+    "why": "You can get free legal help to understand the process and file your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of your work, like an appointment letter or salary slips?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "Whether your specific agency is covered by the Code on Wages.",
+   "The exact steps to file the claim form with the Kolkata labour authority."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "Your salary of Rs 16,000 for September 2026 is overdue. You can file a wage claim before the labour authority to recover this amount. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "Your salary for September 2026 was due before 07 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay and allowances like HRA and overtime.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "The wage authority can order up to ten times the claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer has to prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with the State labour authority in Kolkata within 3 years from 07 October 2026.",
+    "why": "You must file the claim before 07 October 2029 to recover your unpaid salary.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your work, like your appointment letter, salary slips, or messages about your job.",
+    "why": "The employer must prove they paid you, so your proof helps your case.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "action": "Contact the free legal aid helpline 15100 if you need help filing the claim.",
+    "why": "You can get free legal help to understand the process and file your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of your work, like an appointment letter or salary slips?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "Whether your specific agency is covered by the Code on Wages.",
+   "The exact steps to file the claim form with the Kolkata labour authority."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your salary for September 2026 was due before 07 October 2026.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text states that for monthly basis, wages shall be paid 'before the expiry of the seventh day of the succeeding month.' The sentence states the salary was due before 07 October 2026, which is consistent with a September 2026 salary (the seventh day of the succeeding month would be October 7, 2026)."
+  },
+  {
+   "n": 2,
+   "text": "Unpaid wages include your basic pay and allowances like HRA and overtime.",
+   "cite": "COW2019_s2y",
+   "supported": false,
+   "reason": "The law text explicitly excludes house rent allowance (HRA) under clause (f): 'house rent allowance.' It also excludes overtime allowance under clause (h): 'any overtime allowance.' Therefore, the sentence is not supported by the law text."
+  },
+  {
+   "n": 3,
+   "text": "The wage authority can order up to ten times the claim as compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text states the authority 'may order...the payment of compensation in addition to the claim determined, which may extend to ten times of the claim determined.' This directly supports the sentence."
+  },
+  {
+   "n": 4,
+   "text": "The employer has to prove they paid you the wages.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text states: 'the burden to prove that the said dues have been paid shall be on the employer.' This directly supports the sentence."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: an agency, [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 16,000. My wages for September 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 16,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "Unpaid wages include your basic pay and allowances like HRA and overtime."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_MT2a_irfan",
+ "seconds": 7.6
+}

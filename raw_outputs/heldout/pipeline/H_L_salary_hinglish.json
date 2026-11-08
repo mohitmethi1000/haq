@@ -1,0 +1,410 @@
+{
+ "story": "Ahmedabad ke cloud kitchen mein delivery rider tha, 26 Oct 2026 ko resign kiya. Sept aur Oct 2026 ki salary abhi tak nahi mili, 22k per month thi.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "hinglish",
+  "user_state": "Gujarat",
+  "user_city": "Ahmedabad",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 44000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "gig_platform",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-10-26",
+  "unpaid_from_month": "2026-09",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 22000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-26",
+    "event": "Resigned from the cloud kitchen",
+    "user_words": "26 Oct 2026 ko resign kiya"
+   },
+   {
+    "date": "2026-10",
+    "event": "September and October 2026 salary not received",
+    "user_words": "Sept aur Oct 2026 ki salary abhi tak nahi mili"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get pending salary for September and October 2026",
+  "missing": [
+   "Exact date of employment start",
+   "Name of the cloud kitchen or platform"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "worker_status",
+   "outcome": "uncertain",
+   "message": "Delivery and ride-app workers are usually treated as partners, not employees, so the wage claim route may not apply. Your app contract and the platform's grievance process matter. Please talk to free legal aid (15100).",
+   "cite": [
+    "COW2019_s2k"
+   ],
+   "facts_used": {
+    "work_relationship": "gig_platform"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Does the wage law cover you?"
+  },
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (26 Oct 2026), the law says final wages must be paid within two working days - about 28 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-10-26"
+   },
+   "deadline": "2026-10-28",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Oct 2029 (1064 days left). This counts 3 years from 07 Oct 2026 (when September 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "September 2026",
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-10-07",
+   "days_left": 1064,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 22,000 = Rs 44,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 22000.0,
+    "total": 44000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "You worked as a delivery rider at a cloud kitchen in Ahmedabad and resigned on 26 October 2026. You have not received your salary for September and October 2026, which is a total of Rs 44,000. The law says final wages must be paid within two working days after your last day. You can file a wage claim to get your money back.",
+  "claims": [
+   {
+    "text": "You may not be covered as an employee under the Code on Wages, 2019. This is because gig workers are often treated as partners, not employees, so the wage claim route may not apply.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Final wages must be paid within two working days after your last day of work. For you, this means by around 28 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 44,000. This includes basic pay and dearness allowance. House rent allowance also counts as wages for payment.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a wage claim before a wage authority. The authority can order up to ten times the claim as compensation. The employer has to prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "text": "You must file your claim within three years from the date the wages fell due. Do not wait for the last date.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline at 15100.",
+    "why": "You need to check if you are an employee under the law. A lawyer can help you understand your contract and your options.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your app contract and platform grievance process.",
+    "why": "The law says gig workers may not be employees. Your contract might have a different way to solve this.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "action": "Collect proof of your work and unpaid salary.",
+    "why": "You need evidence to show the wage authority. Screenshots, emails, or bank statements will help.",
+    "cite": [
+     "BSA2023_s63_1",
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "action": "File a wage claim with the State labour department.",
+    "why": "This is where you go to ask for your Rs 44,000. The authority can also order extra money as compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written contract or agreement with the cloud kitchen or platform?",
+   "Do you have any proof of your work, like app logs, shift details, or messages with the employer?"
+  ],
+  "not_covered": [
+   "The exact start date of your employment is missing.",
+   "The name of the cloud kitchen or platform is missing."
+  ],
+  "corrections": [
+   "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "You worked as a delivery rider at a cloud kitchen in Ahmedabad and resigned on 26 October 2026. You have not received your salary for September and October 2026, which is a total of Rs 44,000. The law says final wages must be paid within two working days after your last day. You can file a wage claim to get your money back.",
+  "claims": [
+   {
+    "text": "You may not be covered as an employee under the Code on Wages, 2019. This is because gig workers are often treated as partners, not employees, so the wage claim route may not apply.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Final wages must be paid within two working days after your last day of work. For you, this means by around 28 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 44,000. This includes basic pay and dearness allowance. House rent allowance also counts as wages for payment.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a wage claim before a wage authority. The authority can order up to ten times the claim as compensation. The employer has to prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "text": "You must file your claim within three years from the date the wages fell due. Do not wait for the last date.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline at 15100.",
+    "why": "You need to check if you are an employee under the law. A lawyer can help you understand your contract and your options.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your app contract and platform grievance process.",
+    "why": "The law says gig workers may not be employees. Your contract might have a different way to solve this.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "action": "Collect proof of your work and unpaid salary.",
+    "why": "You need evidence to show the wage authority. Screenshots, emails, or bank statements will help.",
+    "cite": [
+     "BSA2023_s63_1",
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "action": "File a wage claim with the State labour department.",
+    "why": "This is where you go to ask for your Rs 44,000. The authority can also order extra money as compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written contract or agreement with the cloud kitchen or platform?",
+   "Do you have any proof of your work, like app logs, shift details, or messages with the employer?"
+  ],
+  "not_covered": [
+   "The exact start date of your employment is missing.",
+   "The name of the cloud kitchen or platform is missing."
+  ],
+  "corrections": [
+   "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019."
+  ]
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You may not be covered as an employee under the Code on Wages, 2019. This is because gig workers are often treated as partners, not employees, so the wage claim route may not apply.",
+   "cite": "COW2019_s2k",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 2,
+   "text": "Final wages must be paid within two working days after your last day of work. For you, this means by around 28 October 2026.",
+   "cite": "COW2019_s17",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 3,
+   "text": "Your unpaid wages are Rs 44,000. This includes basic pay and dearness allowance. House rent allowance also counts as wages for payment.",
+   "cite": "COW2019_s2y",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 4,
+   "text": "You can file a wage claim before a wage authority. The authority can order up to ten times the claim as compensation. The employer has to prove they paid you.",
+   "cite": "COW2019_s45",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 5,
+   "text": "You can file a wage claim before a wage authority. The authority can order up to ten times the claim as compensation. The employer has to prove they paid you.",
+   "cite": "COW2019_s59",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 6,
+   "text": "You can file a wage claim before a wage authority. The authority can order up to ten times the claim as compensation. The employer has to prove they paid you.",
+   "cite": "COW2019_s2d",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  },
+  {
+   "n": 7,
+   "text": "You must file your claim within three years from the date the wages fell due. Do not wait for the last date.",
+   "cite": "COW2019_s45",
+   "supported": null,
+   "reason": "check failed: unbalanced JSON object in model output"
+  }
+ ],
+ "rendered": {
+  "summary": "Aapne Ahmedabad ke ek cloud kitchen mein delivery rider ke roop mein kaam kiya aur 26 October 2026 ko resignation de diya. Aapko September aur October 2026 ki salary nahi mili hai, jo total ₹44,000 banti hai. Kanoon kehta hai ki final wages aapke aakhri din ke baad do working days ke andar milni chahiye. Aap apne paise wapas paane ke liye wage claim file kar sakte hain.",
+  "claims": [
+   "Aap Code on Wages, 2019 ke under employee ke roop mein cover nahi ho sakte. Iski wajah yeh hai ki gig workers ko aksar partner maana jaata hai, employee nahi, isliye wage claim ka rasta shayad aap par apply na ho.",
+   "Final wages aapke aakhri kaam ke din ke baad do working days ke andar milni chahiye. Aapke liye iska matlab hai ki yeh 28 October 2026 tak mil jaani chahiye.",
+   "Aapki unpaid wages ₹44,000 hain. Ismein basic pay aur dearness allowance shaamil hain. House rent allowance bhi payment ke liye wages mein gina jaata hai.",
+   "Aap wage authority ke saamne wage claim file kar sakte hain. Authority compensation ke taur par claim ki rakam ka das guna tak order kar sakti hai. Employer ko yeh saabit karna hoga ki unhone aapko paise diye hain.",
+   "Aapko apna claim us date se teen saal ke andar file karna hoga jis din wages milni theen. Last date ka wait mat kijiye.",
+   "Payment of Wages Act, 1936 ko repeal karke Code on Wages, 2019 laaya gaya tha."
+  ],
+  "next_steps": [
+   "15100 par free legal aid helpline call karein. — Aapko yeh check karna hoga ki kanoon ke tehat aap employee hain ya nahi. Ek lawyer aapko apna contract aur options samajhne mein help kar sakta hai.",
+   "Apna app contract aur platform grievance process check karein. — Kanoon kehta hai ki gig workers employee nahi ho sakte. Aapke contract mein ise solve karne ka koi alag tareeka ho sakta hai.",
+   "Apne kaam aur unpaid salary ka proof collect karein. — Aapko wage authority ko dikhane ke liye saboot chahiye. Screenshots, emails, ya bank statements kaam aayenge.",
+   "State labour department mein wage claim file karein. — Yahin par aap apne ₹44,000 maangne jaate hain. Authority compensation ke taur par extra paise bhi order kar sakti hai."
+  ],
+  "questions_for_user": [
+   "Kya aapke paas cloud kitchen ya platform ke saath koi written contract ya agreement hai?",
+   "Kya aapke paas apne kaam ka koi proof hai, jaise app logs, shift details, ya employer ke saath messages?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 22,000. My wages for September 2026 to October 2026 have not been paid. My last working day was 26 October 2026.\n\nI request you to pay the unpaid amount of Rs 44,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: worker_status (uncertain)",
+  "support check unavailable for some sentences (treated as not confirmed)"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "BSA2023_s63_4",
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2k",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.2(k) (Who is an \"employee\"); Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_L_salary_hinglish",
+ "seconds": 15.4
+}

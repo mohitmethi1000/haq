@@ -1,0 +1,322 @@
+{
+ "story": "I run a bakery and bought a commercial oven for Rs 1,20,000 for the shop in September 2026. It is defective and the dealer refuses to refund.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 120000.0,
+  "amount_paid_inr": 120000.0,
+  "purchase_date": "2026-09-01",
+  "refund_refused_date": null,
+  "bought_for_business": true,
+  "self_employed_livelihood": true,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-09",
+    "event": "Purchased a commercial oven for the bakery shop.",
+    "user_words": "I run a bakery and bought a commercial oven for the shop"
+   },
+   {
+    "date": "2026-09",
+    "event": "The oven was found to be defective.",
+    "user_words": "It is defective"
+   },
+   {
+    "date": "2026-09",
+    "event": "The dealer refused to refund the purchase amount.",
+    "user_words": "the dealer refuses to refund"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get a refund of Rs 1,20,000 for a defective commercial oven purchased in September 2026.",
+  "missing": [
+   "Exact purchase date in September 2026",
+   "Exact date when the refund was refused",
+   "Name of the dealer or company",
+   "State and city of the user"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_status",
+   "outcome": "info",
+   "message": "You bought it to earn your own living by self-employment, so the law's 'commercial purpose' exclusion does not apply - you can still be a consumer.",
+   "cite": [
+    "CPA2019_s2_7"
+   ],
+   "facts_used": {
+    "self_employed_livelihood": true
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "You are still a consumer"
+  },
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 01 Sep 2028 (663 days left). This counts 2 years from 01 Sep 2026 (your purchase date - counted from the earliest possible day, to be safe). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "purchase_date": "2026-09-01",
+    "start_basis": "purchase date (earliest possible start, to be safe)"
+   },
+   "deadline": "2028-09-01",
+   "days_left": 663,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 120,000, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 120000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You bought a commercial oven for your bakery to earn your own living. This means the law's 'commercial purpose' exclusion does not apply, and you can still be treated as a consumer. The oven was found to be defective and the dealer refused to refund the money. You can file a consumer complaint for a refund.",
+  "claims": [
+   {
+    "text": "You are a consumer under the law because you bought the oven to earn your own living by self-employment.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "The dealer refusing to refund a defective product is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "The oven being defective means it has a fault in its quality.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "You must file your complaint within two years from the date you bought the oven.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the dealer.",
+    "why": "This is a free first step to try and resolve the issue quickly.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the seller or dealer's grievance officer.",
+    "why": "This creates a record of your demand for a refund.",
+    "cite": []
+   },
+   {
+    "action": "File a complaint online at e-jagriti.gov.in or at your local District Consumer Commission.",
+    "why": "You paid Rs 120,000, so the District Commission has jurisdiction and there is no filing fee.",
+    "cite": [
+     "CPJR2021_pecuniary",
+     "CPFEE_r7",
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the exact date you purchased the oven in September 2026?",
+   "On what exact date did the dealer refuse to give you a refund?",
+   "What is the name of the dealer or company you bought the oven from?",
+   "Which state and city are you in?"
+  ],
+  "not_covered": [
+   "How to prove the oven is defective with photos or a report.",
+   "What happens if the dealer still refuses after you file a complaint.",
+   "How to claim compensation for losses caused by the defective oven."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You bought a commercial oven for your bakery to earn your own living. This means the law's 'commercial purpose' exclusion does not apply, and you can still be treated as a consumer. The oven was found to be defective and the dealer refused to refund the money. You can file a consumer complaint for a refund.",
+  "claims": [
+   {
+    "text": "You are a consumer under the law because you bought the oven to earn your own living by self-employment.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "The dealer refusing to refund a defective product is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "The oven being defective means it has a fault in its quality.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "You must file your complaint within two years from the date you bought the oven.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the dealer.",
+    "why": "This is a free first step to try and resolve the issue quickly.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the seller or dealer's grievance officer.",
+    "why": "This creates a record of your demand for a refund.",
+    "cite": []
+   },
+   {
+    "action": "File a complaint online at e-jagriti.gov.in or at your local District Consumer Commission.",
+    "why": "You paid Rs 120,000, so the District Commission has jurisdiction and there is no filing fee.",
+    "cite": [
+     "CPJR2021_pecuniary",
+     "CPFEE_r7",
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the exact date you purchased the oven in September 2026?",
+   "On what exact date did the dealer refuse to give you a refund?",
+   "What is the name of the dealer or company you bought the oven from?",
+   "Which state and city are you in?"
+  ],
+  "not_covered": [
+   "How to prove the oven is defective with photos or a report.",
+   "What happens if the dealer still refuses after you file a complaint.",
+   "How to claim compensation for losses caused by the defective oven."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are a consumer under the law because you bought the oven to earn your own living by self-employment.",
+   "cite": "CPA2019_s2_7",
+   "supported": true,
+   "reason": "The law text explicitly states in Explanation (a) that 'commercial purpose' does not include 'use by a person of goods bought and used by him exclusively for the purpose of earning his livelihood, by means of self-employment.' This directly supports that someone who bought an oven for self-employment to earn their own living is a consumer."
+  },
+  {
+   "n": 2,
+   "text": "The dealer refusing to refund a defective product is an unfair trade practice.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": true,
+   "reason": "The law text defines unfair trade practice in clause (viii) as 'refusing, after selling goods or rendering services, to take back or withdraw defective goods or to withdraw or discontinue deficient services and to refund the consideration thereof, if paid, within the period stipulated in the bill or cash memo or receipt or in the absence of such stipulation, within a period of thirty days.' The sentence describes exactly this behavior, though it omits the time limit of 'within a period of thirty days' or 'within the period stipulated in the bill or cash memo or receipt.' However, the sentence only states the dealer is refusing to refund, which is the core conduct described. The time limit is a condition in the law that the sentence omits, making the sentence incomplete but the core claim about the conduct being an unfair trade practice is supported."
+  },
+  {
+   "n": 3,
+   "text": "The oven being defective means it has a fault in its quality.",
+   "cite": "CPA2019_s2_10",
+   "supported": true,
+   "reason": "The law text defines 'defect' as 'any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard.' The sentence states 'The oven being defective means it has a fault in its quality,' which is directly supported by the definition of 'defect' as 'any fault... in the quality.'"
+  },
+  {
+   "n": 4,
+   "text": "You must file your complaint within two years from the date you bought the oven.",
+   "cite": "CPA2019_s69",
+   "supported": true,
+   "reason": "The law text in section 69(1) states 'The District Commission, the State Commission or the National Commission shall not admit a complaint unless it is filed within two years from the date on which the cause of action has arisen.' The sentence states 'You must file your complaint within two years from the date you bought the oven,' which applies the legal rule to the person's own facts (the date of purchase). The cause of action arising from the purchase is a reasonable application, and the two-year time limit is directly from the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 01 September 2026 I paid Rs 120,000 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests you have not refunded the amount.\n\nI request a full refund of Rs 120,000 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_10",
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7",
+  "CPJR2021_pecuniary"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.2(7) (Who is a \"consumer\" (with Explanation)); Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "G07_refund_business",
+ "seconds": 23.2
+}

@@ -1,0 +1,216 @@
+{
+ "story": "My landlord in Pune is sitting on my Rs 60,000 deposit since I moved out on 30 August 2026. Can I file a police case against him under IPC 406 for criminal breach of trust?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "deposit",
+  "user_language": "english",
+  "user_state": "Maharashtra",
+  "user_city": "Pune",
+  "other_party_name": null,
+  "other_party_kind": "individual",
+  "amount_claimed_inr": 60000.0,
+  "amount_paid_inr": 60000.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": "2026-08-30",
+  "moved_out_date": "2026-08-30",
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08-30",
+    "event": "Moved out of the rental property",
+    "user_words": "I moved out on 30 August 2026"
+   },
+   {
+    "date": "2026-11-08",
+    "event": "Landlord is withholding the security deposit",
+    "user_words": "My landlord in Pune is sitting on my Rs 60,000 deposit since I moved out on 30 August 2026"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "To file a police case against the landlord under IPC 406 for criminal breach of trust regarding the withheld deposit",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "deposit_scope",
+   "outcome": "uncertain",
+   "message": "Deposit refunds depend on your State's rent law and your rent agreement. I haven't verified any State rent law yet, so I won't quote one. I can still help you write a demand letter based on your facts. Free legal aid (15100) can tell you your State's rule.",
+   "cite": [
+    "LSA1987_s12"
+   ],
+   "facts_used": {
+    "user_state": "Maharashtra"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Your State's law decides"
+  },
+  {
+   "name": "deposit_limitation",
+   "outcome": "uncertain",
+   "message": "I haven't verified the time limit for getting a deposit back through court, so I won't guess one. Don't wait - a lawyer can confirm it quickly.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Time limit: not verified"
+  }
+ ],
+ "answer": {
+  "summary": "Your landlord is keeping your Rs 60,000 deposit. You want to file a police case for criminal breach of trust under the old IPC 406. The IPC was replaced by the Bharatiya Nyaya Sanhita, 2023. A police case for a civil deposit is usually treated as a civil money dispute. Free legal aid is available to people whose annual income is below Rs 3,00,000 in many States, including Maharashtra. The exact time limit to sue for your deposit is not in the law I have.",
+  "claims": [
+   {
+    "text": "Free legal aid is available to people whose annual income is below Rs 3,00,000 in many States, including Maharashtra.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call 15100 to ask for free legal aid in Pune.",
+    "why": "They can tell you the right court for your deposit and how to file there.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your rent agreement to see what it says about the deposit.",
+    "why": "The agreement is your main proof of the deal.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written rent agreement?",
+   "Did you pay the deposit by bank transfer, cheque, or cash?"
+  ],
+  "not_covered": [
+   "The exact time limit to sue for your deposit is not in the law I have.",
+   "The rules for deposits in Maharashtra are not in the law I have."
+  ],
+  "corrections": [
+   "The IPC was replaced by the Bharatiya Nyaya Sanhita, 2023."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "Your landlord is keeping your Rs 60,000 deposit. You want to file a police case for criminal breach of trust under IPC 406. Police usually take civil money matters like deposits to civil courts. You can ask a lawyer or the District Legal Services Authority for help. Free legal aid is available if your income is below Rs 3,00,000.",
+  "claims": [
+   {
+    "text": "A police case for criminal breach of trust over a security deposit is usually treated as a civil money dispute.",
+    "cite": []
+   },
+   {
+    "text": "Free legal aid is available to people whose annual income is below Rs 3,00,000 in many States, including Maharashtra.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call 15100 to ask for free legal aid in Pune.",
+    "why": "They can tell you the right court for your deposit and how to file there.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your rent agreement to see what it says about the deposit.",
+    "why": "The agreement is your main proof of the deal.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written rent agreement?",
+   "Did you pay the deposit by bank transfer, cheque, or cash?"
+  ],
+  "not_covered": [
+   "The exact time limit to sue for your deposit is not in the law I have.",
+   "The rules for deposits in Maharashtra are not in the law I have."
+  ],
+  "corrections": [
+   "The IPC was replaced by the Bharatiya Nyaya Sanhita, 2023.",
+   "I cannot confirm the exact criminal section for this deposit issue because I do not have the criminal code in my law pack."
+  ]
+ },
+ "violations_first_try": [
+  {
+   "kind": "raw_reference",
+   "detail": "mentions 'IPC 406' without citing a corpus entry for it",
+   "where": "Your landlord is keeping your Rs 60,000 deposit. You want to file a police case for criminal breach of trust under IPC 406. Police usually take civil money matters like deposits to civil courts. You can ask a lawyer or the District Legal Services Authority for help. Free legal aid is available if your income is below Rs 3,00,000."
+  },
+  {
+   "kind": "stale_law",
+   "detail": "uses 'IPC section 406' without naming its replacement (BNS s.316(2) (in force 1 Jul 2024))",
+   "where": "Your landlord is keeping your Rs 60,000 deposit. You want to file a police case for criminal breach of trust under IPC 406. Police usually take civil money matters like deposits to civil courts. You can ask a lawyer or the District Legal Services Authority for help. Free legal aid is available if your income is below Rs 3,00,000."
+  }
+ ],
+ "violations_final": [
+  {
+   "kind": "unknown_act",
+   "detail": "names 'The Indian Penal Code', which is not in the verified corpus",
+   "where": "The Indian Penal Code was replaced by the Bharatiya Nyaya Sanhita, 2023."
+  }
+ ],
+ "support": [
+  {
+   "n": 1,
+   "text": "Free legal aid is available to people whose annual income is below Rs 3,00,000 in many States, including Maharashtra.",
+   "cite": "LSA1987_s12",
+   "supported": true,
+   "reason": "The law text explicitly states that free legal services are available to 'persons whose annual income is below the ceiling set by each State' and specifically notes that NALSA's table shows Rs 3,00,000 for Maharashtra, directly supporting the sentence."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for return of security deposit\n\nI paid you a security deposit of Rs 60,000 on 30 August 2026 for the premises at [FILL: address]. I vacated the premises and handed over the keys on 30 August 2026. The deposit has not been returned.\n\nI request you to return the deposit, less any deduction you can justify in writing with bills, within 15 days of receiving this letter.\n\nIf it is not returned, I will take legal action to recover it, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: deposit_scope (uncertain)",
+  "validator: answer still failed after one retry; failing sentences removed"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your rent agreement.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: none - this letter states facts only",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_S03_ipc_406_deposit",
+ "seconds": 10.0
+}

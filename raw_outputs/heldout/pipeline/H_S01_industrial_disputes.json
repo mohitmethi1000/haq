@@ -1,0 +1,303 @@
+{
+ "story": "My cousin says I should file under Section 33C(2) of the Industrial Disputes Act in the labour court. A garment export unit in Tiruppur owes me Rs 48,000 for August and September 2026. Is that the right way?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 48000.0,
+  "amount_paid_inr": null,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": null,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-08",
+  "unpaid_to_month": "2026-09",
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-09",
+    "event": "Cousin advised filing under Section 33C(2) of the Industrial Disputes Act in the labour court",
+    "user_words": "My cousin says I should file under Section 33C(2) of the Industrial Disputes Act in the labour court"
+   },
+   {
+    "date": "2026-09",
+    "event": "Garment export unit in Tiruppur owes wages",
+    "user_words": "A garment export unit in Tiruppur owes me Rs 48,000 for August and September 2026"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Is filing under Section 33C(2) of the Industrial Disputes Act in the labour court the right way to recover unpaid wages of Rs 48,000 for August and September 2026 from a garment export unit in Tiruppur?",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for August 2026 were due before the end of 07 September 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-08"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Sep 2029 (1034 days left). This counts 3 years from 07 Sep 2026 (when August 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "August 2026",
+     "September 2026"
+    ]
+   },
+   "deadline": "2029-09-07",
+   "days_left": 1034,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  }
+ ],
+ "answer": {
+  "summary": "You can recover your unpaid wages through a wage claim before the labour authority, not by filing a court case. The Code on Wages, 2019 is the main law for unpaid wages. Your wages were due by 7 September 2026. You have time to file, but do not wait.",
+  "claims": [
+   {
+    "text": "The Code on Wages, 2019 is the law that covers unpaid wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "Monthly wages must be paid before the 7th day of the next month.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you if you claim they did not.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim within three years. The authority can order up to ten times your claim as extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with your State labour department.",
+    "why": "This is the correct forum under the Code on Wages, 2019. It can recover your money and order extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your work and the unpaid wages.",
+    "why": "You need records like salary slips, bank statements, or appointment letters to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "Contact your District Legal Services Authority if you need free legal help.",
+    "why": "You may get free legal aid if your income is below the state limit.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your annual income?",
+   "Do you have any proof of employment, like salary slips or bank transfers?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "Details on how to file the claim form with the State labour department.",
+   "The exact steps for using the e-Daakhil portal, as it is not in the law pack.",
+   "Whether your garment export unit is a central or state government establishment."
+  ],
+  "corrections": [
+   "The Industrial Disputes Act, 1947 was replaced by the Industrial Relations Code, 2020, but for unpaid wages, the Code on Wages, 2019 claim is the right way."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "You can recover your unpaid wages through a wage claim before the labour authority, not by filing a court case. The Code on Wages, 2019 is the main law for unpaid wages. Your wages were due by 7 September 2026. You have time to file, but do not wait.",
+  "claims": [
+   {
+    "text": "The Code on Wages, 2019 is the law that covers unpaid wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "Monthly wages must be paid before the 7th day of the next month.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you if you claim they did not.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim within three years. The authority can order up to ten times your claim as extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "File a wage claim with your State labour department.",
+    "why": "This is the correct forum under the Code on Wages, 2019. It can recover your money and order extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of your work and the unpaid wages.",
+    "why": "You need records like salary slips, bank statements, or appointment letters to support your claim.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "Contact your District Legal Services Authority if you need free legal help.",
+    "why": "You may get free legal aid if your income is below the state limit.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your annual income?",
+   "Do you have any proof of employment, like salary slips or bank transfers?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "Details on how to file the claim form with the State labour department.",
+   "The exact steps for using the e-Daakhil portal, as it is not in the law pack.",
+   "Whether your garment export unit is a central or state government establishment."
+  ],
+  "corrections": [
+   "Section 33C(2) of the Industrial Disputes Act and the labour court are not the right way to recover unpaid wages under the current law. The Code on Wages, 2019 provides a specific wage claim process through the labour authority.",
+   "The Payment of Wages Act, 1936 was repealed and replaced by the Code on Wages, 2019."
+  ]
+ },
+ "violations_first_try": [
+  {
+   "kind": "raw_reference",
+   "detail": "mentions 'Section 33C(2)' without citing a corpus entry for it",
+   "where": "Section 33C(2) of the Industrial Disputes Act and the labour court are not the right way to recover unpaid wages under the current law. The Code on Wages, 2019 provides a specific wage claim process through the labour authority."
+  },
+  {
+   "kind": "stale_law",
+   "detail": "uses 'Industrial Disputes Act, 1947' without naming its replacement (Industrial Relations Code, 2020 (existing Labour Courts continue for now); for unpaid wages, the Code on Wages, 2019 claim)",
+   "where": "Section 33C(2) of the Industrial Disputes Act and the labour court are not the right way to recover unpaid wages under the current law. The Code on Wages, 2019 provides a specific wage claim process through the labour authority."
+  }
+ ],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "The Code on Wages, 2019 is the law that covers unpaid wages.",
+   "cite": "COW2019_s45",
+   "supported": false,
+   "reason": "The law text discusses appointment of authorities to hear claims, compensation up to ten times the claim, recovery procedures, who may file applications, and a three-year limitation period. It does not state that the Code on Wages, 2019 is the law that covers unpaid wages; it only refers to 'this Code' without naming it or stating it covers unpaid wages specifically."
+  },
+  {
+   "n": 2,
+   "text": "Monthly wages must be paid before the 7th day of the next month.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "Section 17(1)(iv) explicitly states that for monthly basis employees, wages must be paid 'before the expiry of the seventh day of the succeeding month.'"
+  },
+  {
+   "n": 3,
+   "text": "The employer must prove they paid you if you claim they did not.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "Section 59 explicitly states that 'the burden to prove that the said dues have been paid shall be on the employer' where a claim is filed for non-payment of remuneration, bonus, less payment of wages, or bonus, or unauthorized deductions."
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim within three years. The authority can order up to ten times your claim as extra compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "Section 45(6) states the application may be filed 'within a period of three years from the date on which claims referred to in sub-section (1) arises.' Section 45(2) states compensation 'may extend to ten times of the claim determined.' Both parts of the sentence are directly supported by the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you. My wages for August 2026 to September 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 48,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "COW2019_s17",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "The Code on Wages, 2019 is the law that covers unpaid wages."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_S01_industrial_disputes",
+ "seconds": 13.5
+}

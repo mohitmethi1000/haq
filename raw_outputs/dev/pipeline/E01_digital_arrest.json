@@ -1,0 +1,128 @@
+{
+ "story": "Someone called saying he is from CBI, I am under digital arrest for money laundering, and I must stay on video call and transfer Rs 3 lakh to an RBI account to verify. What do I do?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "other",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": "CBI",
+  "other_party_kind": "government",
+  "amount_claimed_inr": 300000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": "Received a call from someone claiming to be from CBI stating user is under digital arrest for money laundering and demanding Rs 3 lakh transfer to an RBI account to verify.",
+  "timeline": [
+   {
+    "date": "2026-11-08",
+    "event": "Received call claiming to be from CBI about digital arrest for money laundering",
+    "user_words": "Someone called saying he is from CBI, I am under digital arrest for money laundering"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [
+   "Threat of arrest/police",
+   "Demand to transfer money urgently/secretly",
+   "Threat of violence"
+  ],
+  "user_goal": "What to do in response to the call claiming digital arrest and demanding money transfer",
+  "missing": [
+   "Date and time of the call",
+   "Phone number of the caller",
+   "Name of the caller or agency representative",
+   "Bank account details provided by the caller"
+  ]
+ },
+ "triage": {
+  "flags": [
+   "scam",
+   "arrest_or_police",
+   "model:violence"
+  ],
+  "severity": "stop",
+  "helplines": [
+   [
+    "Cyber fraud helpline / cybercrime.gov.in",
+    "1930"
+   ],
+   [
+    "Free legal aid (NALSA)",
+    "15100"
+   ],
+   [
+    "Police / emergency",
+    "112"
+   ],
+   [
+    "Women helpline",
+    "181 (in West Bengal use 112)"
+   ]
+  ],
+  "messages": [
+   [
+    "This looks like a scam. No police, CBI, court or real employer asks you to pay money, stay on a video call, or keep it secret. Stop talking to them and do not pay anything more. Call 1930 or report at cybercrime.gov.in. If you already paid, call 1930 immediately - the sooner you report, the better the chance of freezing the money.",
+    "यह धोखाधड़ी (स्कैम) लगती है। कोई पुलिस, CBI या असली कंपनी पैसे भेजने या वीडियो कॉल पर रहने को नहीं कहती। और पैसे न भेजें। 1930 पर कॉल करें या cybercrime.gov.in पर शिकायत करें। अगर पैसे भेज चुके हैं तो तुरंत 1930 पर कॉल करें।"
+   ],
+   [
+    "Because police, arrest or a court is involved, please talk to a lawyer before doing anything. Free legal aid: 15100. I can still explain your money problem below, but don't rely on me for the police part.",
+    "पुलिस, गिरफ्तारी या कोर्ट का मामला है, इसलिए पहले वकील से बात करें। मुफ़्त कानूनी मदद: 15100।"
+   ],
+   [
+    "Your safety comes first. If you are in danger now, call 112. Women can also call 181. Keep any proof (photos, messages). When you are safe, free legal aid on 15100 can help with both the violence and the money.",
+    "आपकी सुरक्षा सबसे ज़रूरी है। अभी खतरा हो तो 112 पर कॉल करें। महिलाएँ 181 पर भी कॉल कर सकती हैं। सुरक्षित होने पर 15100 पर मुफ़्त कानूनी मदद लें।"
+   ]
+  ]
+ },
+ "rules": [],
+ "answer": null,
+ "answer_first_try": null,
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "",
+ "escalate": true,
+ "escalation_reasons": [
+  "safety: scam, arrest_or_police, model:violence"
+ ],
+ "helplines": [
+  [
+   "Cyber fraud helpline / cybercrime.gov.in",
+   "1930"
+  ],
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Police / emergency",
+   "112"
+  ],
+  [
+   "Women helpline",
+   "181 (in West Bengal use 112)"
+  ]
+ ],
+ "scope_message": "This looks like a scam. No police, CBI, court or real employer asks you to pay money, stay on a video call, or keep it secret. Stop talking to them and do not pay anything more. Call 1930 or report at cybercrime.gov.in. If you already paid, call 1930 immediately - the sooner you report, the better the chance of freezing the money.\n\nBecause police, arrest or a court is involved, please talk to a lawyer before doing anything. Free legal aid: 15100. I can still explain your money problem below, but don't rely on me for the police part.\n\nYour safety comes first. If you are in danger now, call 112. Women can also call 181. Keep any proof (photos, messages). When you are safe, free legal aid on 15100 can help with both the violence and the money.",
+ "scope_message_hi": "यह धोखाधड़ी (स्कैम) लगती है। कोई पुलिस, CBI या असली कंपनी पैसे भेजने या वीडियो कॉल पर रहने को नहीं कहती। और पैसे न भेजें। 1930 पर कॉल करें या cybercrime.gov.in पर शिकायत करें। अगर पैसे भेज चुके हैं तो तुरंत 1930 पर कॉल करें।\n\nपुलिस, गिरफ्तारी या कोर्ट का मामला है, इसलिए पहले वकील से बात करें। मुफ़्त कानूनी मदद: 15100।\n\nआपकी सुरक्षा सबसे ज़रूरी है। अभी खतरा हो तो 112 पर कॉल करें। महिलाएँ 181 पर भी कॉल कर सकती हैं। सुरक्षित होने पर 15100 पर मुफ़्त कानूनी मदद लें।",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "",
+ "versions": {},
+ "error": null,
+ "case_id": "E01_digital_arrest",
+ "seconds": 4.8
+}

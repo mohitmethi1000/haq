@@ -1,0 +1,332 @@
+{
+ "story": "I paid Rs 70 lakh to a builder in Gurugram, Haryana in March 2026 for a flat booking. They cancelled the project in August 2026 and have not refunded.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": "Haryana",
+  "user_city": "Gurugram",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 7000000.0,
+  "amount_paid_inr": 7000000.0,
+  "purchase_date": "2026-03",
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": "null",
+  "unpaid_from_month": "null",
+  "unpaid_to_month": "null",
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": "null",
+  "moved_out_date": "null",
+  "notice_text_summary": "null",
+  "timeline": [
+   {
+    "date": "2026-03",
+    "event": "Paid Rs 70 lakh to a builder in Gurugram, Haryana for a flat booking",
+    "user_words": "I paid Rs 70 lakh to a builder in Gurugram, Haryana in March 2026 for a flat booking"
+   },
+   {
+    "date": "2026-08",
+    "event": "Builder cancelled the project",
+    "user_words": "They cancelled the project in August 2026"
+   },
+   {
+    "date": "2026-08",
+    "event": "Builder has not refunded the money",
+    "user_words": "and have not refunded"
+   }
+  ],
+  "evidence": [
+   "Payment proof of Rs 70 lakh"
+  ],
+  "red_flags": [],
+  "user_goal": "Get a refund of Rs 70 lakh from the builder after project cancellation",
+  "missing": [
+   "Builder's name",
+   "Exact date of payment in March 2026",
+   "Exact date of project cancellation in August 2026"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 01 Mar 2028 (479 days left). This counts 2 years from 01 Mar 2026 (your purchase date - counted from the earliest possible day, to be safe). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "purchase_date": "2026-03",
+    "start_basis": "purchase date (earliest possible start, to be safe)"
+   },
+   "deadline": "2028-03-01",
+   "days_left": 479,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 7,000,000, so the complaint goes to the State Consumer Commission, with a fee from the official table. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 7000000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You paid Rs 70 lakh for a flat booking and the builder cancelled the project. You are a consumer because you bought it for personal use, not for resale or commercial purpose. Refusing a refund is an unfair trade practice. You must file a consumer complaint within 2 years from when you paid. You need to file at the State Consumer Commission because the amount is above Rs 50 lakh but below Rs 2 crore. The filing fee will be Rs 1,000. You can file online at e-jagriti.gov.in.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought the flat for personal use, not for resale or commercial purpose.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "Refusing to refund your money is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You must file a consumer complaint within 2 years from when you paid, which is before 01 March 2028.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "You must file at the State Consumer Commission because you paid Rs 70 lakh.",
+    "cite": [
+     "CPJR2021_pecuniary",
+     "CPA2019_s34_1"
+    ]
+   },
+   {
+    "text": "The filing fee is Rs 1,000.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the issue.",
+    "why": "This is a free step to try to resolve the issue before filing a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the builder's grievance officer asking for your refund.",
+    "why": "This creates a record of your demand and may resolve the issue without needing a court.",
+    "cite": []
+   },
+   {
+    "action": "File your consumer complaint online at e-jagriti.gov.in or at the State Consumer Commission.",
+    "why": "This is the formal legal step to get your money back through the consumer dispute process.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written agreement or booking receipt from the builder?",
+   "Did the builder give you a specific reason for cancelling the project?",
+   "Have you tried calling or emailing the builder's customer service or grievance officer?"
+  ],
+  "not_covered": [
+   "The exact date of payment in March 2026 and the exact date of project cancellation in August 2026.",
+   "Whether the builder has offered to refund a portion of the money or provide a different flat.",
+   "The specific terms of your flat booking agreement."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You paid Rs 70 lakh for a flat booking and the builder cancelled the project. You are a consumer because you bought it for personal use, not for resale or commercial purpose. Refusing a refund is an unfair trade practice. You must file a consumer complaint within 2 years from when you paid. You need to file at the State Consumer Commission because the amount is above Rs 50 lakh but below Rs 2 crore. The filing fee will be Rs 1,000. You can file online at e-jagriti.gov.in.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought the flat for personal use, not for resale or commercial purpose.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "Refusing to refund your money is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You must file a consumer complaint within 2 years from when you paid, which is before 01 March 2028.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "You must file at the State Consumer Commission because you paid Rs 70 lakh.",
+    "cite": [
+     "CPJR2021_pecuniary",
+     "CPA2019_s34_1"
+    ]
+   },
+   {
+    "text": "The filing fee is Rs 1,000.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the issue.",
+    "why": "This is a free step to try to resolve the issue before filing a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the builder's grievance officer asking for your refund.",
+    "why": "This creates a record of your demand and may resolve the issue without needing a court.",
+    "cite": []
+   },
+   {
+    "action": "File your consumer complaint online at e-jagriti.gov.in or at the State Consumer Commission.",
+    "why": "This is the formal legal step to get your money back through the consumer dispute process.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written agreement or booking receipt from the builder?",
+   "Did the builder give you a specific reason for cancelling the project?",
+   "Have you tried calling or emailing the builder's customer service or grievance officer?"
+  ],
+  "not_covered": [
+   "The exact date of payment in March 2026 and the exact date of project cancellation in August 2026.",
+   "Whether the builder has offered to refund a portion of the money or provide a different flat.",
+   "The specific terms of your flat booking agreement."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are a consumer because you bought the flat for personal use, not for resale or commercial purpose.",
+   "cite": "CPA2019_s2_7",
+   "supported": true,
+   "reason": "The law text defines 'consumer' as any person who buys goods for consideration, but excludes a person who obtains goods for resale or for any commercial purpose. The sentence states the person bought the flat for personal use, not for resale or commercial purpose, which directly applies the exclusion condition in the law to the facts."
+  },
+  {
+   "n": 2,
+   "text": "Refusing to refund your money is an unfair trade practice.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": true,
+   "reason": "The law text explicitly states that refusing to take back or withdraw defective goods or to refund consideration, when paid, within the stipulated period (or 30 days if no stipulation) is an unfair trade practice under clause (viii)."
+  },
+  {
+   "n": 3,
+   "text": "You must file a consumer complaint within 2 years from when you paid, which is before 01 March 2028.",
+   "cite": "CPA2019_s69",
+   "supported": true,
+   "reason": "The law text states complaints must be filed within two years from when the cause of action arose. The sentence applies this to the fact that payment was made and computes the deadline as before 01 March 2028 (assuming the cause of action arose on or before 01 March 2026). The legal rule of the 2-year limit is directly from the law text."
+  },
+  {
+   "n": 4,
+   "text": "You must file at the State Consumer Commission because you paid Rs 70 lakh.",
+   "cite": "CPJR2021_pecuniary",
+   "supported": true,
+   "reason": "The law text states State Commission jurisdiction is for consideration paid above Rs 50 lakh up to Rs 2 crore. The sentence applies this to Rs 70 lakh, which falls within that range. The legal rule of the pecuniary jurisdiction is directly from the law text."
+  },
+  {
+   "n": 5,
+   "text": "You must file at the State Consumer Commission because you paid Rs 70 lakh.",
+   "cite": "CPA2019_s34_1",
+   "supported": false,
+   "reason": "The law text states District Commission jurisdiction is for consideration not exceeding one crore rupees. The sentence claims the person must file at the State Consumer Commission because they paid Rs 70 lakh. However, Rs 70 lakh does not exceed one crore, so the District Commission would have jurisdiction, not the State Commission. The sentence misapplies the law."
+  },
+  {
+   "n": 6,
+   "text": "The filing fee is Rs 1,000.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The law text states the filing fee is Rs 1,000 for consideration above Rs 20 lakh and up to Rs 50 lakh. The sentence states the filing fee is Rs 1,000, which directly matches the rule for the specified amount range."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 01 March 2026 I paid Rs 7,000,000 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests you have not refunded the amount.\n\nI request a full refund of Rs 7,000,000 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the State Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: Payment proof of Rs 70 lakh.\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: forum_and_fee (info)",
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_1",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7",
+  "CPJR2021_pecuniary"
+ ],
+ "unconfirmed": [
+  "You must file at the State Consumer Commission because you paid Rs 70 lakh."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "G06_refund_state_commission",
+ "seconds": 11.4
+}

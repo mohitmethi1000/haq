@@ -1,0 +1,343 @@
+{
+ "story": "I bought a sofa set for Rs 45,000 from a furniture showroom in Indore on 10 November 2024. The frame broke in a week. The showroom refused a refund in writing on 25 November 2024 and I let it go. Can I still do anything?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": "Indore",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 45000.0,
+  "amount_paid_inr": 45000.0,
+  "purchase_date": "2024-11-10",
+  "refund_refused_date": "2024-11-25",
+  "bought_for_business": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": "unknown",
+  "unpaid_from_month": "unknown",
+  "unpaid_to_month": "unknown",
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": "unknown",
+  "moved_out_date": "unknown",
+  "notice_text_summary": "Showroom refused a refund in writing on 25 November 2024.",
+  "timeline": [
+   {
+    "date": "2024-11-10",
+    "event": "Purchased a sofa set",
+    "user_words": "I bought a sofa set for Rs 45,000 from a furniture showroom in Indore on 10 November 2024."
+   },
+   {
+    "date": "2024-11-17",
+    "event": "Sofa frame broke",
+    "user_words": "The frame broke in a week."
+   },
+   {
+    "date": "2024-11-25",
+    "event": "Refund refused in writing",
+    "user_words": "The showroom refused a refund in writing on 25 November 2024 and I let it go."
+   }
+  ],
+  "evidence": [
+   "Written refusal of refund from the furniture showroom on 25 November 2024.",
+   "Proof of purchase for Rs 45,000 on 10 November 2024."
+  ],
+  "red_flags": [],
+  "user_goal": "Seeking advice on whether they can still pursue a refund for the broken sofa set from the showroom.",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 25 Nov 2026 (17 days left). This counts 2 years from 25 Nov 2024 (the date they refused; if they refused earlier, your deadline is earlier). Don't wait for the last date. This is close - act now, and call free legal aid (15100) today. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "refund_refused_date": "2024-11-25"
+   },
+   "deadline": "2026-11-25",
+   "days_left": 17,
+   "escalate": true,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 45,000, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 45000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You can still file a consumer complaint for your broken sofa. The showroom's written refusal on 25 November 2024 is a key piece of evidence. You have time to act, but you should not wait.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought the sofa for personal use.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A broken sofa frame shortly after buying it is a 'defect' in the goods.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "Refusing to take back a defective product and give a refund is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file your complaint with the District Consumer Commission in Indore because that is where you live.",
+    "cite": [
+     "CPA2019_s34_2",
+     "CPJR2021_pecuniary"
+    ]
+   },
+   {
+    "text": "You paid Rs 45,000, so there is no filing fee for your complaint.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint before 25 November 2026.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "This is a free step that can help you resolve the issue quickly.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the showroom's grievance officer.",
+    "why": "This creates a paper trail before you file your official complaint.",
+    "cite": []
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in.",
+    "why": "You can file directly with the District Consumer Commission in Indore without hiring a lawyer.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you still have the sofa, or did you throw it away?",
+   "Do you have the receipt, warranty card, or any other proof of purchase?"
+  ],
+  "not_covered": [
+   "How to calculate the exact date your 2-year time limit ends if the refusal happened on a different date.",
+   "Whether you can get interest on the refund amount."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You can still file a consumer complaint for your broken sofa. The showroom's written refusal on 25 November 2024 is a key piece of evidence. You have time to act, but you should not wait.",
+  "claims": [
+   {
+    "text": "You are a consumer because you bought the sofa for personal use.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A broken sofa frame shortly after buying it is a 'defect' in the goods.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "Refusing to take back a defective product and give a refund is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file your complaint with the District Consumer Commission in Indore because that is where you live.",
+    "cite": [
+     "CPA2019_s34_2",
+     "CPJR2021_pecuniary"
+    ]
+   },
+   {
+    "text": "You paid Rs 45,000, so there is no filing fee for your complaint.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint before 25 November 2026.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "This is a free step that can help you resolve the issue quickly.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the showroom's grievance officer.",
+    "why": "This creates a paper trail before you file your official complaint.",
+    "cite": []
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in.",
+    "why": "You can file directly with the District Consumer Commission in Indore without hiring a lawyer.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you still have the sofa, or did you throw it away?",
+   "Do you have the receipt, warranty card, or any other proof of purchase?"
+  ],
+  "not_covered": [
+   "How to calculate the exact date your 2-year time limit ends if the refusal happened on a different date.",
+   "Whether you can get interest on the refund amount."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are a consumer because you bought the sofa for personal use.",
+   "cite": "CPA2019_s2_7",
+   "supported": true,
+   "reason": "The law defines 'consumer' as any person who buys goods for consideration (paid or promised, including deferred payment) for personal use, and explicitly excludes those who obtain goods for resale or commercial purpose. Buying a sofa for personal use fits this definition."
+  },
+  {
+   "n": 2,
+   "text": "A broken sofa frame shortly after buying it is a 'defect' in the goods.",
+   "cite": "CPA2019_s2_10",
+   "supported": true,
+   "reason": "The law defines 'defect' as any fault, imperfection or shortcoming in quality, quantity, potency, purity or standard. A broken sofa frame is a fault/imperfection in quality, which directly qualifies as a 'defect'."
+  },
+  {
+   "n": 3,
+   "text": "Refusing to take back a defective product and give a refund is an unfair trade practice.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": true,
+   "reason": "The law explicitly lists 'refusing, after selling goods or rendering services, to take back or withdraw defective goods ... and to refund the consideration ... within a period of thirty days' as an unfair trade practice. This directly matches the sentence."
+  },
+  {
+   "n": 4,
+   "text": "You can file your complaint with the District Consumer Commission in Indore because that is where you live.",
+   "cite": "CPA2019_s34_2",
+   "supported": true,
+   "reason": "The law states a complaint may be instituted where 'the complainant resides or personally works for gain' (section 34(2)(d)). Since the complainant resides in Indore, they can file there."
+  },
+  {
+   "n": 5,
+   "text": "You can file your complaint with the District Consumer Commission in Indore because that is where you live.",
+   "cite": "CPJR2021_pecuniary",
+   "supported": true,
+   "reason": "The law states District Commission has consideration up to Rs 50 lakh. The sentence applies this to the person's facts (assuming their case is within this limit), which is permissible."
+  },
+  {
+   "n": 6,
+   "text": "You paid Rs 45,000, so there is no filing fee for your complaint.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The law states 'No fee where the consideration paid is up to Rs 5 lakh.' The sentence applies Rs 45,000 (which is under Rs 5 lakh), so no fee applies."
+  },
+  {
+   "n": 7,
+   "text": "You must file your complaint before 25 November 2026.",
+   "cite": "CPA2019_s69",
+   "supported": false,
+   "reason": "The law states complaints must be filed within two years from when the cause of action arose, with possible condonation for sufficient cause. The sentence imposes a specific date of 25 November 2026 without any basis in the law text about when the cause of action arose or any calculation from the two-year rule."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 10 November 2024 I paid Rs 45,000 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests, including on 25 November 2024, you have not refunded the amount.\n\nI request a full refund of Rs 45,000 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: Written refusal of refund from the furniture showroom on 25 November 2024., Proof of purchase for Rs 45,000 on 10 November 2024..\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: consumer_limitation (within)",
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_10",
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7",
+  "CPJR2021_pecuniary"
+ ],
+ "unconfirmed": [
+  "You must file your complaint before 25 November 2026."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_G03_urgent_refund",
+ "seconds": 12.3
+}

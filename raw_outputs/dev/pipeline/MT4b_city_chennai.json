@@ -1,0 +1,313 @@
+{
+ "story": "My company in Chennai hasn't paid my October 2026 salary of Rs 50,000. I resigned on 31 October 2026.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Tamil Nadu",
+  "user_city": "Chennai",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 50000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-10-31",
+  "unpaid_from_month": "2026-10",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 50000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-31",
+    "event": "User resigned from the company",
+    "user_words": "I resigned on 31 October 2026."
+   },
+   {
+    "date": "2026-11-08",
+    "event": "User reports that the company has not paid the October 2026 salary",
+    "user_words": "My company in Chennai hasn't paid my October 2026 salary of Rs 50,000."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Recover unpaid October 2026 salary of Rs 50,000.",
+  "missing": [
+   "Company name",
+   "Date of joining or confirmation of employment",
+   "Reason for resignation"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (31 Oct 2026), the law says final wages must be paid within two working days - about 03 Nov 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-10-31"
+   },
+   "deadline": "2026-11-03",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 03 Nov 2029 (1091 days left). This counts 3 years from 03 Nov 2026 (when October 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-11-03",
+   "days_left": 1091,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 1 month(s) x Rs 50,000 = Rs 50,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 1,
+    "monthly_wage_inr": 50000.0,
+    "total": 50000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "You are an employee who resigned on 31 October 2026, but your company has not paid your October salary of Rs 50,000. Under the Code on Wages, 2019, your employer had to pay you within two working days of your resignation, which is around 3 November 2026. You can file a wage claim to recover this amount and possibly get extra compensation.",
+  "claims": [
+   {
+    "text": "Your October 2026 salary of Rs 50,000 is wages that the employer must pay you.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "Because you resigned on 31 October 2026, your employer had to pay your wages within two working days.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer must prove in court that they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim before the wage authority to recover your unpaid salary.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of employment, such as your appointment letter, salary slips, and resignation email.",
+    "why": "You need documents to prove you worked and are owed money.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the Tamil Nadu State labour department or the Central Government authority if your company is a bank, telecom, railway, mine, or insurance company.",
+    "why": "This is the official place to recover unpaid wages and claim extra compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File your claim before 3 November 2029.",
+    "why": "The law gives you three years from when the wages fell due to file your claim.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_art7"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of your company?",
+   "Do you have your appointment letter, salary slips, or resignation email?",
+   "Is your company a bank, railway, telecom, mine, insurance company, or a central government PSU?"
+  ],
+  "not_covered": [
+   "We do not have the company name to confirm if it falls under Central or State Government authority.",
+   "We do not have your date of joining or a copy of your employment confirmation."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You are an employee who resigned on 31 October 2026, but your company has not paid your October salary of Rs 50,000. Under the Code on Wages, 2019, your employer had to pay you within two working days of your resignation, which is around 3 November 2026. You can file a wage claim to recover this amount and possibly get extra compensation.",
+  "claims": [
+   {
+    "text": "Your October 2026 salary of Rs 50,000 is wages that the employer must pay you.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "Because you resigned on 31 October 2026, your employer had to pay your wages within two working days.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer must prove in court that they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim before the wage authority to recover your unpaid salary.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of employment, such as your appointment letter, salary slips, and resignation email.",
+    "why": "You need documents to prove you worked and are owed money.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the Tamil Nadu State labour department or the Central Government authority if your company is a bank, telecom, railway, mine, or insurance company.",
+    "why": "This is the official place to recover unpaid wages and claim extra compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File your claim before 3 November 2029.",
+    "why": "The law gives you three years from when the wages fell due to file your claim.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_art7"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of your company?",
+   "Do you have your appointment letter, salary slips, or resignation email?",
+   "Is your company a bank, railway, telecom, mine, insurance company, or a central government PSU?"
+  ],
+  "not_covered": [
+   "We do not have the company name to confirm if it falls under Central or State Government authority.",
+   "We do not have your date of joining or a copy of your employment confirmation."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your October 2026 salary of Rs 50,000 is wages that the employer must pay you.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "The law text defines 'wages' as including 'salaries' and 'remuneration whether by way of salaries, allowances or otherwise' payable to a person employed in respect of his employment. The sentence states that the October 2026 salary of Rs 50,000 is wages that the employer must pay, which directly follows from the definition of wages in the law."
+  },
+  {
+   "n": 2,
+   "text": "Because you resigned on 31 October 2026, your employer had to pay your wages within two working days.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text in COW2019_s17(2)(ii) explicitly states that where an employee 'has resigned from service,' the wages payable to him 'shall be paid within two working days of his... resignation.' The sentence directly applies this rule to the fact of resignation on 31 October 2026."
+  },
+  {
+   "n": 3,
+   "text": "The employer must prove in court that they paid you the wages.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text in COW2019_s59 states: 'the burden to prove that the said dues have been paid shall be on the employer.' This directly supports the sentence that the employer must prove in court that they paid the wages."
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim before the wage authority to recover your unpaid salary.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text in COW2019_s45(1) provides that the appropriate Government may appoint authorities to 'hear and determine the claims which arises under the provisions of this Code.' Sub-section (4)(a) explicitly states that 'the employee concerned' may file an application before the authority for claim. The sentence directly applies this to the employee's own facts."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 50,000. My wages for October 2026 have not been paid. My last working day was 31 October 2026.\n\nI request you to pay the unpaid amount of Rs 50,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LIM1963_art7"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "MT4b_city_chennai",
+ "seconds": 9.1
+}

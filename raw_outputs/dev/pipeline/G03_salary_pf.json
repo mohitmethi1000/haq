@@ -1,0 +1,364 @@
+{
+ "story": "My employer in Chennai deducted PF from my salary every month since January 2026 but my EPFO passbook shows nothing deposited. Also October 2026 salary of Rs 25,000 not paid.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": "Chennai",
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 25000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-10",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 25000.0,
+  "pf_deducted_not_deposited": true,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-01",
+    "event": "PF deducted from salary every month",
+    "user_words": "My employer in Chennai deducted PF from my salary every month since January 2026"
+   },
+   {
+    "date": "2026-10",
+    "event": "October 2026 salary not paid",
+    "user_words": "October 2026 salary of Rs 25,000 not paid"
+   }
+  ],
+  "evidence": [
+   "EPFO passbook showing no deposits"
+  ],
+  "red_flags": [],
+  "user_goal": "Get October 2026 salary and ensure PF deducted since January 2026 is deposited in EPFO passbook",
+  "missing": [
+   "Employer's name",
+   "Total amount of PF deducted since January 2026",
+   "State"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for October 2026 were due before the end of 07 November 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-10"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Nov 2029 (1095 days left). This counts 3 years from 07 Nov 2026 (when October 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-11-07",
+   "days_left": 1095,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 1 month(s) x Rs 25,000 = Rs 25,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 1,
+    "monthly_wage_inr": 25000.0,
+    "total": 25000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  },
+  {
+   "name": "pf_not_deposited",
+   "outcome": "info",
+   "message": "If PF was cut from your salary but not deposited, the law treats the employer as having dishonestly used it (criminal breach of trust). You can also complain to EPFO.",
+   "cite": [
+    "BNS2023_s316_expl1",
+    "BNS2023_s316_2"
+   ],
+   "facts_used": {
+    "pf_deducted_not_deposited": true
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "PF not deposited"
+  }
+ ],
+ "answer": {
+  "summary": "Your employer in Chennai did not pay your October 2026 salary of Rs 25,000. The salary was due before 7 November 2026. You can file a wage claim with your State labour department for the unpaid salary. You can also report the employer for not depositing your deducted PF. The law says the employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "Your October 2026 salary of Rs 25,000 was due before 07 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You can file a wage claim for the unpaid salary. The claim must be filed within 3 years.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "You can file a claim with the State labour department. The employer must prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "text": "If PF was cut from your salary but not deposited, the employer can be punished with up to 5 years in jail.",
+    "cite": [
+     "BNS2023_s316_2",
+     "BNS2023_s316_expl1"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather your salary slips and EPFO passbook as evidence.",
+    "why": "These show your salary and that PF was not deposited.",
+    "cite": [
+     "BSA2023_s63_1",
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "action": "File a wage claim with your State labour department or the wage authority.",
+    "why": "You can claim your unpaid salary and extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Report the PF issue to EPFO.",
+    "why": "PF was deducted but not deposited.",
+    "cite": [
+     "BNS2023_s316_expl1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your employer's name and address?",
+   "What is your total State?",
+   "Do you have any salary slips or bank statements for October 2026?"
+  ],
+  "not_covered": [
+   "The total amount of PF deducted since January 2026 is missing.",
+   "The employer's name and State are missing."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "Your employer in Chennai did not pay your October 2026 salary of Rs 25,000. The salary was due before 7 November 2026. You can file a wage claim with your State labour department for the unpaid salary. You can also report the employer for not depositing your deducted PF. The law says the employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "Your October 2026 salary of Rs 25,000 was due before 07 November 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You can file a wage claim for the unpaid salary. The claim must be filed within 3 years.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "You can file a claim with the State labour department. The employer must prove they paid you.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s59",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "text": "If PF was cut from your salary but not deposited, the employer can be punished with up to 5 years in jail.",
+    "cite": [
+     "BNS2023_s316_2",
+     "BNS2023_s316_expl1"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather your salary slips and EPFO passbook as evidence.",
+    "why": "These show your salary and that PF was not deposited.",
+    "cite": [
+     "BSA2023_s63_1",
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "action": "File a wage claim with your State labour department or the wage authority.",
+    "why": "You can claim your unpaid salary and extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Report the PF issue to EPFO.",
+    "why": "PF was deducted but not deposited.",
+    "cite": [
+     "BNS2023_s316_expl1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your employer's name and address?",
+   "What is your total State?",
+   "Do you have any salary slips or bank statements for October 2026?"
+  ],
+  "not_covered": [
+   "The total amount of PF deducted since January 2026 is missing.",
+   "The employer's name and State are missing."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your October 2026 salary of Rs 25,000 was due before 07 November 2026.",
+   "cite": "COW2019_s17",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 2,
+   "text": "You can file a wage claim for the unpaid salary. The claim must be filed within 3 years.",
+   "cite": "COW2019_s45",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 3,
+   "text": "You can file a claim with the State labour department. The employer must prove they paid you.",
+   "cite": "COW2019_s45",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 4,
+   "text": "You can file a claim with the State labour department. The employer must prove they paid you.",
+   "cite": "COW2019_s59",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 5,
+   "text": "You can file a claim with the State labour department. The employer must prove they paid you.",
+   "cite": "COW2019_s2d",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 6,
+   "text": "If PF was cut from your salary but not deposited, the employer can be punished with up to 5 years in jail.",
+   "cite": "BNS2023_s316_2",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  },
+  {
+   "n": 7,
+   "text": "If PF was cut from your salary but not deposited, the employer can be punished with up to 5 years in jail.",
+   "cite": "BNS2023_s316_expl1",
+   "supported": null,
+   "reason": "check failed: 'list' object has no attribute 'get'"
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 25,000. My wages for October 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 25,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: EPFO passbook showing no deposits.\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: pf_not_deposited (info)",
+  "support check unavailable for some sentences (treated as not confirmed)"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BNS2023_s316_2",
+  "BNS2023_s316_expl1",
+  "BSA2023_s63_1",
+  "BSA2023_s63_4",
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s45",
+  "COW2019_s59"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\"); Bharatiya Nyaya Sanhita, 2023, s.316(1) Explanation 1 (Employer not depositing deducted PF); Bharatiya Nyaya Sanhita, 2023, s.316(2) (Punishment for criminal breach of trust)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "G03_salary_pf",
+ "seconds": 12.8
+}

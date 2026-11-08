@@ -1,0 +1,16 @@
+{
+ "today": "2026-11-08",
+ "model": "sarvam-105b",
+ "provider": "sarvam",
+ "corpus_as_of": "2026-11-08",
+ "n_cases": 26,
+ "cases_file": "/Users/mohitmethi/Desktop/kuku/haq/evals/heldout_cases.py",
+ "started": "2026-11-08T12:49:14",
+ "finished": "2026-11-08T12:51:14",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ }
+}

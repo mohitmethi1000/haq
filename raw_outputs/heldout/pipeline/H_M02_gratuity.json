@@ -1,0 +1,344 @@
+{
+ "story": "I worked 7 years as a teacher at a private school in Dehradun and retired on 30 September 2026. The school has not paid my gratuity of Rs 2,10,000. What can I do?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": "Dehradun",
+  "other_party_name": "private school",
+  "other_party_kind": "company",
+  "amount_claimed_inr": 210000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "employee",
+  "employment_end": "terminated",
+  "employment_end_date": "2026-09-30",
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2019-09-30",
+    "event": "Retired from private school in Dehradun",
+    "user_words": "retired on 30 September 2026"
+   },
+   {
+    "date": "2026-11-08",
+    "event": "School has not paid gratuity",
+    "user_words": "The school has not paid my gratuity of Rs 2,10,000"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "What can I do?",
+  "missing": [
+   "Exact date of employment termination",
+   "Whether the school is registered under the Payment of Gratuity Act",
+   "Whether a formal claim for gratuity was submitted"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (30 Sep 2026), the law says final wages must be paid within two working days - about 03 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "terminated",
+    "employment_end_date": "2026-09-30"
+   },
+   "deadline": "2026-10-03",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 03 Oct 2029 (1060 days left). This counts 3 years from 03 Oct 2026 (when final wages wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "final wages"
+    ]
+   },
+   "deadline": "2029-10-03",
+   "days_left": 1060,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  }
+ ],
+ "answer": {
+  "summary": "You are a teacher who retired on 30 September 2026. Your private school in Dehradun has not paid your gratuity of Rs 2,10,000. The school must pay your final wages and gratuity. You can file a claim with the labour authority to recover your money.",
+  "claims": [
+   {
+    "text": "Your gratuity and final wages are protected under the Code on Wages, 2019.",
+    "cite": [
+     "COW2019_s2y",
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The school must pay your final wages within two working days of your retirement.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You have three years from when the wages were due to file a claim.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The school has to prove they paid you the money.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim for up to ten times your claim as extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Contact the District Legal Services Authority in Dehradun at 15100 for free legal help.",
+    "why": "You may qualify for free legal aid, and they can guide you on how to file your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "File a wage claim with the Labour Department before the three-year deadline.",
+    "why": "This is the official way to recover your unpaid gratuity and wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have your appointment letter, salary slips, and retirement notice?",
+   "Did the school give you any written reason for not paying your gratuity?"
+  ],
+  "not_covered": [
+   "The exact date you submitted your formal claim for gratuity.",
+   "Whether the school deducted any PF or other amounts."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You are a teacher who retired on 30 September 2026. Your private school in Dehradun has not paid your gratuity of Rs 2,10,000. The school must pay your final wages and gratuity. You can file a claim with the labour authority to recover your money.",
+  "claims": [
+   {
+    "text": "Your gratuity and final wages are protected under the Code on Wages, 2019.",
+    "cite": [
+     "COW2019_s2y",
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The school must pay your final wages within two working days of your retirement.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You have three years from when the wages were due to file a claim.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The school has to prove they paid you the money.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "text": "You can file a claim for up to ten times your claim as extra compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather your employment records, appointment letter, salary slips, and retirement notice.",
+    "why": "These documents prove you worked for 7 years and did not receive your money.",
+    "cite": []
+   },
+   {
+    "action": "Contact the District Legal Services Authority in Dehradun at 15100 for free legal help.",
+    "why": "You may qualify for free legal aid, and they can guide you on how to file your claim.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "File a wage claim with the Labour Department before the three-year deadline.",
+    "why": "This is the official way to recover your unpaid gratuity and wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have your appointment letter, salary slips, and retirement notice?",
+   "Did the school give you any written reason for not paying your gratuity?"
+  ],
+  "not_covered": [
+   "Whether the school is registered under the Payment of Gratuity Act, 1972.",
+   "The exact date you submitted your formal claim for gratuity.",
+   "Whether the school deducted any PF or other amounts."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (7y) that is not in the law pack or the computed rules",
+   "where": "Gather your employment records, appointment letter, salary slips, and retirement notice. These documents prove you worked for 7 years and did not receive your money."
+  },
+  {
+   "kind": "unknown_act",
+   "detail": "names 'Gratuity Act, 1972', which is not in the verified corpus",
+   "where": "Whether the school is registered under the Payment of Gratuity Act, 1972."
+  }
+ ],
+ "violations_final": [
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (7y) that is not in the law pack or the computed rules",
+   "where": "Gather your employment records, appointment letter, salary slips, and retirement notice. These documents prove you worked for 7 years and did not receive your money."
+  },
+  {
+   "kind": "unknown_act",
+   "detail": "names 'Gratuity Act, 1972', which is not in the verified corpus",
+   "where": "Whether the school is registered under the Payment of Gratuity Act, 1972."
+  },
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (7y) that is not in the law pack or the computed rules",
+   "where": "There is no Section 7 or 7-year rule in the Code on Wages, 2019. The time limit for filing a claim is three years from when the wages fell due."
+  }
+ ],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your gratuity and final wages are protected under the Code on Wages, 2019.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "The law text defines 'wages' and includes gratuity as an excluded item, but the Code on Wages, 2019 as a whole governs wages. The sentence states gratuity and final wages are protected under the Code on Wages, 2019. The law text shows the Code defines wages and addresses payment of wages, supporting that the Code protects wages. The Code also contains provisions for gratuity (separate from wages definition). The sentence is a general statement that is supported by the existence of the Code."
+  },
+  {
+   "n": 2,
+   "text": "Your gratuity and final wages are protected under the Code on Wages, 2019.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text states that where an employee has been removed, dismissed, retrenched, resigned, or became unemployed due to closure, wages payable shall be paid within two working days. Retirement is not explicitly mentioned, but the sentence applies the law to retirement facts. However, the sentence says 'final wages' which could be interpreted as termination-related wages. The law text covers 'resignation' and 'removal/dismissal/retrenchment' but not retirement. The sentence adds retirement which is not in the law. False."
+  },
+  {
+   "n": 3,
+   "text": "The school must pay your final wages within two working days of your retirement.",
+   "cite": "COW2019_s17",
+   "supported": false,
+   "reason": "The law text specifies payment within two working days for removal, dismissal, retrenchment, or resignation, or unemployment due to closure. Retirement is not mentioned in the law text. The sentence applies the law to retirement, which is a condition not contained in the law text."
+  },
+  {
+   "n": 4,
+   "text": "You have three years from when the wages were due to file a claim.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text explicitly states in sub-section (6): 'The application under sub-section (4) may be filed within a period of three years from the date on which claims referred to in sub-section (1) arises.' This directly supports the sentence about having three years from when wages were due to file a claim."
+  },
+  {
+   "n": 5,
+   "text": "The school has to prove they paid you the money.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text explicitly states: 'the burden to prove that the said dues have been paid shall be on the employer.' This directly supports the sentence that the employer must prove they paid the money."
+  },
+  {
+   "n": 6,
+   "text": "You can file a claim for up to ten times your claim as extra compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text explicitly states: 'the payment of compensation in addition to the claim determined, which may extend to ten times of the claim determined.' This directly supports the sentence about filing a claim for up to ten times the claim as extra compensation."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: private school, [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you. My wages for [FILL: unpaid month] have not been paid. My last working day was 30 September 2026.\n\nI request you to pay the unpaid amount of Rs 210,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "validator: answer still failed after one retry; failing sentences removed",
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "The school must pay your final wages within two working days of your retirement."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_M02_gratuity",
+ "seconds": 15.1
+}

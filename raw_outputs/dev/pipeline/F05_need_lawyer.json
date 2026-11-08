@@ -1,0 +1,277 @@
+{
+ "story": "Do I need to hire a lawyer to file a consumer complaint? I paid Rs 9,000 for a washing machine repair on 12 October 2026 that was never done.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 9000.0,
+  "amount_paid_inr": 9000.0,
+  "purchase_date": "2026-10-12",
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-12",
+    "event": "Paid Rs 9,000 for washing machine repair",
+    "user_words": "I paid Rs 9,000 for a washing machine repair on 12 October 2026 that was never done."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Do I need to hire a lawyer to file a consumer complaint?",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 12 Oct 2028 (704 days left). This counts 2 years from 12 Oct 2026 (your purchase date - counted from the earliest possible day, to be safe). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "purchase_date": "2026-10-12",
+    "start_basis": "purchase date (earliest possible start, to be safe)"
+   },
+   "deadline": "2028-10-12",
+   "days_left": 704,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 9,000, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 9000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You do not need to hire a lawyer to file a consumer complaint. You paid Rs 9,000 for a washing machine repair that was never done. You can file a complaint online at e-jagriti.gov.in in your district. There is no filing fee because you paid Rs 9,000. You must file before 12 Oct 2028.",
+  "claims": [
+   {
+    "text": "You do not need a lawyer to file a consumer complaint.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "You can file your complaint online with the District Consumer Commission.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "There is no filing fee for a complaint where the amount paid is up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint within two years from the date of the cause of action, which is 12 Oct 2028.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written complaint to the seller or service provider's grievance officer.",
+    "why": "This is a free step that may get you a refund without a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "This is a free step that may help you get your refund.",
+    "cite": []
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in.",
+    "why": "You can file in your district with no fee, and you do not need a lawyer.",
+    "cite": [
+     "CPA2019_s35_1",
+     "CPA2019_s34_2",
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of payment, like a receipt or bank statement?",
+   "Do you have any communication with the repair person about the repair?"
+  ],
+  "not_covered": [
+   "This does not cover the legal process if the seller does not refund you after a complaint.",
+   "This does not cover if the repair person claims they did the work."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You do not need to hire a lawyer to file a consumer complaint. You paid Rs 9,000 for a washing machine repair that was never done. You can file a complaint online at e-jagriti.gov.in in your district. There is no filing fee because you paid Rs 9,000. You must file before 12 Oct 2028.",
+  "claims": [
+   {
+    "text": "You do not need a lawyer to file a consumer complaint.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "You can file your complaint online with the District Consumer Commission.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "There is no filing fee for a complaint where the amount paid is up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint within two years from the date of the cause of action, which is 12 Oct 2028.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written complaint to the seller or service provider's grievance officer.",
+    "why": "This is a free step that may get you a refund without a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "This is a free step that may help you get your refund.",
+    "cite": []
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in.",
+    "why": "You can file in your district with no fee, and you do not need a lawyer.",
+    "cite": [
+     "CPA2019_s35_1",
+     "CPA2019_s34_2",
+     "CPFEE_r7"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any proof of payment, like a receipt or bank statement?",
+   "Do you have any communication with the repair person about the repair?"
+  ],
+  "not_covered": [
+   "This does not cover the legal process if the seller does not refund you after a complaint.",
+   "This does not cover if the repair person claims they did the work."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You do not need a lawyer to file a consumer complaint.",
+   "cite": "CPA2019_s35_1",
+   "supported": false,
+   "reason": "The law text does not mention whether a lawyer is required or not to file a consumer complaint. It only lists who may file a complaint and mentions electronic filing, but says nothing about the need for a lawyer."
+  },
+  {
+   "n": 2,
+   "text": "You can file your complaint online with the District Consumer Commission.",
+   "cite": "CPA2019_s35_1",
+   "supported": true,
+   "reason": "The law text explicitly states 'the complaint under this sub-section may be filed electronically in such manner as may be prescribed.' Filing online is a form of electronic filing, and the District Commission is the forum where complaints are filed."
+  },
+  {
+   "n": 3,
+   "text": "There is no filing fee for a complaint where the amount paid is up to Rs 5 lakh.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The law text explicitly states 'No fee where the consideration paid is up to Rs 5 lakh,' which directly supports that there is no filing fee for a complaint where the amount paid is up to Rs 5 lakh."
+  },
+  {
+   "n": 4,
+   "text": "You must file your complaint within two years from the date of the cause of action, which is 12 Oct 2028.",
+   "cite": "CPA2019_s69",
+   "supported": false,
+   "reason": "The law text states the complaint must be filed within two years from the date on which the cause of action has arisen, but does not specify that the cause of action date is 12 Oct 2028. The specific date of 12 Oct 2028 is not in the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 12 October 2026 I paid Rs 9,000 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests you have not refunded the amount.\n\nI request a full refund of Rs 9,000 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 2 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7"
+ ],
+ "unconfirmed": [
+  "You do not need a lawyer to file a consumer complaint.",
+  "You must file your complaint within two years from the date of the cause of action, which is 12 Oct 2028."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "F05_need_lawyer",
+ "seconds": 8.5
+}

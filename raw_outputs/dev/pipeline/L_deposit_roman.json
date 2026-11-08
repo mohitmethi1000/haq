@@ -1,0 +1,215 @@
+{
+ "story": "maine 31 agast 2026 ko bangalore ka kiraye ka kamra chhod diya. makaan malik ne mera 40000 deposit wapas nahi kiya.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "deposit",
+  "user_language": "hinglish",
+  "user_state": "Karnataka",
+  "user_city": "Bangalore",
+  "other_party_name": "makaan malik",
+  "other_party_kind": "individual",
+  "amount_claimed_inr": 40000.0,
+  "amount_paid_inr": 40000.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08-31",
+    "event": "User moved out of the rented room in Bangalore.",
+    "user_words": "maine 31 agast 2026 ko bangalore ka kiraye ka kamra chhod diya."
+   },
+   {
+    "date": null,
+    "event": "Landlord refused to return the security deposit.",
+    "user_words": "makaan malik ne mera 40000 deposit wapas nahi kiya."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get the deposit of 40000 INR back from the landlord.",
+  "missing": [
+   "Date the deposit was originally paid",
+   "Reason for not returning the deposit"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "deposit_scope",
+   "outcome": "uncertain",
+   "message": "Deposit refunds depend on your State's rent law and your rent agreement. I haven't verified any State rent law yet, so I won't quote one. I can still help you write a demand letter based on your facts. Free legal aid (15100) can tell you your State's rule.",
+   "cite": [
+    "LSA1987_s12"
+   ],
+   "facts_used": {
+    "user_state": "Karnataka"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Your State's law decides"
+  },
+  {
+   "name": "deposit_limitation",
+   "outcome": "uncertain",
+   "message": "I haven't verified the time limit for getting a deposit back through court, so I won't guess one. Don't wait - a lawyer can confirm it quickly.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Time limit: not verified"
+  }
+ ],
+ "answer": {
+  "summary": "Your landlord in Bangalore kept your 40,000 INR security deposit after you moved out on 31 August 2026. You can ask for the money back. The exact rule depends on your rent agreement and your state's rent law. Free legal aid can help you.",
+  "claims": [
+   {
+    "text": "Your landlord kept your 40,000 INR deposit after you moved out on 31 August 2026.",
+    "cite": []
+   },
+   {
+    "text": "Free legal aid is available to help you with this dispute.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline 15100 to ask about your state's rent laws.",
+    "why": "This will tell you your exact rights for getting your deposit back.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your rent agreement for the deposit return rules.",
+    "why": "The agreement might say how long they have to give the money back.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written rent agreement?",
+   "Do you have proof of the 40,000 INR deposit payment, like a bank transfer or receipt?"
+  ],
+  "not_covered": [
+   "The exact time limit to take the landlord to court for your deposit is not covered.",
+   "The specific rules for Karnataka rent deposits are not covered in my law pack."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "Your landlord in Bangalore kept your 40,000 INR security deposit after you moved out on 31 August 2026. You can ask for the money back. The exact rule depends on your rent agreement and your state's rent law. Free legal aid can help you.",
+  "claims": [
+   {
+    "text": "Your landlord kept your 40,000 INR deposit after you moved out on 31 August 2026.",
+    "cite": []
+   },
+   {
+    "text": "Free legal aid is available to help you with this dispute.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline 15100 to ask about your state's rent laws.",
+    "why": "This will tell you your exact rights for getting your deposit back.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Check your rent agreement for the deposit return rules.",
+    "why": "The agreement might say how long they have to give the money back.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a written rent agreement?",
+   "Do you have proof of the 40,000 INR deposit payment, like a bank transfer or receipt?"
+  ],
+  "not_covered": [
+   "The exact time limit to take the landlord to court for your deposit is not covered.",
+   "The specific rules for Karnataka rent deposits are not covered in my law pack."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Free legal aid is available to help you with this dispute.",
+   "cite": "LSA1987_s12",
+   "supported": true,
+   "reason": "The law text explicitly states that 'Free legal services are available' to various categories of people, which directly supports the sentence that 'Free legal aid is available to help you with this dispute.' The sentence applies the general rule to the person's own facts (the 'you' and 'this dispute'), which is permitted."
+  }
+ ],
+ "rendered": {
+  "summary": "Bangalore mein 31 August 2026 ko ghar chhodne ke baad aapke landlord ne aapka ₹40,000 security deposit rakh liya. Aap apna paisa wapas maang sakte hain. Iska exact rule aapke rent agreement aur aapke state ke rent law par depend karta hai. Free legal aid isme aapki help kar sakti hai.",
+  "claims": [
+   "31 August 2026 ko ghar chhodne ke baad aapke landlord ne aapka ₹40,000 deposit rakh liya.",
+   "Is dispute mein aapki help ke liye free legal aid available hai."
+  ],
+  "next_steps": [
+   "Apne state ke rent laws ke baare mein poochne ke liye free legal aid helpline 15100 par call karein. — Isse aapko apna deposit wapas paane ke exact rights pata chalenge.",
+   "Deposit return rules ke liye apna rent agreement check karein. — Agreement mein likha ho sakta hai ki unhe paise wapas karne mein kitna time lagega."
+  ],
+  "questions_for_user": [
+   "Kya aapke paas written rent agreement hai?",
+   "Kya aapke paas ₹40,000 deposit payment ka proof hai, jaise bank transfer ya receipt?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: makaan malik, [FILL: their address / registered office / email]\n\nSubject: Demand for return of security deposit\n\nI paid you a security deposit of Rs 40,000 on [FILL: date paid] for the premises at [FILL: address]. [FILL: the date you vacated and handed over the keys - only if you have moved out] The deposit has not been returned.\n\nI request you to return the deposit, less any deduction you can justify in writing with bills, within 15 days of receiving this letter.\n\nIf it is not returned, I will take legal action to recover it, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: deposit_scope (uncertain)"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your rent agreement.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: none - this letter states facts only",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_deposit_roman",
+ "seconds": 10.3
+}

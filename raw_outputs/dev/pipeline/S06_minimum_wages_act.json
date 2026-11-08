@@ -1,0 +1,360 @@
+{
+ "story": "Under the Minimum Wages Act, can I claim my unpaid wages? I work in a factory in Ludhiana, Punjab and August and September 2026 wages of Rs 14,000 a month are unpaid.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Punjab",
+  "user_city": "Ludhiana",
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 28000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-08",
+  "unpaid_to_month": "2026-09",
+  "monthly_wage_inr": 14000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08-01",
+    "event": "August 2026 wages unpaid",
+    "user_words": "August and September 2026 wages of Rs 14,000 a month are unpaid"
+   },
+   {
+    "date": "2026-09-01",
+    "event": "September 2026 wages unpaid",
+    "user_words": "August and September 2026 wages of Rs 14,000 a month are unpaid"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Can I claim my unpaid wages under the Minimum Wages Act?",
+  "missing": [
+   "Name of employer or factory",
+   "Date of employment start",
+   "Whether PF was deducted"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for August 2026 were due before the end of 07 September 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-08"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Sep 2029 (1034 days left). This counts 3 years from 07 Sep 2026 (when August 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "August 2026",
+     "September 2026"
+    ]
+   },
+   "deadline": "2029-09-07",
+   "days_left": 1034,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 14,000 = Rs 28,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 14000.0,
+    "total": 28000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "The Code on Wages, 2019 has replaced the Minimum Wages Act, 1948. You can claim your unpaid August and September 2026 wages of Rs 28,000. You must file a claim before the wage authority within three years. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "The Code on Wages, 2019 replaced the Minimum Wages Act, 1948.",
+    "cite": [
+     "COW2019_s69"
+    ]
+   },
+   {
+    "text": "The law says an 'employee' is someone employed on wages to do work for hire or reward, and includes people doing clerical, supervisory or managerial work.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your unpaid wages of Rs 28,000 for August and September 2026 are due. Basic pay, dearness allowance and retaining allowance all count as wages.",
+    "cite": [
+     "COW2019_s17",
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You must file your wage claim within three years from when the wages fell due.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The wage authority can order the employer to pay up to ten times your claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Find the name of your employer or factory.",
+    "why": "You need this to file your claim.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the wage authority in Ludhiana.",
+    "why": "The law says you can file a claim for unpaid wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of work, like an appointment letter or salary slips.",
+    "why": "The wage authority needs proof that you are an employee and that your wages were not paid.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of your employer or factory?",
+   "When did you start working there?",
+   "Did your employer ever give you a salary slip or appointment letter?"
+  ],
+  "not_covered": [
+   "Whether PF was deducted and not deposited.",
+   "The exact date you started your job."
+  ],
+  "corrections": [
+   "The Minimum Wages Act, 1948 was repealed by the Code on Wages, 2019."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "The Code on Wages, 2019 has replaced the Minimum Wages Act, 1948. You can claim your unpaid August and September 2026 wages of Rs 28,000. You must file a claim before the wage authority within three years. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "The Code on Wages, 2019 replaced the Minimum Wages Act, 1948.",
+    "cite": [
+     "COW2019_s69"
+    ]
+   },
+   {
+    "text": "The law says an 'employee' is someone employed on wages to do work for hire or reward, and includes people doing clerical, supervisory or managerial work.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your unpaid wages of Rs 28,000 for August and September 2026 are due. Basic pay, dearness allowance and retaining allowance all count as wages.",
+    "cite": [
+     "COW2019_s17",
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You must file your wage claim within three years from when the wages fell due.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The wage authority can order the employer to pay up to ten times your claim as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you the wages.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Find the name of your employer or factory.",
+    "why": "You need this to file your claim.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the wage authority in Ludhiana.",
+    "why": "The law says you can file a claim for unpaid wages.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Gather proof of work, like an appointment letter or salary slips.",
+    "why": "The wage authority needs proof that you are an employee and that your wages were not paid.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of your employer or factory?",
+   "When did you start working there?",
+   "Did your employer ever give you a salary slip or appointment letter?"
+  ],
+  "not_covered": [
+   "Whether PF was deducted and not deposited.",
+   "The exact date you started your job."
+  ],
+  "corrections": [
+   "The Minimum Wages Act, 1948 was repealed by the Code on Wages, 2019."
+  ]
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "The Code on Wages, 2019 replaced the Minimum Wages Act, 1948.",
+   "cite": "COW2019_s69",
+   "supported": true,
+   "reason": "Section 69(1) explicitly states that the Minimum Wages Act, 1948 is repealed, and the Code on Wages, 2019 replaces it."
+  },
+  {
+   "n": 2,
+   "text": "The law says an 'employee' is someone employed on wages to do work for hire or reward, and includes people doing clerical, supervisory or managerial work.",
+   "cite": "COW2019_s2k",
+   "supported": true,
+   "reason": "Section 2(k) defines 'employee' as including persons employed on wages to do work for hire or reward, and explicitly includes supervisory, managerial, administrative, and clerical work."
+  },
+  {
+   "n": 3,
+   "text": "Your unpaid wages of Rs 28,000 for August and September 2026 are due. Basic pay, dearness allowance and retaining allowance all count as wages.",
+   "cite": "COW2019_s17",
+   "supported": false,
+   "reason": "The law text (Section 17) specifies time limits for payment of wages (daily, weekly, fortnightly, monthly, or within 2 working days for certain terminations, or as the appropriate Government may provide), but does not state that wages of Rs 28,000 for August and September 2026 are specifically due, nor does it mention basic pay, dearness allowance, or retaining allowance in the context of the sentence's application. The sentence adds specific amounts, months, and years that are not in the law text."
+  },
+  {
+   "n": 4,
+   "text": "Your unpaid wages of Rs 28,000 for August and September 2026 are due. Basic pay, dearness allowance and retaining allowance all count as wages.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "Section 2(y) defines 'wages' to include basic pay, dearness allowance, and retaining allowance if any."
+  },
+  {
+   "n": 5,
+   "text": "You must file your wage claim within three years from when the wages fell due.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "Section 45(6) states that the application may be filed within a period of three years from the date on which claims arises."
+  },
+  {
+   "n": 6,
+   "text": "The wage authority can order the employer to pay up to ten times your claim as compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "Section 45(2) states that the authority may order compensation which may extend to ten times of the claim determined."
+  },
+  {
+   "n": 7,
+   "text": "The employer must prove they paid you the wages.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "Section 59 states that the burden to prove that the said dues have been paid shall be on the employer."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 14,000. My wages for August 2026 to September 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 28,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2k",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "COW2019_s69"
+ ],
+ "unconfirmed": [
+  "Your unpaid wages of Rs 28,000 for August and September 2026 are due. Basic pay, dearness allowance and retaining allowance all count as wages."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "S06_minimum_wages_act",
+ "seconds": 8.3
+}

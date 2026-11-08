@@ -1,0 +1,162 @@
+[
+ {
+  "n": 1,
+  "text": "Monthly wages must be paid before the 7th of the next month.",
+  "cite": "COW2019_s17",
+  "supported": true,
+  "reason": "The law text explicitly states in section 17(1)(iv) that for monthly basis employees, wages must be paid 'before the expiry of the seventh day of the succeeding month' (i.e., before the 7th of the next month).",
+  "truth": true
+ },
+ {
+  "n": 2,
+  "text": "After resignation, wages must be paid within two working days.",
+  "cite": "COW2019_s17",
+  "supported": true,
+  "reason": "The law text explicitly states in section 17(2) that where an employee 'has resigned from service,' the wages payable 'shall be paid within two working days of his... resignation.'",
+  "truth": true
+ },
+ {
+  "n": 3,
+  "text": "The wage authority can award compensation up to ten times the claim.",
+  "cite": "COW2019_s45",
+  "supported": true,
+  "reason": "The law text explicitly states in section 45(2) that the authority may order compensation 'which may extend to ten times of the claim determined.'",
+  "truth": true
+ },
+ {
+  "n": 4,
+  "text": "A wage claim can be filed within three years, and later if there is sufficient cause.",
+  "cite": "COW2019_s45",
+  "supported": true,
+  "reason": "The law text explicitly states in section 45(6) that 'The application... may be filed within a period of three years from the date on which claims... arises: Provided that the authority... may, entertain the application after three years on sufficient cause being shown by the applicant for such delay.'",
+  "truth": true
+ },
+ {
+  "n": 5,
+  "text": "In a wage claim, the employer must prove the dues were paid.",
+  "cite": "COW2019_s59",
+  "supported": true,
+  "reason": "The law text explicitly states in section 59 that 'the burden to prove that the said dues have been paid shall be on the employer.'",
+  "truth": true
+ },
+ {
+  "n": 6,
+  "text": "A consumer complaint must be filed within two years of the cause of action.",
+  "cite": "CPA2019_s69",
+  "supported": true,
+  "reason": "The law text explicitly states in section 69(1) that a complaint shall not be admitted unless filed 'within two years from the date on which the cause of action has arisen.'",
+  "truth": true
+ },
+ {
+  "n": 7,
+  "text": "You can file a consumer complaint where you live or work.",
+  "cite": "CPA2019_s34_2",
+  "supported": true,
+  "reason": "The law text explicitly states in section 34(2)(d) that a complaint may be instituted where 'the complainant resides or personally works for gain.'",
+  "truth": true
+ },
+ {
+  "n": 8,
+  "text": "Refusing to refund for defective goods within thirty days, if no period is stated, is an unfair trade practice.",
+  "cite": "CPA2019_s2_47_viii",
+  "supported": true,
+  "reason": "The law text explicitly states in section 2(47)(viii) that refusing to take back defective goods or refund consideration 'in the absence of such stipulation, within a period of thirty days' is an unfair trade practice.",
+  "truth": true
+ },
+ {
+  "n": 9,
+  "text": "A consumer complaint can be filed electronically.",
+  "cite": "CPA2019_s35_1",
+  "supported": true,
+  "reason": "The law text explicitly states in section 35(1) 'Provided that the complaint under this sub-section may be filed electronically in such manner as may be prescribed.'",
+  "truth": true
+ },
+ {
+  "n": 10,
+  "text": "Screenshots and other electronic records can count as documents in evidence.",
+  "cite": "BSA2023_s63_1",
+  "supported": true,
+  "reason": "The law text explicitly states in section 63(1) that 'any information contained in an electronic record... shall be deemed to be also a document, if the conditions mentioned in this section are satisfied' and 'shall be admissible in any proceedings.'",
+  "truth": true
+ },
+ {
+  "n": 11,
+  "text": "Monthly wages must be paid before the 7th of the next month.",
+  "cite": "COW2019_s59",
+  "supported": false,
+  "reason": "The law text provided is section 59, which deals with the burden of proof in wage claims, not the timing of wage payments. Section 59 does not state that monthly wages must be paid before the 7th of the next month.",
+  "truth": false
+ },
+ {
+  "n": 12,
+  "text": "After resignation, wages must be paid within two working days.",
+  "cite": "COW2019_s45",
+  "supported": false,
+  "reason": "The law text provided is section 45, which deals with wage claims, authorities, and compensation, not the timing of wage payments. Section 45 does not state that after resignation wages must be paid within two working days.",
+  "truth": false
+ },
+ {
+  "n": 13,
+  "text": "The wage authority can award compensation up to ten times the claim.",
+  "cite": "COW2019_s17",
+  "supported": false,
+  "reason": "The law text provided is section 17, which deals with payment of wages by employers, not with compensation awards by wage authorities. Section 17 does not state that the wage authority can award compensation up to ten times the claim.",
+  "truth": false
+ },
+ {
+  "n": 14,
+  "text": "A wage claim can be filed within one year only.",
+  "cite": "COW2019_s45",
+  "supported": false,
+  "reason": "The law text provided is section 45, which explicitly states in section 45(6) that the application 'may be filed within a period of three years,' not one year.",
+  "truth": false
+ },
+ {
+  "n": 15,
+  "text": "In a wage claim, the employee must prove the dues were not paid.",
+  "cite": "COW2019_s59",
+  "supported": false,
+  "reason": "The law text explicitly states in section 59 that 'the burden to prove that the said dues have been paid shall be on the employer,' not the employee. The sentence incorrectly reverses the burden of proof.",
+  "truth": false
+ },
+ {
+  "n": 16,
+  "text": "A consumer complaint must be filed within six months of the cause of action.",
+  "cite": "CPA2019_s69",
+  "supported": false,
+  "reason": "The law text explicitly states in section 69(1) that a complaint shall not be admitted unless filed 'within two years from the date on which the cause of action has arisen,' not six months.",
+  "truth": false
+ },
+ {
+  "n": 17,
+  "text": "You can file a consumer complaint only where the seller has its head office.",
+  "cite": "CPA2019_s34_2",
+  "supported": false,
+  "reason": "The law text explicitly lists multiple alternative venues for filing a complaint in section 34(2)(a)-(d), including where the complainant resides or works, where the cause of action arises, and where the opposite party resides or carries on business. It is not limited to where the seller has its head office.",
+  "truth": false
+ },
+ {
+  "n": 18,
+  "text": "A seller must refund within seven days in all cases.",
+  "cite": "CPA2019_s2_47_viii",
+  "supported": false,
+  "reason": "The law text explicitly states in section 2(47)(viii) that the refund period is 'within a period of thirty days' in the absence of a stipulation, not seven days.",
+  "truth": false
+ },
+ {
+  "n": 19,
+  "text": "A consumer complaint must be filed by a lawyer.",
+  "cite": "CPA2019_s35_1",
+  "supported": false,
+  "reason": "The law text explicitly lists who may file a complaint in section 35(1)(a)-(d) as the consumer, a recognised consumer association, one or more consumers with permission, or the government. It does not state that a complaint must be filed by a lawyer.",
+  "truth": false
+ },
+ {
+  "n": 20,
+  "text": "WhatsApp messages can never be used as evidence.",
+  "cite": "BSA2023_s63_1",
+  "supported": false,
+  "reason": "The law text explicitly states in section 63(1) that electronic records 'shall be deemed to be also a document' and 'shall be admissible in any proceedings' if conditions are satisfied. This directly contradicts the statement that WhatsApp messages can never be used as evidence.",
+  "truth": false
+ }
+]

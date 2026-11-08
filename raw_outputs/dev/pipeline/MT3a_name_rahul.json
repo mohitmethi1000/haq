@@ -1,0 +1,352 @@
+{
+ "story": "Rahul here. Swiftkart has not refunded Rs 3,499 for a cancelled order I placed on 20 October 2026. I live in Lucknow.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": "Uttar Pradesh",
+  "user_city": "Lucknow",
+  "other_party_name": "Swiftkart",
+  "other_party_kind": "company",
+  "amount_claimed_inr": 3499.0,
+  "amount_paid_inr": 3499.0,
+  "purchase_date": "2026-10-20",
+  "refund_refused_date": "2026-11-08",
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": "null",
+  "unpaid_from_month": "null",
+  "unpaid_to_month": "null",
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": "null",
+  "moved_out_date": "null",
+  "notice_text_summary": "null",
+  "timeline": [
+   {
+    "date": "2026-10-20",
+    "event": "Placed an order that was later cancelled",
+    "user_words": "cancelled order I placed on 20 October 2026"
+   },
+   {
+    "date": "2026-11-08",
+    "event": "Swiftkart has not refunded the cancelled order",
+    "user_words": "Swiftkart has not refunded Rs 3,499 for a cancelled order"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get a refund of Rs 3,499 from Swiftkart for a cancelled order",
+  "missing": [
+   "Date when the order was cancelled",
+   "Exact amount paid",
+   "State"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 08 Nov 2028 (731 days left). This counts 2 years from 08 Nov 2026 (the date they refused; if they refused earlier, your deadline is earlier). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "refund_refused_date": "2026-11-08"
+   },
+   "deadline": "2028-11-08",
+   "days_left": 731,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 3,499, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 3499.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You paid Rs 3,499 to Swiftkart and they refused to refund your cancelled order on 8 November 2026. You can file a complaint with the District Consumer Commission in Lucknow because you live there. There is no filing fee for amounts up to Rs 5 lakh. You have until 8 November 2028 to file your complaint.",
+  "claims": [
+   {
+    "text": "You can file a consumer complaint against Swiftkart for refusing to refund your cancelled order.",
+    "cite": [
+     "CPA2019_s2_7",
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "The complaint must be filed within two years from the date the cause of action arose.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "You can file the complaint with the District Consumer Commission because the amount paid is Rs 3,499.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPJR2021_pecuniary"
+    ]
+   },
+   {
+    "text": "There is no filing fee for amounts up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You can file the complaint in the district where you reside or work.",
+    "cite": [
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written complaint to Swiftkart's grievance officer asking for your refund.",
+    "why": "This is a free first step that often resolves the issue.",
+    "cite": []
+   },
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "They can help you resolve the dispute before you file a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Gather your proof of payment and the refusal message from Swiftkart.",
+    "why": "You need evidence like screenshots or emails to support your complaint.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in or in person at the District Consumer Commission in Lucknow.",
+    "why": "This is the official way to start your legal process.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have proof of payment, like a bank statement or screenshot of the transaction?",
+   "Do you have any email or message from Swiftkart refusing the refund?"
+  ],
+  "not_covered": [
+   "The exact date your order was cancelled."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You paid Rs 3,499 to Swiftkart and they refused to refund your cancelled order on 8 November 2026. You can file a complaint with the District Consumer Commission in Lucknow because you live there. There is no filing fee for amounts up to Rs 5 lakh. You have until 8 November 2028 to file your complaint.",
+  "claims": [
+   {
+    "text": "You can file a consumer complaint against Swiftkart for refusing to refund your cancelled order.",
+    "cite": [
+     "CPA2019_s2_7",
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "The complaint must be filed within two years from the date the cause of action arose.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "You can file the complaint with the District Consumer Commission because the amount paid is Rs 3,499.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPJR2021_pecuniary"
+    ]
+   },
+   {
+    "text": "There is no filing fee for amounts up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You can file the complaint in the district where you reside or work.",
+    "cite": [
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Send a written complaint to Swiftkart's grievance officer asking for your refund.",
+    "why": "This is a free first step that often resolves the issue.",
+    "cite": []
+   },
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915.",
+    "why": "They can help you resolve the dispute before you file a formal complaint.",
+    "cite": []
+   },
+   {
+    "action": "Gather your proof of payment and the refusal message from Swiftkart.",
+    "why": "You need evidence like screenshots or emails to support your complaint.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "action": "File your complaint online at e-jagriti.gov.in or in person at the District Consumer Commission in Lucknow.",
+    "why": "This is the official way to start your legal process.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have proof of payment, like a bank statement or screenshot of the transaction?",
+   "Do you have any email or message from Swiftkart refusing the refund?"
+  ],
+  "not_covered": [
+   "The exact date your order was cancelled."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You can file a consumer complaint against Swiftkart for refusing to refund your cancelled order.",
+   "cite": "CPA2019_s2_7",
+   "supported": false,
+   "reason": "The law text defines 'consumer' but does not state that a consumer can file a complaint, nor does it mention 'Swiftkart' or 'cancelled orders'. The sentence introduces a right to file a complaint and specific facts (Swiftkart, cancelled order) not found in the law text."
+  },
+  {
+   "n": 2,
+   "text": "You can file a consumer complaint against Swiftkart for refusing to refund your cancelled order.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": false,
+   "reason": "The law text describes a specific ground for complaint (refusing to take back defective goods or refund consideration within a period), but it does not state that a consumer can file a complaint, nor does it mention 'Swiftkart' or 'cancelled orders'. The sentence introduces a right to file a complaint and specific facts not in the law text."
+  },
+  {
+   "n": 3,
+   "text": "The complaint must be filed within two years from the date the cause of action arose.",
+   "cite": "CPA2019_s69",
+   "supported": true,
+   "reason": "The law text explicitly states that complaints must be filed within two years from the date the cause of action arose (with a proviso for condonation of delay). The sentence directly reflects this rule."
+  },
+  {
+   "n": 4,
+   "text": "You can file the complaint with the District Consumer Commission because the amount paid is Rs 3,499.",
+   "cite": "CPA2019_s34_1",
+   "supported": true,
+   "reason": "The law text states the District Commission has jurisdiction where the value does not exceed one crore rupees. Rs 3,499 is below that amount, so the sentence correctly applies this rule to the fact."
+  },
+  {
+   "n": 5,
+   "text": "You can file the complaint with the District Consumer Commission because the amount paid is Rs 3,499.",
+   "cite": "CPJR2021_pecuniary",
+   "supported": true,
+   "reason": "The law text (the Rules) states District Commission has jurisdiction up to Rs 50 lakh. Rs 3,499 is below that amount, so the sentence correctly applies this rule to the fact."
+  },
+  {
+   "n": 6,
+   "text": "There is no filing fee for amounts up to Rs 5 lakh.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The law text explicitly states 'No fee where the consideration paid is up to Rs 5 lakh'. The sentence directly restates this rule."
+  },
+  {
+   "n": 7,
+   "text": "You can file the complaint in the district where you reside or work.",
+   "cite": "CPA2019_s34_2",
+   "supported": true,
+   "reason": "The law text explicitly allows filing in the district where the complainant resides or personally works for gain (clause 2(d)). The sentence directly reflects this rule."
+  },
+  {
+   "n": 8,
+   "text": "You can file the complaint in the district where you reside or work.",
+   "cite": "CPA2019_s35_1",
+   "supported": false,
+   "reason": "The law text in s.35(1) does not specify where the complaint may be filed; it only specifies who may file the complaint (the consumer, consumer association, etc.). The rule about venue is in s.34(2), not s.35(1). The sentence incorrectly attributes the venue rule to s.35(1)."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: Swiftkart, [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 20 October 2026 I paid Rs 3,499 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests, including on 08 November 2026, you have not refunded the amount.\n\nI request a full refund of Rs 3,499 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 2 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_1",
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7",
+  "CPJR2021_pecuniary"
+ ],
+ "unconfirmed": [
+  "You can file a consumer complaint against Swiftkart for refusing to refund your cancelled order.",
+  "You can file the complaint in the district where you reside or work."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "MT3a_name_rahul",
+ "seconds": 9.8
+}

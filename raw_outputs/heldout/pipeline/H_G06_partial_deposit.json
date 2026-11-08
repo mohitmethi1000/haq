@@ -1,0 +1,284 @@
+{
+ "story": "I vacated my PG room in Hyderabad on 15 September 2026. The owner returned only Rs 12,000 of my Rs 30,000 deposit and says he cut Rs 18,000 for painting and cleaning. I have the receipt for the deposit.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "deposit",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": "Hyderabad",
+  "other_party_name": null,
+  "other_party_kind": "individual",
+  "amount_claimed_inr": 18000.0,
+  "amount_paid_inr": 30000.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": "2026-09-15",
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-09-15",
+    "event": "User vacated the PG room",
+    "user_words": "I vacated my PG room in Hyderabad on 15 September 2026."
+   }
+  ],
+  "evidence": [
+   "Receipt for the deposit"
+  ],
+  "red_flags": [],
+  "user_goal": null,
+  "missing": [
+   "State",
+   "Other party name",
+   "Date of deposit payment",
+   "Date of refund refusal"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "deposit_scope",
+   "outcome": "uncertain",
+   "message": "Deposit refunds depend on your State's rent law and your rent agreement. I haven't verified any State rent law yet, so I won't quote one. I can still help you write a demand letter based on your facts. Free legal aid (15100) can tell you your State's rule.",
+   "cite": [
+    "LSA1987_s12"
+   ],
+   "facts_used": {
+    "user_state": null
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Your State's law decides"
+  },
+  {
+   "name": "deposit_limitation",
+   "outcome": "uncertain",
+   "message": "I haven't verified the time limit for getting a deposit back through court, so I won't guess one. Don't wait - a lawyer can confirm it quickly.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Time limit: not verified"
+  }
+ ],
+ "answer": {
+  "summary": "You paid a 30,000 INR deposit for a PG room in Hyderabad. The owner returned only 12,000 INR and kept 18,000 INR. You have a receipt for the full 30,000 INR deposit. The owner says he kept the 18,000 INR for painting and cleaning.",
+  "claims": [
+   {
+    "text": "You have a receipt for the full 30,000 INR deposit.",
+    "cite": [
+     "BSA2023_s63_4",
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "text": "The owner must give you a certificate with your electronic record if you use it as evidence in court.",
+    "cite": [
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "text": "Any electronic record, like a receipt photo or email, is considered a document in court if it meets the rules in the Bharatiya Sakshya Adhiniyam, 2023.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "text": "Free legal aid is available if your annual income is below 3,00,000 INR. You can call 15100 to find out if you qualify.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Ask the owner in writing for a breakdown of the 18,000 INR deductions.",
+    "why": "You need proof of what the 18,000 INR was spent on before you can file a claim.",
+    "cite": []
+   },
+   {
+    "action": "Send a written demand letter asking for the remaining 18,000 INR.",
+    "why": "This is the first step to try to settle the dispute without going to court.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 to check your eligibility for free legal aid.",
+    "why": "A lawyer can help you check the time limit for your case and send the demand letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your annual income?",
+   "Do you have the owner's full name and phone number?",
+   "Do you have a written rent agreement?",
+   "Did you pay the deposit in cash or bank transfer?"
+  ],
+  "not_covered": [
+   "The time limit to file a case in court is not in the law I have.",
+   "The specific rules for PG refunds in your state are not in the law I have.",
+   "The exact amount of court fees is not in the law I have."
+  ],
+  "corrections": [
+   "There is no specific section about PG deposits in the law I have."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "You paid a 30,000 INR deposit for a PG room in Hyderabad. The owner returned only 12,000 INR and kept 18,000 INR. You have a receipt for the full 30,000 INR deposit. The owner says he kept the 18,000 INR for painting and cleaning.",
+  "claims": [
+   {
+    "text": "You have a receipt for the full 30,000 INR deposit.",
+    "cite": [
+     "BSA2023_s63_4",
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "text": "The owner must give you a certificate with your electronic record if you use it as evidence in court.",
+    "cite": [
+     "BSA2023_s63_4"
+    ]
+   },
+   {
+    "text": "Any electronic record, like a receipt photo or email, is considered a document in court if it meets the rules in the Bharatiya Sakshya Adhiniyam, 2023.",
+    "cite": [
+     "BSA2023_s63_1"
+    ]
+   },
+   {
+    "text": "Free legal aid is available if your annual income is below 3,00,000 INR. You can call 15100 to find out if you qualify.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Ask the owner in writing for a breakdown of the 18,000 INR deductions.",
+    "why": "You need proof of what the 18,000 INR was spent on before you can file a claim.",
+    "cite": []
+   },
+   {
+    "action": "Send a written demand letter asking for the remaining 18,000 INR.",
+    "why": "This is the first step to try to settle the dispute without going to court.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 to check your eligibility for free legal aid.",
+    "why": "A lawyer can help you check the time limit for your case and send the demand letter.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is your annual income?",
+   "Do you have the owner's full name and phone number?",
+   "Do you have a written rent agreement?",
+   "Did you pay the deposit in cash or bank transfer?"
+  ],
+  "not_covered": [
+   "The time limit to file a case in court is not in the law I have.",
+   "The specific rules for PG refunds in your state are not in the law I have.",
+   "The exact amount of court fees is not in the law I have."
+  ],
+  "corrections": [
+   "There is no specific section about PG deposits in the law I have."
+  ]
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You have a receipt for the full 30,000 INR deposit.",
+   "cite": "BSA2023_s63_4",
+   "supported": false,
+   "reason": "The law text (BSA2023_s63_4) discusses submitting a certificate along with an electronic record for admission in proceedings, but it does not mention anything about a 'receipt for the full 30,000 INR deposit.' The sentence introduces specific facts (30,000 INR deposit, receipt) that are not in the law text."
+  },
+  {
+   "n": 2,
+   "text": "You have a receipt for the full 30,000 INR deposit.",
+   "cite": "BSA2023_s63_1",
+   "supported": false,
+   "reason": "The law text (BSA2023_s63_1) states that computer output may be deemed a document and admissible in proceedings if conditions are satisfied, but it does not mention anything about a 'receipt for the full 30,000 INR deposit.' The specific amount and receipt are not contained in the law text."
+  },
+  {
+   "n": 3,
+   "text": "The owner must give you a certificate with your electronic record if you use it as evidence in court.",
+   "cite": "BSA2023_s63_4",
+   "supported": false,
+   "reason": "The law text (BSA2023_s63_4) states that 'a certificate doing any of the following things shall be submitted along with the electronic record at each instance where it is being submitted for admission,' but it does not specify who must give the certificate (it does not say 'the owner must give you a certificate'). The sentence adds a condition about who must provide the certificate that is not in the law text."
+  },
+  {
+   "n": 4,
+   "text": "Any electronic record, like a receipt photo or email, is considered a document in court if it meets the rules in the Bharatiya Sakshya Adhiniyam, 2023.",
+   "cite": "BSA2023_s63_1",
+   "supported": true,
+   "reason": "The law text (BSA2023_s63_1) states that 'any information contained in an electronic record...shall be deemed to be also a document, if the conditions mentioned in this section are satisfied in relation to the information and computer in question and shall be admissible in any proceedings.' The sentence states that 'Any electronic record, like a receipt photo or email, is considered a document in court if it meets the rules in the Bharatiya Sakshya Adhiniyam, 2023.' This is directly supported - the law text says electronic records are deemed documents if conditions are satisfied, and the sentence says they are considered documents if they meet the rules (i.e., conditions)."
+  },
+  {
+   "n": 5,
+   "text": "Free legal aid is available if your annual income is below 3,00,000 INR. You can call 15100 to find out if you qualify.",
+   "cite": "LSA1987_s12",
+   "supported": false,
+   "reason": "The law text (LSA1987_s12) states that 'persons whose annual income is below the ceiling set by each State' are eligible for free legal services, and mentions 'NALSA's table shows Rs 3,00,000 for many States' as an example. However, the law text does not state that the ceiling is specifically 3,00,000 INR - it says it is 'set by each State' and gives examples. The sentence states 'if your annual income is below 3,00,000 INR' as a definite threshold, and adds 'You can call 15100 to find out if you qualify' which is not in the law text. The law text mentions 'Helpline 15100' but the sentence's conditional 'if you qualify' is an application not directly supported as a legal rule."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for return of security deposit\n\nI paid you a security deposit of Rs 18,000 on [FILL: date paid] for the premises at [FILL: address]. I vacated the premises and handed over the keys on 15 September 2026. The deposit has not been returned.\n\nI request you to return the deposit, less any deduction you can justify in writing with bills, within 15 days of receiving this letter.\n\nIf it is not returned, I will take legal action to recover it, without further notice to you.\n\nI have the following records: Receipt for the deposit.\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: deposit_scope (uncertain)",
+  "support check could not confirm 3 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "BSA2023_s63_1",
+  "BSA2023_s63_4",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "You have a receipt for the full 30,000 INR deposit.",
+  "The owner must give you a certificate with your electronic record if you use it as evidence in court.",
+  "Free legal aid is available if your annual income is below 3,00,000 INR. You can call 15100 to find out if you qualify."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your rent agreement.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: none - this letter states facts only",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_G06_partial_deposit",
+ "seconds": 15.9
+}

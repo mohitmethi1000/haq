@@ -1,0 +1,76 @@
+{
+ "story": "My brother has illegally occupied our ancestral land in Bihar. How do I get it back?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "other",
+  "user_language": "english",
+  "user_state": "Bihar",
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": null,
+  "amount_paid_inr": null,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "To get back the illegally occupied ancestral land in Bihar",
+  "missing": [
+   "Exact location/village of the land in Bihar",
+   "Details of the illegal occupation (e.g., date of taking over)",
+   "Relationship status with the brother (e.g., is he the only heir?)",
+   "Whether there are any existing legal documents or titles in the user's name"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [],
+ "answer": null,
+ "answer_first_try": null,
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "",
+ "escalate": true,
+ "escalation_reasons": [
+  "out of scope: other"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "This problem is outside what I have verified law for (I cover unpaid salary, consumer refunds and, partly, rental deposits). Rather than guess, please contact free legal aid: NALSA 15100 or Tele-Law 14454. They can advise you at no cost.",
+ "scope_message_hi": "",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "",
+ "versions": {},
+ "error": null,
+ "case_id": "M03_property",
+ "seconds": 1.8
+}

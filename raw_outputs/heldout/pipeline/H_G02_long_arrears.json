@@ -1,0 +1,369 @@
+{
+ "story": "I am still working as a helper at a kirana wholesaler in Patna, Bihar. My pay is Rs 12,500 a month and I have not been paid anything from May 2026 to October 2026. The owner says business is slow.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Bihar",
+  "user_city": "Patna",
+  "other_party_name": "owner",
+  "other_party_kind": "individual",
+  "amount_claimed_inr": 75000.0,
+  "amount_paid_inr": 12500.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "employee",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": "2026-05",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 12500.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-05",
+    "event": "Salary not paid",
+    "user_words": "I have not been paid anything from May 2026 to October 2026"
+   },
+   {
+    "date": "2026-10",
+    "event": "Owner provides reason for non-payment",
+    "user_words": "The owner says business is slow"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": null,
+  "missing": [
+   "Exact dates of employment start and end",
+   "Written employment agreement or salary slip",
+   "Specific reason for business being slow"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "monthly_due_date",
+   "outcome": "info",
+   "message": "Wages for May 2026 were due before the end of 07 June 2026 (the 7th of the next month).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "unpaid_from_month": "2026-05"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "When wages were due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Jun 2029 (942 days left). This counts 3 years from 07 Jun 2026 (when May 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "May 2026",
+     "June 2026",
+     "July 2026",
+     "August 2026",
+     "September 2026",
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-06-07",
+   "days_left": 942,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 6 month(s) x Rs 12,500 = Rs 75,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 6,
+    "monthly_wage_inr": 12500.0,
+    "total": 75000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "You have not been paid Rs 12,500 for six months (May 2026 to October 2026), totalling Rs 75,000, while still working as a helper in Patna. The law says your wages must be paid by the 7th of the next month. You can file a claim with the labour authority to recover your unpaid salary. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+    "cite": [
+     "COW2019_s2k",
+     "COW2019_s2y",
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer is legally required to pay your wages by the 7th day of the next month.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You can file a wage claim within 3 years. You still have time, but do not wait.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_s3_1",
+     "LIM1963_art7"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you. They cannot force you to sign a waiver of your dues.",
+    "cite": [
+     "COW2019_s59",
+     "COW2019_s60"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather your proof of work and salary, like a salary slip or bank statement showing previous payments.",
+    "why": "You need proof to show you worked and the amount owed.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the Bihar State Labour Department.",
+    "why": "The State Government is the appropriate authority for your employer.",
+    "cite": [
+     "COW2019_s2d",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help with the claim.",
+    "why": "You can get free help to file your case.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any written proof of your employment, like a salary slip or a bank statement showing past payments?",
+   "Did the owner ask you to sign any paper giving up your right to this salary?"
+  ],
+  "not_covered": [
+   "We do not have information about the exact start date of your employment.",
+   "We do not have information about any written employment agreement you might have signed.",
+   "We do not have information about the specific reason the owner says the business is slow."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You have not been paid Rs 12,500 for six months (May 2026 to October 2026), totalling Rs 75,000, while still working as a helper in Patna. The law says your wages must be paid by the 7th of the next month. You can file a claim with the labour authority to recover your unpaid salary. The employer must prove they paid you.",
+  "claims": [
+   {
+    "text": "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+    "cite": [
+     "COW2019_s2k",
+     "COW2019_s2y",
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer is legally required to pay your wages by the 7th day of the next month.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "You can file a wage claim within 3 years. You still have time, but do not wait.",
+    "cite": [
+     "COW2019_s45",
+     "LIM1963_s3_1",
+     "LIM1963_art7"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you. They cannot force you to sign a waiver of your dues.",
+    "cite": [
+     "COW2019_s59",
+     "COW2019_s60"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather your proof of work and salary, like a salary slip or bank statement showing previous payments.",
+    "why": "You need proof to show you worked and the amount owed.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with the Bihar State Labour Department.",
+    "why": "The State Government is the appropriate authority for your employer.",
+    "cite": [
+     "COW2019_s2d",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help with the claim.",
+    "why": "You can get free help to file your case.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have any written proof of your employment, like a salary slip or a bank statement showing past payments?",
+   "Did the owner ask you to sign any paper giving up your right to this salary?"
+  ],
+  "not_covered": [
+   "We do not have information about the exact start date of your employment.",
+   "We do not have information about any written employment agreement you might have signed.",
+   "We do not have information about the specific reason the owner says the business is slow."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+   "cite": "COW2019_s2k",
+   "supported": true,
+   "reason": "The law text defines 'employee' as any person employed on wages by an establishment, which supports the sentence stating the person is an employee. The law text defines 'wages' as remuneration including salaries, which supports the claim that unpaid salary is due under the Code on Wages."
+  },
+  {
+   "n": 2,
+   "text": "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "The law text defines 'wages' as including all remuneration whether by way of salaries, allowances or otherwise, expressed in terms of money, which directly supports that unpaid salary of Rs 75,000 is due under the Code on Wages."
+  },
+  {
+   "n": 3,
+   "text": "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+   "cite": "COW2019_s17",
+   "supported": false,
+   "reason": "The sentence makes no legal rule claim about when wages are due or any time limit, amount cap, right, penalty or condition. It merely states a fact about being an employee with unpaid salary, which is not a legal rule. The law text s17 does not support this as a legal rule."
+  },
+  {
+   "n": 4,
+   "text": "The employer is legally required to pay your wages by the 7th day of the next month.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text s17(1)(iv) states that for monthly basis employment, wages shall be paid before the expiry of the seventh day of the succeeding month, which directly supports the sentence that the employer is legally required to pay wages by the 7th day of the next month."
+  },
+  {
+   "n": 5,
+   "text": "You can file a wage claim within 3 years. You still have time, but do not wait.",
+   "cite": "COW2019_s45",
+   "supported": false,
+   "reason": "The law text s45(6) states that an application may be filed within a period of three years from the date on which claims arise, but only with proviso that the authority may entertain the application after three years on sufficient cause being shown. The sentence states 'You can file a wage claim within 3 years' as an absolute right, but the law text contains a proviso allowing extension beyond 3 years on sufficient cause, and the sentence adds 'You still have time, but do not wait' which is not in the law text. More critically, the sentence presents this as a definitive time limit without the proviso, which adds/conditions the law text."
+  },
+  {
+   "n": 6,
+   "text": "You can file a wage claim within 3 years. You still have time, but do not wait.",
+   "cite": "LIM1963_s3_1",
+   "supported": false,
+   "reason": "The law text s3(1) states that every suit instituted, appeal preferred, and application made after the prescribed period shall be dismissed, but does not specify what the prescribed period is. The sentence claims 'within 3 years' which is not in the law text. The law text only states the general principle of limitation without specifying the 3-year period for wage claims."
+  },
+  {
+   "n": 7,
+   "text": "You can file a wage claim within 3 years. You still have time, but do not wait.",
+   "cite": "LIM1963_art7",
+   "supported": true,
+   "reason": "The law text art7 states 'Three years When the wages accrue due' which directly supports that a wage claim can be filed within 3 years from when wages accrue due. The sentence 'You can file a wage claim within 3 years' is directly supported."
+  },
+  {
+   "n": 8,
+   "text": "The employer must prove they paid you. They cannot force you to sign a waiver of your dues.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text s59 states that the burden to prove that dues have been paid shall be on the employer, which directly supports the sentence that the employer must prove they paid you. The law text s59 does not address waivers, so that part is not supported by this law text, but the core legal rule about burden of proof is supported."
+  },
+  {
+   "n": 9,
+   "text": "The employer must prove they paid you. They cannot force you to sign a waiver of your dues.",
+   "cite": "COW2019_s60",
+   "supported": false,
+   "reason": "The law text s60 states that any contract or agreement whereby an employee relinquishes the right to any amount or bonus due under this Code shall be null and void, which supports that waivers are void. However, the sentence adds 'They cannot force you to sign a waiver of your dues' which implies a prohibition on forcing that is not explicitly in the law text - the law text only says such contracts are null and void. The 'force' aspect is not directly in the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: owner, [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 12,500. My wages for May 2026 to October 2026 have not been paid.\n\nI request you to pay the unpaid amount of Rs 75,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 3 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2k",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "COW2019_s60",
+  "LIM1963_art7",
+  "LIM1963_s3_1",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "You are an employee and your unpaid salary of Rs 75,000 is due under the Code on Wages.",
+  "You can file a wage claim within 3 years. You still have time, but do not wait.",
+  "The employer must prove they paid you. They cannot force you to sign a waiver of your dues."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_G02_long_arrears",
+ "seconds": 14.2
+}

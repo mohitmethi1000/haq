@@ -1,0 +1,330 @@
+{
+ "story": "Meri company ne August aur September 2026 ki salary nahi di. 35,000 per month tha. Maine 30 September 2026 ko resign kar diya.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "hinglish",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": 70000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "employee",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-09-30",
+  "unpaid_from_month": "2026-08",
+  "unpaid_to_month": "2026-09",
+  "monthly_wage_inr": 35000.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-08",
+    "event": "Salary for August 2026 not paid",
+    "user_words": "Meri company ne August aur September 2026 ki salary nahi di."
+   },
+   {
+    "date": "2026-09",
+    "event": "Salary for September 2026 not paid and resignation submitted",
+    "user_words": "Meri company ne August aur September 2026 ki salary nahi di. Maine 30 September 2026 ko resign kar diya."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Recover unpaid salary for August and September 2026",
+  "missing": [
+   "Name of the company",
+   "State and city",
+   "Proof of salary deduction (bank statements, payslips)"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (30 Sep 2026), the law says final wages must be paid within two working days - about 03 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-09-30"
+   },
+   "deadline": "2026-10-03",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Sep 2029 (1034 days left). This counts 3 years from 07 Sep 2026 (when August 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "August 2026",
+     "September 2026"
+    ]
+   },
+   "deadline": "2029-09-07",
+   "days_left": 1034,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 35,000 = Rs 70,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 35000.0,
+    "total": 70000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "Your company must pay your unpaid salary of Rs 35,000 for August and September 2026, totaling Rs 70,000, within two working days of your resignation. You can file a claim with the labour authority within three years, and they can order the employer to pay up to ten times your claim amount.",
+  "claims": [
+   {
+    "text": "You are an employee under the Code on Wages, 2019 because you were employed on wages for work done.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your unpaid wages of Rs 70,000 are included in the definition of wages under the law.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer has the burden to prove they paid your salary.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Collect proof of employment and salary, like bank statements or payslips.",
+    "why": "You need evidence to support your claim before the labour authority.",
+    "cite": []
+   },
+   {
+    "action": "Find out if your company is a central government establishment or a private company to know which authority to approach.",
+    "why": "Central government establishments are handled by the Central Government, while private companies are handled by the State Government.",
+    "cite": [
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File a wage claim with the appropriate labour authority within three years from when your wages became due.",
+    "why": "This is the legal way to recover your unpaid salary, and the authority can also order compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name and location of your company?",
+   "Do you have any proof of your employment, such as bank statements showing salary credits or payslips?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "The specific name of the labour authority or the exact procedure to file a claim.",
+   "Whether you are eligible for free legal aid.",
+   "How to prove your employment if you do not have payslips or bank statements."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "Your company must pay your unpaid salary of Rs 35,000 for August and September 2026, totaling Rs 70,000, within two working days of your resignation. You can file a claim with the labour authority within three years, and they can order the employer to pay up to ten times your claim amount.",
+  "claims": [
+   {
+    "text": "You are an employee under the Code on Wages, 2019 because you were employed on wages for work done.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your unpaid wages of Rs 70,000 are included in the definition of wages under the law.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "The employer has the burden to prove they paid your salary.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Collect proof of employment and salary, like bank statements or payslips.",
+    "why": "You need evidence to support your claim before the labour authority.",
+    "cite": []
+   },
+   {
+    "action": "Find out if your company is a central government establishment or a private company to know which authority to approach.",
+    "why": "Central government establishments are handled by the Central Government, while private companies are handled by the State Government.",
+    "cite": [
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "File a wage claim with the appropriate labour authority within three years from when your wages became due.",
+    "why": "This is the legal way to recover your unpaid salary, and the authority can also order compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name and location of your company?",
+   "Do you have any proof of your employment, such as bank statements showing salary credits or payslips?",
+   "Are you a member of a registered trade union?"
+  ],
+  "not_covered": [
+   "The specific name of the labour authority or the exact procedure to file a claim.",
+   "Whether you are eligible for free legal aid.",
+   "How to prove your employment if you do not have payslips or bank statements."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are an employee under the Code on Wages, 2019 because you were employed on wages for work done.",
+   "cite": "COW2019_s2k",
+   "supported": true,
+   "reason": "The law text defines 'employee' as any person employed on wages by an establishment to do work for hire or reward, which directly supports the sentence that the person is an employee under the Code on Wages, 2019 because they were employed on wages for work done."
+  },
+  {
+   "n": 2,
+   "text": "Your unpaid wages of Rs 70,000 are included in the definition of wages under the law.",
+   "cite": "COW2019_s2y",
+   "supported": true,
+   "reason": "The law text defines 'wages' as all remuneration payable to a person employed in respect of his employment or of work done in such employment, which directly supports that unpaid wages of Rs 70,000 are included in the definition of wages."
+  },
+  {
+   "n": 3,
+   "text": "Your employer must pay your final wages within two working days of your resignation.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text in section 17(2) explicitly states that where an employee has resigned from service, the wages payable to him shall be paid within two working days of his resignation. This directly supports the sentence."
+  },
+  {
+   "n": 4,
+   "text": "The employer has the burden to prove they paid your salary.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text in section 59 explicitly states that where a claim has been filed on account of non-payment of wages, 'the burden to prove that the said dues have been paid shall be on the employer,' which directly supports the sentence that the employer has the burden to prove they paid the salary."
+  }
+ ],
+ "rendered": {
+  "summary": "Aapki company ko aapke resignation ke do working days ke andar August aur September 2026 ki ₹35,000 ki unpaid salary (total ₹70,000) pay karni chahiye. Aap labour authority ke paas teen saal ke andar claim file kar sakte hain, aur wo employer ko aapke claim amount ka das guna tak pay karne ka order de sakte hain.",
+  "claims": [
+   "Aap Code on Wages, 2019 ke tehat ek employee hain kyunki aapko kiye gaye kaam ke liye wages par employ kiya gaya tha.",
+   "Aapki ₹70,000 ki unpaid wages kanoon ke tehat wages ki definition mein aati hain.",
+   "Aapke employer ko aapke resignation ke do working days ke andar aapki final wages pay karni chahiye.",
+   "Aapki salary pay karne ka saboot dene ki zimmedari employer ki hai."
+  ],
+  "next_steps": [
+   "Employment aur salary ka proof collect karein, jaise bank statements ya payslips. — Labour authority ke saamne apna claim support karne ke liye aapko evidence chahiye.",
+   "Pata karein ki aapki company central government establishment hai ya private company, taaki aapko pata chale ki kis authority se approach karna hai. — Central government establishments ko Central Government handle karti hai, jabki private companies ko State Government handle karti hai.",
+   "Jab aapki wages due hui thi, uske teen saal ke andar appropriate labour authority ke paas wage claim file karein. — Yeh aapki unpaid salary recover karne ka legal tareeka hai, aur authority compensation bhi order kar sakti hai."
+  ],
+  "questions_for_user": [
+   "Aapki company ka naam aur location kya hai?",
+   "Kya aapke paas apne employment ka koi proof hai, jaise salary credit dikhne wale bank statements ya payslips?",
+   "Kya aap kisi registered trade union ke member hain?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 35,000. My wages for August 2026 to September 2026 have not been paid. My last working day was 30 September 2026.\n\nI request you to pay the unpaid amount of Rs 70,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2k",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59"
+ ],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "L_salary_hinglish",
+ "seconds": 11.2
+}

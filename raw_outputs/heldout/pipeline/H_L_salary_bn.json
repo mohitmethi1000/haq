@@ -1,0 +1,354 @@
+{
+ "story": "আমি আহমেদাবাদের একটি ক্লাউড কিচেনে ডেলিভারি রাইডার ছিলাম, ২৬ অক্টোবর ২০২৬-এ চাকরি ছেড়ে দিয়েছি। ওরা সেপ্টেম্বর আর অক্টোবর ২০২৬-এর বেতন দেয়নি। মাসে ২২,০০০ টাকা ছিল।",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "bengali",
+  "user_state": "Gujarat",
+  "user_city": "Ahmedabad",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 44000.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": null,
+  "work_relationship": "employee",
+  "employment_end": "resigned",
+  "employment_end_date": "2026-10-26",
+  "unpaid_from_month": "2026-09",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 22000.0,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-26",
+    "event": "Resigned from the job",
+    "user_words": "২৬ অক্টোবর ২০২৬-এ চাকরি ছেড়ে দিয়েছি"
+   },
+   {
+    "date": "2026-10",
+    "event": "September and October 2026 salary not paid",
+    "user_words": "ওরা সেপ্টেম্বর আর অক্টোবর ২০২৬-এর বেতন দেয়নি"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": null,
+  "missing": [
+   "Company name",
+   "Proof of employment or resignation",
+   "Bank statements or salary slips",
+   "Mode of resignation or notice period details"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (26 Oct 2026), the law says final wages must be paid within two working days - about 28 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "resigned",
+    "employment_end_date": "2026-10-26"
+   },
+   "deadline": "2026-10-28",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Oct 2029 (1064 days left). This counts 3 years from 07 Oct 2026 (when September 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "September 2026",
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-10-07",
+   "days_left": 1064,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 22,000 = Rs 44,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 22000.0,
+    "total": 44000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "You are a delivery rider in Ahmedabad. You resigned on 26 October 2026, and your employer has not paid you for September and October 2026. Your monthly wage was Rs 22,000. You are owed Rs 44,000. The law says your final wages must be paid within two working days of your resignation. You can file a wage claim with your State labour department to recover your unpaid wages.",
+  "claims": [
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a wage claim with the wage authority within three years from the date the wages became due.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The wage authority can order your employer to pay up to ten times the claimed amount as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you. If they cannot, you win the claim.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Collect proof of your employment and resignation. Gather your resignation letter, ID card, and any messages or emails with the company.",
+    "why": "You need proof to show the wage authority that you worked and resigned on the stated date.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with your State labour department or the Central Government authority if your company is a bank, railway, or telecom company.",
+    "why": "This is the legal way to recover your unpaid wages and claim compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "Call 15100 to ask for free legal aid if you need help with your claim.",
+    "why": "You may qualify for free legal help to understand the claim process.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Did you resign in person or send a message to the company?",
+   "Do you have any proof of employment, like an ID card or salary slips?",
+   "Is your company a bank, railway, telecom company, or something else?"
+  ],
+  "not_covered": [
+   "The exact fee to file a wage claim is not in the law text I have.",
+   "The name of the specific wage authority in Gujarat is not in the law text I have."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You are a delivery rider in Ahmedabad. You resigned on 26 October 2026, and your employer has not paid you for September and October 2026. Your monthly wage was Rs 22,000. You are owed Rs 44,000. The law says your final wages must be paid within two working days of your resignation. You can file a wage claim with your State labour department to recover your unpaid wages.",
+  "claims": [
+   {
+    "text": "Your employer must pay your final wages within two working days of your resignation.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages.",
+    "cite": [
+     "COW2019_s2y"
+    ]
+   },
+   {
+    "text": "You can file a wage claim with the wage authority within three years from the date the wages became due.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The wage authority can order your employer to pay up to ten times the claimed amount as compensation.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "The employer must prove they paid you. If they cannot, you win the claim.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Collect proof of your employment and resignation. Gather your resignation letter, ID card, and any messages or emails with the company.",
+    "why": "You need proof to show the wage authority that you worked and resigned on the stated date.",
+    "cite": []
+   },
+   {
+    "action": "File a wage claim with your State labour department or the Central Government authority if your company is a bank, railway, or telecom company.",
+    "why": "This is the legal way to recover your unpaid wages and claim compensation.",
+    "cite": [
+     "COW2019_s45",
+     "COW2019_s2d"
+    ]
+   },
+   {
+    "action": "Call 15100 to ask for free legal aid if you need help with your claim.",
+    "why": "You may qualify for free legal help to understand the claim process.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Did you resign in person or send a message to the company?",
+   "Do you have any proof of employment, like an ID card or salary slips?",
+   "Is your company a bank, railway, telecom company, or something else?"
+  ],
+  "not_covered": [
+   "The exact fee to file a wage claim is not in the law text I have.",
+   "The name of the specific wage authority in Gujarat is not in the law text I have."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "Your employer must pay your final wages within two working days of your resignation.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text in sub-section (2) explicitly states that where an employee has resigned from service, the wages payable shall be paid within two working days of his resignation."
+  },
+  {
+   "n": 2,
+   "text": "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages.",
+   "cite": "COW2019_s2y",
+   "supported": false,
+   "reason": "The law text defines wages to include basic pay, dearness allowance, and retaining allowance, but explicitly excludes house rent allowance (HRA) and overtime allowance."
+  },
+  {
+   "n": 3,
+   "text": "You can file a wage claim with the wage authority within three years from the date the wages became due.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text in sub-section (6) explicitly states that the application may be filed within a period of three years from the date on which claims arises."
+  },
+  {
+   "n": 4,
+   "text": "The wage authority can order your employer to pay up to ten times the claimed amount as compensation.",
+   "cite": "COW2019_s45",
+   "supported": true,
+   "reason": "The law text in sub-section (2) explicitly states that the authority may order compensation which may extend to ten times of the claim determined."
+  },
+  {
+   "n": 5,
+   "text": "The employer must prove they paid you. If they cannot, you win the claim.",
+   "cite": "COW2019_s59",
+   "supported": true,
+   "reason": "The law text in section 59 explicitly states that the burden to prove that the said dues have been paid shall be on the employer."
+  }
+ ],
+ "rendered": {
+  "summary": "আপনি আহমেদাবাদের একজন ডেলিভারি রাইডার। আপনি 26 October 2026-এ পদত্যাগ করেছেন, কিন্তু আপনার নিয়োগকর্তা September এবং October 2026-এর বেতন দেননি। আপনার মাসিক বেতন ছিল ₹22,000। আপনার ₹44,000 পাওনা আছে। আইন অনুযায়ী, আপনার পদত্যাগের দু'দিনের মধ্যে আপনার চূড়ান্ত বেতন অবশ্যই পরিশোধ করতে হবে। আপনার বকেয়া বেতন আদায় করতে আপনি আপনার রাজ্যের শ্রম দপ্তরে একটি wage claim দাখিল করতে পারেন।",
+  "claims": [
+   "আপনার নিয়োগকর্তাকে অবশ্যই আপনার পদত্যাগের দু'দিনের মধ্যে আপনার চূড়ান্ত বেতন দিতে হবে।",
+   "বকেয়া বেতনের মধ্যে আপনার basic pay, dearness allowance এবং যেকোনো retaining allowance অন্তর্ভুক্ত। HRA এবং overtime-ও বেতনের অন্তর্ভুক্ত।",
+   "বেতন বকেয়া হওয়ার তারিখ থেকে তিন বছরের মধ্যে আপনি wage authority-তে wage claim দাখিল করতে পারেন।",
+   "Wage authority আপনার নিয়োগকর্তাকে ক্ষতিপূরণ হিসেবে দাবিকৃত অর্থের দশ গুণ পর্যন্ত দিতে নির্দেশ দিতে পারে।",
+   "নিয়োগকর্তাকে অবশ্যই প্রমাণ করতে হবে যে তারা আপনাকে বেতন দিয়েছে। যদি তারা তা না পারে, তবে আপনি claim-এ জিতবেন।"
+  ],
+  "next_steps": [
+   "আপনার চাকরি এবং পদত্যাগের প্রমাণ সংগ্রহ করুন। আপনার resignation letter, ID card এবং কোম্পানির সাথে কোনো মেসেজ বা ইমেল থাকলে তা সংগ্রহ করুন। — Wage authority-কে দেখানোর জন্য আপনার প্রমাণ দরকার যে আপনি ওই তারিখে কাজ করেছেন এবং পদত্যাগ করেছেন।",
+   "আপনার কোম্পানির যদি ব্যাংক, রেলওয়ে বা টেলিকম কোম্পানি হয়, তবে আপনার রাজ্যের শ্রম দপ্তর বা Central Government authority-তে wage claim দাখিল করুন। — এটি আপনার বকেয়া বেতন আদায় এবং ক্ষতিপূরণ দাবি করার আইনি উপায়।",
+   "আপনার claim-এর জন্য সাহায্যের প্রয়োজন হলে বিনামূল্যে legal aid পেতে 15100-এ কল করুন। — claim প্রক্রিয়া বোঝার জন্য আপনি বিনামূল্যে আইনি সাহায্যের যোগ্য হতে পারেন।"
+  ],
+  "questions_for_user": [
+   "আপনি কি সরাসরি গিয়ে পদত্যাগ করেছেন নাকি কোম্পানিকে মেসেজ পাঠিয়েছেন?",
+   "আপনার কাছে চাকরির কোনো প্রমাণ আছে কি, যেমন ID card বা salary slips?",
+   "আপনার কোম্পানি কি ব্যাংক, রেলওয়ে, টেলিকম কোম্পানি, নাকি অন্য কিছু?"
+  ]
+ },
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 22,000. My wages for September 2026 to October 2026 have not been paid. My last working day was 26 October 2026.\n\nI request you to pay the unpaid amount of Rs 44,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "Unpaid wages include your basic pay, dearness allowance, and any retaining allowance. HRA and overtime also count as wages."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_L_salary_bn",
+ "seconds": 14.2
+}

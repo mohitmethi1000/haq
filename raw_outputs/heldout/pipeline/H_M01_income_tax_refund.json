@@ -1,0 +1,244 @@
+{
+ "story": "The income tax department has not given me my refund of Rs 23,400 for last year's return. It has been 8 months. How do I get my refund?",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": null,
+  "user_city": null,
+  "other_party_name": "Income Tax Department",
+  "other_party_kind": "government",
+  "amount_claimed_inr": 23400.0,
+  "amount_paid_inr": 23400.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "unknown",
+  "employment_end": "still_employed",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-03-08",
+    "event": "8 months have passed since filing last year's tax return",
+    "user_words": "It has been 8 months"
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get the income tax refund of Rs 23,400",
+  "missing": []
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "government_party",
+   "outcome": "info",
+   "message": "The other side is a government body. If you ever need to file a civil suit in court against the Government or a public officer, the law first requires a written notice and a two-month wait. This rule is about court suits; ask free legal aid (15100) whether it affects your route.",
+   "cite": [
+    "CPC1908_s80"
+   ],
+   "facts_used": {
+    "other_party_kind": "government"
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Government on the other side"
+  },
+  {
+   "name": "consumer_limitation",
+   "outcome": "uncertain",
+   "message": "I can't work out the time limit for your consumer complaint without the date it started. Please add the date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 23,400, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 23400.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You are asking about a refund from the Income Tax Department. This is not a consumer dispute. The Consumer Protection Act does not apply to government tax refunds. You need to follow the correct government process or ask free legal aid.",
+  "claims": [
+   {
+    "text": "The Consumer Protection Act does not apply to getting an income tax refund from the government.",
+    "cite": []
+   },
+   {
+    "text": "If you need to file a court suit against the Government, the law first requires a written notice and a two-month wait.",
+    "cite": []
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to ask how to track your income tax refund.",
+    "why": "They can guide you on the correct government process.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 for free legal aid to ask about your specific income tax refund issue.",
+    "why": "The law says to ask free legal aid if you need to file a court suit against the Government.",
+    "cite": []
+   }
+  ],
+  "questions_for_user": [
+   "What was the exact date you filed your last year's tax return?",
+   "Have you already checked the Income Tax Department's refund status on their website?"
+  ],
+  "not_covered": [
+   "The specific time limit for a consumer complaint against a government body."
+  ],
+  "corrections": [
+   "You cannot file a consumer complaint for an income tax refund. The Consumer Protection Act is for goods and services, not government tax refunds."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "You are asking about a refund from the Income Tax Department. This is not a consumer dispute. The Consumer Protection Act does not apply to government tax refunds. You need to follow the Income Tax Act process or ask free legal aid.",
+  "claims": [
+   {
+    "text": "The Consumer Protection Act does not apply to getting an income tax refund from the government.",
+    "cite": []
+   },
+   {
+    "text": "If you need to file a court suit against the Government, the law first requires a written notice and a two-month wait.",
+    "cite": [
+     "CPC1908_s80"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to ask how to track your income tax refund.",
+    "why": "They can guide you on the correct government process.",
+    "cite": []
+   },
+   {
+    "action": "Call 15100 for free legal aid to ask about your specific income tax refund issue.",
+    "why": "The law says to ask free legal aid if you need to file a court suit against the Government.",
+    "cite": [
+     "CPC1908_s80"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What was the exact date you filed your last year's tax return?",
+   "Have you already checked the Income Tax Department's refund status on their website?"
+  ],
+  "not_covered": [
+   "The exact rules for income tax refunds under the Income Tax Act.",
+   "The specific time limit for a consumer complaint against a government body."
+  ],
+  "corrections": [
+   "You cannot file a consumer complaint for an income tax refund. The Consumer Protection Act is for goods and services, not government tax refunds."
+  ]
+ },
+ "violations_first_try": [
+  {
+   "kind": "unknown_act",
+   "detail": "names 'Income Tax Act', which is not in the verified corpus",
+   "where": "You are asking about a refund from the Income Tax Department. This is not a consumer dispute. The Consumer Protection Act does not apply to government tax refunds. You need to follow the Income Tax Act process or ask free legal aid."
+  },
+  {
+   "kind": "off_pack",
+   "detail": "'CPC1908_s80' is not in the refund pack",
+   "where": "If you need to file a court suit against the Government, the law first requires a written notice and a two-month wait."
+  },
+  {
+   "kind": "off_pack",
+   "detail": "'CPC1908_s80' is not in the refund pack",
+   "where": "Call 15100 for free legal aid to ask about your specific income tax refund issue. The law says to ask free legal aid if you need to file a court suit against the Government."
+  },
+  {
+   "kind": "unknown_act",
+   "detail": "names 'Income Tax Act', which is not in the verified corpus",
+   "where": "The exact rules for income tax refunds under the Income Tax Act."
+  }
+ ],
+ "violations_final": [
+  {
+   "kind": "unknown_act",
+   "detail": "names 'Income Tax Act', which is not in the verified corpus",
+   "where": "The exact rules for income tax refunds under the Income Tax Act."
+  }
+ ],
+ "support": [],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: Income Tax Department, [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn [FILL: date of purchase] I paid Rs 23,400 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests you have not refunded the amount.\n\nI request a full refund of Rs 23,400 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: government_party (info)",
+  "validator: answer still failed after one retry; failing sentences removed"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [],
+ "unconfirmed": [],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code of Civil Procedure, 1908, s.80(1) (Two months' notice before a civil SUIT against the Government (not consumer or wage claims)); Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_M01_income_tax_refund",
+ "seconds": 7.0
+}

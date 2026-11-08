@@ -1,0 +1,364 @@
+{
+ "story": "I bought earphones for Rs 4,999 on an online store on 2 October 2026. They stopped working in a week. I returned them on 10 October but the refund still hasn't come. I live in Delhi.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": "Delhi",
+  "user_city": null,
+  "other_party_name": null,
+  "other_party_kind": "unknown",
+  "amount_claimed_inr": null,
+  "amount_paid_inr": 4999.0,
+  "purchase_date": "2026-10-02",
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "self_employed_livelihood": false,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": null,
+  "unpaid_from_month": null,
+  "unpaid_to_month": null,
+  "monthly_wage_inr": null,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-02",
+    "event": "Purchased earphones",
+    "user_words": "I bought earphones for Rs 4,999 on an online store on 2 October 2026"
+   },
+   {
+    "date": "2026-10-09",
+    "event": "Earphones stopped working",
+    "user_words": "They stopped working in a week"
+   },
+   {
+    "date": "2026-10-10",
+    "event": "Returned the earphones",
+    "user_words": "I returned them on 10 October"
+   },
+   {
+    "date": "2026-11-08",
+    "event": "Refund not received",
+    "user_words": "the refund still hasn't come"
+   }
+  ],
+  "evidence": [
+   "Purchase receipt for Rs 4,999 on 2 October 2026",
+   "Return confirmation for 10 October 2026"
+  ],
+  "red_flags": [],
+  "user_goal": "To get a refund of Rs 4,999 for the returned earphones",
+  "missing": [
+   "Name of the online store",
+   "Date and time of the refund request",
+   "Reason given by the online store for not processing the refund"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 02 Oct 2028 (694 days left). This counts 2 years from 02 Oct 2026 (your purchase date - counted from the earliest possible day, to be safe). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "purchase_date": "2026-10-02",
+    "start_basis": "purchase date (earliest possible start, to be safe)"
+   },
+   "deadline": "2028-10-02",
+   "days_left": 694,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  },
+  {
+   "name": "forum_and_fee",
+   "outcome": "info",
+   "message": "You paid Rs 4,999, so the complaint goes to the District Consumer Commission, with no filing fee. You can file in the district where you live or work, online at e-jagriti.gov.in. You don't need a lawyer to file.",
+   "cite": [
+    "CPJR2021_pecuniary",
+    "CPFEE_r7",
+    "CPA2019_s34_2",
+    "CPA2019_s35_1"
+   ],
+   "facts_used": {
+    "amount_paid_inr": 4999.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to file"
+  },
+  {
+   "name": "free_first_steps",
+   "outcome": "info",
+   "message": "Two free steps often work first: (1) a written complaint to the seller's or platform's grievance officer, (2) the National Consumer Helpline: call 1915 or WhatsApp 8800001915.",
+   "cite": [],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Try these first"
+  }
+ ],
+ "answer": {
+  "summary": "You bought earphones for Rs 4,999. They stopped working and you returned them. You have not received a refund. You can file a consumer complaint in Delhi, and there is no filing fee because your amount is under Rs 5 lakh.",
+  "claims": [
+   {
+    "text": "You are a consumer for these earphones because you bought them for personal use and not for resale or commercial purpose.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A product that stops working within a week can be a defect.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "Refusing to refund a defective product within 30 days is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "There is no filing fee because your amount is up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint within 2 years from 2 October 2026.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the missing refund.",
+    "why": "This is a free first step to try to resolve the issue before going to the commission.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the online store's grievance officer asking for the refund.",
+    "why": "This creates a record that you demanded your money back.",
+    "cite": []
+   },
+   {
+    "action": "File a consumer complaint online at e-jagriti.gov.in in the District Commission for Delhi.",
+    "why": "This starts the legal process to get your Rs 4,999 back.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of the online store where you bought the earphones?",
+   "Did you receive a return confirmation with a tracking number or reference ID?"
+  ],
+  "not_covered": [
+   "The specific steps to prove you sent the earphones back and that the store received them.",
+   "The exact date and time you requested the refund."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You bought earphones for Rs 4,999. They stopped working and you returned them. You have not received a refund. You can file a consumer complaint in Delhi, and there is no filing fee because your amount is under Rs 5 lakh.",
+  "claims": [
+   {
+    "text": "You are a consumer for these earphones because you bought them for personal use and not for resale or commercial purpose.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A product that stops working within a week can be a defect.",
+    "cite": [
+     "CPA2019_s2_10"
+    ]
+   },
+   {
+    "text": "Refusing to refund a defective product within 30 days is an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+    "cite": [
+     "CPA2019_s34_1",
+     "CPA2019_s34_2",
+     "CPA2019_s35_1"
+    ]
+   },
+   {
+    "text": "There is no filing fee because your amount is up to Rs 5 lakh.",
+    "cite": [
+     "CPFEE_r7"
+    ]
+   },
+   {
+    "text": "You must file your complaint within 2 years from 2 October 2026.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the National Consumer Helpline at 1915 or WhatsApp 8800001915 to report the missing refund.",
+    "why": "This is a free first step to try to resolve the issue before going to the commission.",
+    "cite": []
+   },
+   {
+    "action": "Send a written complaint to the online store's grievance officer asking for the refund.",
+    "why": "This creates a record that you demanded your money back.",
+    "cite": []
+   },
+   {
+    "action": "File a consumer complaint online at e-jagriti.gov.in in the District Commission for Delhi.",
+    "why": "This starts the legal process to get your Rs 4,999 back.",
+    "cite": [
+     "CPA2019_s35_1"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "What is the name of the online store where you bought the earphones?",
+   "Did you receive a return confirmation with a tracking number or reference ID?"
+  ],
+  "not_covered": [
+   "The specific steps to prove you sent the earphones back and that the store received them.",
+   "The exact date and time you requested the refund."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are a consumer for these earphones because you bought them for personal use and not for resale or commercial purpose.",
+   "cite": "CPA2019_s2_7",
+   "supported": true,
+   "reason": "The law text defines 'consumer' as any person who buys goods for consideration, and explicitly excludes 'a person who obtains such goods for resale or for any commercial purpose.' The sentence correctly applies this definition to conclude the person is a consumer because they bought for personal use, not resale or commercial purpose."
+  },
+  {
+   "n": 2,
+   "text": "A product that stops working within a week can be a defect.",
+   "cite": "CPA2019_s2_10",
+   "supported": false,
+   "reason": "The law text defines 'defect' as 'any fault, imperfection or shortcoming in the quality, quantity, potency, purity or standard which is required to be maintained by or under any law for the time being in force or under any contract, express or implied or as is claimed by the trader in any manner whatsoever in relation to any goods or product.' The sentence adds a specific time limit ('within a week') that is not contained in the law text."
+  },
+  {
+   "n": 3,
+   "text": "Refusing to refund a defective product within 30 days is an unfair trade practice.",
+   "cite": "CPA2019_s2_47_viii",
+   "supported": true,
+   "reason": "The law text (viii) states 'refusing...to take back or withdraw defective goods...and to refund the consideration thereof, if paid, within the period stipulated in the bill or cash memo or receipt or in the absence of such stipulation, within a period of thirty days.' The sentence correctly applies this rule to state that refusing to refund within 30 days is an unfair trade practice."
+  },
+  {
+   "n": 4,
+   "text": "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+   "cite": "CPA2019_s34_1",
+   "supported": false,
+   "reason": "The law text [CPA2019_s34_2] (2) states that a complaint may be instituted where 'the complainant resides or personally works for gain.' However, the law text [CPA2019_s34_1] (1) also requires that 'the value of the goods or services paid as consideration does not exceed one crore rupees.' The sentence omits this jurisdictional value limitation, so it does not fully support the claim that one can file in Delhi just because they live there without regard to the value of goods/services."
+  },
+  {
+   "n": 5,
+   "text": "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+   "cite": "CPA2019_s34_2",
+   "supported": true,
+   "reason": "The law text [CPA2019_s34_2] (2)(d) states 'the complainant resides or personally works for gain' as one of the jurisdictions where a complaint may be instituted. The sentence applies this rule to the complainant's residence in Delhi."
+  },
+  {
+   "n": 6,
+   "text": "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+   "cite": "CPA2019_s35_1",
+   "supported": true,
+   "reason": "The law text [CPA2019_s35_1] (1)(a)(i) states that a consumer 'to whom such goods are sold or delivered or agreed to be sold or delivered or such service is provided or agreed to be provided' may file a complaint. The sentence applies this to the consumer's right to file."
+  },
+  {
+   "n": 7,
+   "text": "There is no filing fee because your amount is up to Rs 5 lakh.",
+   "cite": "CPFEE_r7",
+   "supported": true,
+   "reason": "The law text [CPFEE_r7] states 'No fee where the consideration paid is up to Rs 5 lakh.' The sentence correctly applies this rule to conclude there is no filing fee for amounts up to Rs 5 lakh."
+  },
+  {
+   "n": 8,
+   "text": "You must file your complaint within 2 years from 2 October 2026.",
+   "cite": "CPA2019_s69",
+   "supported": false,
+   "reason": "The law text [CPA2019_s69] (1) states that a complaint must be filed 'within two years from the date on which the cause of action has arisen.' The sentence adds a specific date '2 October 2026' which is not in the law text and appears to be an arbitrary application not supported by the rule."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 02 October 2026 I paid Rs 4,999 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests you have not refunded the amount.\n\nI request a full refund of Rs 4,999 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the District Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: Purchase receipt for Rs 4,999 on 2 October 2026, Return confirmation for 10 October 2026.\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": false,
+ "escalation_reasons": [
+  "support check could not confirm 3 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_10",
+  "CPA2019_s2_47_viii",
+  "CPA2019_s2_7",
+  "CPA2019_s34_1",
+  "CPA2019_s34_2",
+  "CPA2019_s35_1",
+  "CPA2019_s69",
+  "CPFEE_r7"
+ ],
+ "unconfirmed": [
+  "A product that stops working within a week can be a defect.",
+  "You can file a complaint in the District Consumer Commission in Delhi because you live there.",
+  "You must file your complaint within 2 years from 2 October 2026."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation); Consumer Protection Act, 2019, s.34(2) (Where to file: District Commission); Consumer Protection Act, 2019, s.35(1) (Who may file a complaint; e-filing)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "670e256ea690"
+ },
+ "error": null,
+ "case_id": "G04_refund_small",
+ "seconds": 12.2
+}

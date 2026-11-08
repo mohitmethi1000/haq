@@ -1,0 +1,280 @@
+{
+ "story": "I bought a second-hand auto-rickshaw for Rs 1,80,000 from a dealer in Nagpur on 14 October 2026. I drive it myself, it is how I earn my living. The engine seized after 6 days and the dealer refused to refund on 24 October 2026.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "refund",
+  "user_language": "english",
+  "user_state": "Maharashtra",
+  "user_city": "Nagpur",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 180000.0,
+  "amount_paid_inr": 180000.0,
+  "purchase_date": "2026-10-14",
+  "refund_refused_date": "2026-10-24",
+  "bought_for_business": true,
+  "work_relationship": "unknown",
+  "employment_end": "unknown",
+  "employment_end_date": "unknown",
+  "unpaid_from_month": "unknown",
+  "unpaid_to_month": "unknown",
+  "monthly_wage_inr": 0.0,
+  "pf_deducted_not_deposited": false,
+  "deposit_paid_date": "unknown",
+  "moved_out_date": "unknown",
+  "notice_text_summary": "unknown",
+  "timeline": [
+   {
+    "date": "2026-10-14",
+    "event": "Bought a second-hand auto-rickshaw for Rs 1,80,000 from a dealer in Nagpur.",
+    "user_words": "I bought a second-hand auto-rickshaw for Rs 1,80,000 from a dealer in Nagpur on 14 October 2026."
+   },
+   {
+    "date": "2026-10-20",
+    "event": "The auto-rickshaw engine seized.",
+    "user_words": "The engine seized after 6 days."
+   },
+   {
+    "date": "2026-10-24",
+    "event": "Dealer refused to refund the purchase price.",
+    "user_words": "the dealer refused to refund on 24 October 2026."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": null,
+  "missing": [
+   "Name of the dealer or company",
+   "Written proof of refund refusal",
+   "Terms of sale or warranty details"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "consumer_status",
+   "outcome": "blocked",
+   "message": "Things bought for a business usually fall outside consumer law, unless you use them only to earn your own living by self-employment. You may still have a claim in a civil court - please talk to free legal aid (15100).",
+   "cite": [
+    "CPA2019_s2_7"
+   ],
+   "facts_used": {
+    "bought_for_business": true
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": true,
+   "label": "Consumer law may not apply"
+  },
+  {
+   "name": "consumer_limitation",
+   "outcome": "within",
+   "message": "File your consumer complaint before 24 Oct 2028 (716 days left). This counts 2 years from 24 Oct 2026 (the date they refused; if they refused earlier, your deadline is earlier). Don't wait for the last date. Sending a letter or calling the helpline does NOT pause this clock.",
+   "cite": [
+    "CPA2019_s69"
+   ],
+   "facts_used": {
+    "refund_refused_date": "2026-10-24"
+   },
+   "deadline": "2028-10-24",
+   "days_left": 716,
+   "escalate": false,
+   "label": "Last date to file your consumer complaint"
+  }
+ ],
+ "answer": {
+  "summary": "You bought a second-hand auto-rickshaw for Rs 1,80,000 for your livelihood. The dealer refused to refund the payment. You may be able to file a consumer complaint if you use the auto-rickshaw only for self-employment. The deadline to file is before 24 October 2028. Do not wait.",
+  "claims": [
+   {
+    "text": "A person who buys goods for consideration, including online or offline, is a consumer.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A consumer complaint must be filed within 2 years from the date the cause of action arose.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "A complaint for Rs 1,80,000 is filed with the District Commission.",
+    "cite": [
+     "CPA2019_s34_2"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline at 15100 to ask if your auto-rickshaw is for self-employment or business.",
+    "why": "Free legal aid can help you understand if you qualify as a consumer and what your next steps are.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Gather any written proof of the sale, the refund refusal, and the engine failure.",
+    "why": "You need evidence to support your complaint.",
+    "cite": []
+   },
+   {
+    "action": "File a consumer complaint at the District Commission in Nagpur before 24 October 2028.",
+    "why": "This is the deadline to file your case.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you use the auto-rickshaw only to earn your own living by self-employment?",
+   "Do you have any written proof of the refund refusal from the dealer?"
+  ],
+  "not_covered": [
+   "What to do if the dealer is a company and you are not a consumer.",
+   "How to file a civil court claim if your consumer claim is blocked."
+  ],
+  "corrections": [
+   "The Consumer Protection Act, 2019 applies to you only if you bought the auto-rickshaw for self-employment, not for a business purpose."
+  ]
+ },
+ "answer_first_try": {
+  "summary": "You bought a second-hand auto-rickshaw for Rs 1,80,000 for your livelihood. The engine seized after 6 days and the dealer refused a refund. You may be able to file a consumer complaint if you use the auto-rickshaw only for self-employment, but this depends on your exact usage. If it is used for business, your claim is blocked under consumer law, but you may still have a civil claim. The deadline to file a consumer complaint is before 24 October 2028. Do not wait.",
+  "claims": [
+   {
+    "text": "The dealer refusing to refund the Rs 1,80,000 within 30 days of the sale may be an unfair trade practice.",
+    "cite": [
+     "CPA2019_s2_47_viii"
+    ]
+   },
+   {
+    "text": "A person who buys goods for consideration, including online or offline, is a consumer.",
+    "cite": [
+     "CPA2019_s2_7"
+    ]
+   },
+   {
+    "text": "A consumer complaint must be filed within 2 years from the date the cause of action arose.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   },
+   {
+    "text": "A complaint for Rs 1,80,000 is filed with the District Commission.",
+    "cite": [
+     "CPA2019_s34_2"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Call the free legal aid helpline at 15100 to ask if your auto-rickshaw is for self-employment or business.",
+    "why": "Free legal aid can help you understand if you qualify as a consumer and what your next steps are.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   },
+   {
+    "action": "Gather any written proof of the sale, the refund refusal, and the engine failure.",
+    "why": "You need evidence to support your complaint.",
+    "cite": []
+   },
+   {
+    "action": "File a consumer complaint at the District Commission in Nagpur before 24 October 2028.",
+    "why": "This is the deadline to file your case.",
+    "cite": [
+     "CPA2019_s69"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you use the auto-rickshaw only to earn your own living by self-employment?",
+   "Do you have any written proof of the refund refusal from the dealer?"
+  ],
+  "not_covered": [
+   "What to do if the dealer is a company and you are not a consumer.",
+   "How to file a civil court claim if your consumer claim is blocked."
+  ],
+  "corrections": [
+   "The Consumer Protection Act, 2019 applies to you only if you bought the auto-rickshaw for self-employment, not for a business purpose."
+  ]
+ },
+ "violations_first_try": [
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (6d) that is not in the law pack or the computed rules",
+   "where": "You bought a second-hand auto-rickshaw for Rs 1,80,000 for your livelihood. The engine seized after 6 days and the dealer refused a refund. You may be able to file a consumer complaint if you use the auto-rickshaw only for self-employment, but this depends on your exact usage. If it is used for business, your claim is blocked under consumer law, but you may still have a civil claim. The deadline to file a consumer complaint is before 24 October 2028. Do not wait."
+  }
+ ],
+ "violations_final": [],
+ "support": [
+  {
+   "n": 1,
+   "text": "A person who buys goods for consideration, including online or offline, is a consumer.",
+   "cite": "CPA2019_s2_7",
+   "supported": true,
+   "reason": "The law text defines 'consumer' as any person who 'buys any goods for a consideration' and explicitly states that 'buys any goods' includes 'offline or online transactions through electronic means or by teleshopping or direct selling or multi-level marketing'. This directly supports the sentence."
+  },
+  {
+   "n": 2,
+   "text": "A consumer complaint must be filed within 2 years from the date the cause of action arose.",
+   "cite": "CPA2019_s69",
+   "supported": true,
+   "reason": "The law text in section 69(1) states that a complaint shall not be admitted unless filed within two years from the date the cause of action arose. This directly supports the sentence."
+  },
+  {
+   "n": 3,
+   "text": "A complaint for Rs 1,80,000 is filed with the District Commission.",
+   "cite": "CPA2019_s34_2",
+   "supported": false,
+   "reason": "The law text in section 34(2) specifies the jurisdictional criteria for where a complaint shall be instituted (residence, business, branch office, personal work for gain, or cause of action arising, or complainant's residence), but does not specify any monetary value threshold or amount cap for filing with the District Commission. The sentence mentions Rs 1,80,000 which is not in the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for refund\n\nOn 14 October 2026 I paid Rs 180,000 to you for [FILL: product/service and order number]. [FILL: what went wrong, e.g. product defective / service not provided]. Despite my requests, including on 24 October 2026, you have not refunded the amount.\n\nI request a full refund of Rs 180,000 within 15 days of receiving this letter.\n\nIf the refund is not made, I intend to file a complaint before the Consumer Commission under the Consumer Protection Act, 2019, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "rule: consumer_status (blocked)",
+  "support check could not confirm 1 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ],
+  [
+   "National Consumer Helpline",
+   "1915"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "CPA2019_s2_7",
+  "CPA2019_s34_2",
+  "CPA2019_s69",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "A complaint for Rs 1,80,000 is filed with the District Commission."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in the invoice, order page, or the seller's 'grievance officer' details on the website/app.\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Consumer Protection Act, 2019, s.2(7) (Who is a \"consumer\" (with Explanation)); Consumer Protection Act, 2019, s.69 (Two-year limitation and condonation)",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_G05_livelihood_exception",
+ "seconds": 16.0
+}

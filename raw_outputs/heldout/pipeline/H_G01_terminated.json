@@ -1,0 +1,361 @@
+{
+ "story": "The hotel I worked at in Kochi, Kerala terminated me on Monday 12 October 2026. They still have not paid my September 2026 salary of Rs 26,500, or anything for the 12 days I worked in October.",
+ "today": "2026-11-08",
+ "facts": {
+  "dispute_type": "salary",
+  "user_language": "english",
+  "user_state": "Kerala",
+  "user_city": "Kochi",
+  "other_party_name": null,
+  "other_party_kind": "company",
+  "amount_claimed_inr": 26500.0,
+  "amount_paid_inr": 0.0,
+  "purchase_date": null,
+  "refund_refused_date": null,
+  "bought_for_business": false,
+  "work_relationship": "employee",
+  "employment_end": "terminated",
+  "employment_end_date": "2026-10-12",
+  "unpaid_from_month": "2026-09",
+  "unpaid_to_month": "2026-10",
+  "monthly_wage_inr": 26500.0,
+  "pf_deducted_not_deposited": null,
+  "deposit_paid_date": null,
+  "moved_out_date": null,
+  "notice_text_summary": null,
+  "timeline": [
+   {
+    "date": "2026-10-12",
+    "event": "Terminated from work",
+    "user_words": "The hotel I worked at in Kochi, Kerala terminated me on Monday 12 October 2026."
+   },
+   {
+    "date": "2026-09",
+    "event": "September salary unpaid",
+    "user_words": "They still have not paid my September 2026 salary of Rs 26,500"
+   },
+   {
+    "date": "2026-10",
+    "event": "October salary unpaid",
+    "user_words": "or anything for the 12 days I worked in October."
+   }
+  ],
+  "evidence": [],
+  "red_flags": [],
+  "user_goal": "Get unpaid salary for September 2026 and 12 days of work in October 2026.",
+  "missing": [
+   "Exact date of termination",
+   "Exact date of September salary due",
+   "Exact amount for 12 days of October work",
+   "Employer's name"
+  ]
+ },
+ "triage": {
+  "flags": [],
+  "severity": "none",
+  "helplines": [],
+  "messages": []
+ },
+ "rules": [
+  {
+   "name": "wage_due_date",
+   "outcome": "info",
+   "message": "After your last day (12 Oct 2026), the law says final wages must be paid within two working days - about 14 Oct 2026 (not counting Sundays and national holidays; your State can set a different limit).",
+   "cite": [
+    "COW2019_s17"
+   ],
+   "facts_used": {
+    "employment_end": "terminated",
+    "employment_end_date": "2026-10-12"
+   },
+   "deadline": "2026-10-14",
+   "days_left": null,
+   "escalate": false,
+   "label": "When final pay was due"
+  },
+  {
+   "name": "wage_claim_limitation",
+   "outcome": "within",
+   "message": "File your wage claim before 07 Oct 2029 (1064 days left). This counts 3 years from 07 Oct 2026 (when September 2026 wages fell due; each later month has its own, later deadline). Don't wait for the last date.",
+   "cite": [
+    "COW2019_s45"
+   ],
+   "facts_used": {
+    "months": [
+     "September 2026",
+     "October 2026"
+    ]
+   },
+   "deadline": "2029-10-07",
+   "days_left": 1064,
+   "escalate": false,
+   "label": "Last date to file your wage claim"
+  },
+  {
+   "name": "where_to_claim",
+   "outcome": "info",
+   "message": "You (or your union) can file a claim before the wage authority. For banks, railways, telecom, mines, insurance and central PSUs this is the Central Government's authority; for other employers it is your State labour department. It can order up to ten times the claim as compensation and recovers unpaid amounts like land revenue. The employer has to prove they paid you.",
+   "cite": [
+    "COW2019_s45",
+    "COW2019_s59",
+    "COW2019_s2d"
+   ],
+   "facts_used": {},
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Where to claim"
+  },
+  {
+   "name": "amount",
+   "outcome": "info",
+   "message": "Unpaid wages: 2 month(s) x Rs 26,500 = Rs 53,000 (before any lawful deductions; HRA and overtime also count as wages for payment).",
+   "cite": [
+    "COW2019_s2y"
+   ],
+   "facts_used": {
+    "months": 2,
+    "monthly_wage_inr": 26500.0,
+    "total": 53000.0
+   },
+   "deadline": null,
+   "days_left": null,
+   "escalate": false,
+   "label": "Amount"
+  }
+ ],
+ "answer": {
+  "summary": "Part of my answer failed the law check and was removed. Please treat what remains as partial and talk to free legal aid (15100).",
+  "claims": [
+   {
+    "text": "You are an employee because you worked for hire or reward.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your employer must pay your final wages within two working days of your termination on 12 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 53,000.",
+    "cite": [
+     "COW2019_s2y",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "You must file your claim within three years from 7 October 2029.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of your employment and unpaid wages.",
+    "why": "You need evidence like an offer letter, attendance record, or salary slips to support your claim.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "action": "File a wage claim with the Kerala Labour Department.",
+    "why": "Since your employer is not a bank or railway, the State Government is the correct authority.",
+    "cite": [
+     "COW2019_s2d",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help.",
+    "why": "You can get free legal help from the District Legal Services Authority in Kochi.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a salary slip for September 2026 or October 2026?",
+   "Do you have your appointment letter or any document proving your employment?",
+   "Do you have a record of your work in October 2026?"
+  ],
+  "not_covered": [
+   "We do not know the exact date your September 2026 salary fell due.",
+   "We do not know the exact amount for your October work.",
+   "We do not know the name of your employer."
+  ],
+  "corrections": []
+ },
+ "answer_first_try": {
+  "summary": "You are an employee under the Code on Wages, 2019. You were terminated on 12 October 2026. Your employer must pay your final wages within two working days. You are owed Rs 53,000 for September and 12 days of October. You must file a claim within three years from the due date. You can file a claim with the Kerala Labour Department.",
+  "claims": [
+   {
+    "text": "You are an employee because you worked for hire or reward.",
+    "cite": [
+     "COW2019_s2k"
+    ]
+   },
+   {
+    "text": "Your employer must pay your final wages within two working days of your termination on 12 October 2026.",
+    "cite": [
+     "COW2019_s17"
+    ]
+   },
+   {
+    "text": "Your unpaid wages are Rs 53,000.",
+    "cite": [
+     "COW2019_s2y",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "text": "You must file your claim within three years from 7 October 2029.",
+    "cite": [
+     "COW2019_s45"
+    ]
+   }
+  ],
+  "next_steps": [
+   {
+    "action": "Gather proof of your employment and unpaid wages.",
+    "why": "You need evidence like an offer letter, attendance record, or salary slips to support your claim.",
+    "cite": [
+     "COW2019_s59"
+    ]
+   },
+   {
+    "action": "File a wage claim with the Kerala Labour Department.",
+    "why": "Since your employer is not a bank or railway, the State Government is the correct authority.",
+    "cite": [
+     "COW2019_s2d",
+     "COW2019_s45"
+    ]
+   },
+   {
+    "action": "Call 15100 for free legal aid if you need help.",
+    "why": "You can get free legal help from the District Legal Services Authority in Kochi.",
+    "cite": [
+     "LSA1987_s12"
+    ]
+   }
+  ],
+  "questions_for_user": [
+   "Do you have a salary slip for September 2026 or October 2026?",
+   "Do you have your appointment letter or any document proving your employment?",
+   "Do you have a record of the 12 days you worked in October 2026?"
+  ],
+  "not_covered": [
+   "We do not know the exact date your September 2026 salary fell due.",
+   "We do not know the exact amount for your 12 days of October work.",
+   "We do not know the name of your employer."
+  ],
+  "corrections": []
+ },
+ "violations_first_try": [
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (12d) that is not in the law pack or the computed rules",
+   "where": "You are an employee under the Code on Wages, 2019. You were terminated on 12 October 2026. Your employer must pay your final wages within two working days. You are owed Rs 53,000 for September and 12 days of October. You must file a claim within three years from the due date. You can file a claim with the Kerala Labour Department."
+  },
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (12d) that is not in the law pack or the computed rules",
+   "where": "Do you have a record of the 12 days you worked in October 2026?"
+  },
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (12d) that is not in the law pack or the computed rules",
+   "where": "We do not know the exact amount for your 12 days of October work."
+  }
+ ],
+ "violations_final": [
+  {
+   "kind": "unsupported_time_limit",
+   "detail": "states a time period (12d) that is not in the law pack or the computed rules",
+   "where": "You are an employee under the Code on Wages, 2019. You were terminated on 12 October 2026. Your employer must pay your final wages within two working days. You are owed Rs 53,000 for September and 12 days of October. You must file a claim within three years from the due date. You can file a claim with the Kerala Labour Department."
+  }
+ ],
+ "support": [
+  {
+   "n": 1,
+   "text": "You are an employee because you worked for hire or reward.",
+   "cite": "COW2019_s2k",
+   "supported": true,
+   "reason": "The law text defines 'employee' as a person employed on wages by an establishment to do any work 'for hire or reward', which directly supports the sentence stating that being an employee requires working 'for hire or reward'."
+  },
+  {
+   "n": 2,
+   "text": "Your employer must pay your final wages within two working days of your termination on 12 October 2026.",
+   "cite": "COW2019_s17",
+   "supported": true,
+   "reason": "The law text in section 17(2) states that where an employee has been 'removed or dismissed from service', the wages payable shall be paid within two working days of his removal or dismissal. The sentence applies this rule to termination on 12 October 2026, which is a permissible application of the legal rule."
+  },
+  {
+   "n": 3,
+   "text": "Your unpaid wages are Rs 53,000.",
+   "cite": "COW2019_s2y",
+   "supported": false,
+   "reason": "The law text defines 'wages' as all remuneration expressed in terms of money or capable of being so expressed, but it does not specify any particular amount such as Rs 53,000. The sentence asserts a specific unpaid wage amount that is not contained in or directly implied by the law text."
+  },
+  {
+   "n": 4,
+   "text": "Your unpaid wages are Rs 53,000.",
+   "cite": "COW2019_s45",
+   "supported": false,
+   "reason": "The law text in section 45 deals with appointment of authorities to hear and determine claims, compensation, recovery procedures, and time limits for filing applications. It does not define or state anything about what 'unpaid wages' are or what specific amount they might be. The sentence asserts a specific unpaid wage amount of Rs 53,000 that is not in the law text."
+  },
+  {
+   "n": 5,
+   "text": "You must file your claim within three years from 7 October 2029.",
+   "cite": "COW2019_s45",
+   "supported": false,
+   "reason": "The law text in section 45(6) states that 'The application under sub-section (4) may be filed within a period of three years from the date on which claims referred to in sub-section (1) arises'. The sentence states 'You must file your claim within three years from 7 October 2029'. The law text does not specify 7 October 2029 as the date from which the three-year period runs; rather, the three years run from 'the date on which claims...arises'. The sentence adds a specific date that is not in the law text."
+  }
+ ],
+ "rendered": null,
+ "render_violations": [],
+ "draft": "Date: 08 November 2026\nFrom: [FILL: your full name], [FILL: your full postal address]\nTo: [FILL: name of the other party], [FILL: their address / registered office / email]\n\nSubject: Demand for payment of unpaid wages\n\nI was employed with you at a monthly wage of Rs 26,500. My wages for September 2026 to October 2026 have not been paid. My last working day was 12 October 2026.\n\nI request you to pay the unpaid amount of Rs 53,000 within 15 days of receiving this letter, to my bank account [FILL: account details].\n\nIf the amount is not paid, I intend to file a claim before the authority under the Code on Wages, 2019, which may also award compensation, without further notice to you.\n\nI have the following records: [FILL: receipts, chats, emails, bank statements].\n\nYours faithfully,\n[FILL: your name and signature]",
+ "escalate": true,
+ "escalation_reasons": [
+  "validator: answer still failed after one retry; failing sentences removed",
+  "support check could not confirm 2 sentence(s); shown separately as 'not fully confirmed'"
+ ],
+ "helplines": [
+  [
+   "Free legal aid (NALSA)",
+   "15100"
+  ],
+  [
+   "Tele-Law free advice",
+   "14454"
+  ]
+ ],
+ "scope_message": "",
+ "scope_message_hi": "",
+ "cited": [
+  "COW2019_s17",
+  "COW2019_s2d",
+  "COW2019_s2k",
+  "COW2019_s2y",
+  "COW2019_s45",
+  "COW2019_s59",
+  "LSA1987_s12"
+ ],
+ "unconfirmed": [
+  "Your unpaid wages are Rs 53,000.",
+  "You must file your claim within three years from 7 October 2029."
+ ],
+ "draft_notes": "How to send it:\n1. Find their correct address in your offer letter, salary slip, or the company's registered office on the MCA website (mca.gov.in).\n2. Fill every [FILL] slot. Remove anything that isn't true - only state facts you can prove.\n3. Send by Speed Post and keep the receipt and the tracking proof of delivery. Also send a copy by email or WhatsApp and keep a screenshot.\n4. Wait 15 days. Sending this letter does NOT stop any legal time limit - file your claim/complaint before the deadline shown, even if they haven't replied.\n5. Free help to check the letter: legal aid 15100 or Tele-Law 14454.\n\nLaws this letter relies on: Code on Wages, 2019, s.17(1)-(4) (Time limit for payment of wages); Code on Wages, 2019, s.45(1)-(6) (Claims authority, compensation, recovery and time limit); Code on Wages, 2019, s.59 (Burden of proof on employer); Code on Wages, 2019, s.2(d) (Central or State Government: whose authority applies); Code on Wages, 2019, s.2(y) (main part, clauses (a)-(j)) (What counts as \"wages\")",
+ "versions": {
+  "model": "sarvam/sarvam-105b",
+  "corpus_as_of": "2026-11-08",
+  "corpus_sha": "ea995cdc8d5a",
+  "prompts_sha": "f3c0f079be05"
+ },
+ "error": null,
+ "case_id": "H_G01_terminated",
+ "seconds": 15.5
+}
